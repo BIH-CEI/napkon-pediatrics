@@ -1,4 +1,5 @@
 //Author: Sally Brose
+// Berlin Institute of Health | Charité
 
 Profile: RadiologyProcedures
 Parent: Procedure
@@ -6,36 +7,23 @@ Id: radiology-procedures
 Title: "RadiologyProcedures"
 Description: "Records an application of a radiological imaging procedures performed on the patient (COVID-19 imaging procedures)"
 * insert napkon-metadata(2021-09-23, #draft, 0.1.0)
-* category = $sct#40701008 "Echocardiography (procedure)"
-* bodySite 1..
-* bodySite.coding 1..
-* bodySite.coding ^slicing.discriminator.type = #pattern
-* bodySite.coding ^slicing.discriminator.path = "$this"
-* bodySite.coding ^slicing.rules = #open
-* bodySite.coding contains snomed-heart 0..1
-* bodySite.coding[snomed-heart] = $sct#80891009 "Heart structure (body structure)"
-* bodySite.coding[snomed-heart] ^short = "Coding for bodySite of heart"
-* bodySite.coding[snomed-heart] ^definition = "A reference to a code defined by SNOMED CT to express that the imaging procedure is performed on the anatomical location of the heart."
-* bodySite.coding[snomed-heart].system 1..1
-* bodySite.coding[snomed-heart].code 1..1
-// report only Reference(ImagingPediatrics) // GL: what for is this?
-//* report MS
-//* category.coding[sct] = $sct#450436003 "Positron emission tomography with computed tomography (procedure)" // GL: what for is this?
-* status 1..1 MS
-* status from EventStatus(required)
+* category.coding ^slicing.discriminator[0].type = #pattern
+* category.coding ^slicing.discriminator[0].path = "$this"
+* category.coding ^slicing.rules = #open
+* category.coding contains sct 1..1
+* category.coding[sct] = $sct#103693007 "Diagnostic procedure (procedure)" 
+* code 1..1 MS
+* code from ImagingPediatrics (required)
+* subject 1..1 MS
 * subject only Reference(Patient)
-* subject MS
-// * actor 1..1 MS
-// *actor only Reference(Patient)?
-// * Procedure.focalDevice.manipulated 1..1 MS //was müsste an dieser Stelle hinkommen?
-// * Procedure.focalDevice.manipulated only Reference(Device) // kommt hier nach der sct code?
 
-Instance: radiology-procedure-instance
+
+Instance: RadiologyProcedures
 InstanceOf: radiology-procedures
 Usage: #example
 Title: "radiology-procedure-instance"
-Description: "Example of a radiology procedure"
+Description: "Example of a performed radiology/imaging procedure for pediatric patients when treating COVID-19."
 * status = #completed
-* code = $sct#450436003 "Positron emission tomography with computed tomography (procedure)" //das könnte doch raus oder?
-* bodySite.coding[snomed-heart] = $sct#80891009 "Heart structure (body structure)"
+* code = $sct#103693007 "Diagnostic procedure (procedure)" 
 * subject = Reference(ExamplePatient)
+* performedDateTime = "2021-09-23T13:06:00+02:00"

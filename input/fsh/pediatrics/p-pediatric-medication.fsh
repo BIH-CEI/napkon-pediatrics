@@ -14,6 +14,8 @@ Description: "Prescription of a medication or consumption by a pediatric patient
   * coding contains sct 0..1 and atcde 0..1
   * coding[sct] from MedicationPediatricsSCT (required)
   * coding[atcde] from MedicationPediatricsATCDE (required)
+// TODO: Mention in IG that "Anwendungsdauer" is coded by effectivePeriod
+
 
 Instance: PediatricMedicationSCT
 InstanceOf: pediatric-medication
@@ -23,8 +25,7 @@ Description: "Example prescription of a medication or consumption by a pediatric
 * status = #active
 * medicationCodeableConcept.coding[sct] = $sct#387458008 "Aspirin (substance)"
 * subject = Reference(ExamplePatient)
-* effectiveDateTime = "2021-09-23T13:06:00+02:00"
-
+* effectivePeriod.start = "2021-09-23T13:06:00+02:00"
 
 Instance: PediatricMedicationATCDE
 InstanceOf: pediatric-medication
@@ -34,4 +35,4 @@ Description: "Example prescription of a medication or consumption by a pediatric
 * status = #active
 * medicationCodeableConcept.coding[atcde] = $atcde#J06BA01 "Immunglobuline, normal human, zur extravasalen Anwendung"
 * subject = Reference(ExamplePatient)
-* effectiveDateTime = "2021-09-23T13:06:00+02:00"
+* effectivePeriod.start = "2021-09-23T13:06:00+02:00"

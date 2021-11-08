@@ -5,11 +5,10 @@ Parent: List
 Id: preadmission-medications
 Title: "Preadmission Medications"
 Description: ""
+* insert mii-patient-reference
 * code 1..1 MS
-* code = $sct#281379000 "Pre-admission (qualifier value)" //TODO: ok? genug?
+* code = $sct#281379000 "Pre-admission (qualifier value)"
 * entry.item only Reference(ImmunosuppresivePermanentMedication)
-* subject 1..1 MS
-* subject only $mii-reference
 
 Instance: preadmission-medications
 InstanceOf: preadmission-medications

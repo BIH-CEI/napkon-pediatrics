@@ -38,7 +38,7 @@ InstanceOf: gastrointestinal-diseases
 Usage: #example
 Title: "Instance of fhir resource sgastrointestinal-diseases in the context of pediatrics"
 Description: "Example of a gastrointestinal disease"
-* code.coding[icd10-gm] = $icd10-gm|"2021"#K59.9 "Funktionelle Darmstörung, nicht näher bezeichnet"
+* code.coding[icd10-gm] = $icd10-gm|"2021"#K90.0 "Zöliakie"
 * subject = Reference(ExamplePatient)
 * recordedDate = "2021-11-08"
 * verificationStatus.coding[conditionVerificationStatus] = $cs-condition-ver-status#refuted

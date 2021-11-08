@@ -1,4 +1,4 @@
-//Author: Sally Brose
+// Author: Sally Brose
 // Berlin Institute of Health | Charité
 Profile: PediatricMedication
 Parent: $mii-medication-statement
@@ -7,9 +7,13 @@ Title: "- MedicationStatement - Medikation"
 Description: "Prescription of a medication or consumption by a pediatric patient."
 * insert napkon-metadata(2021-09-23, #draft, 0.1.0)
 * medication[x] only CodeableConcept
-* medicationCodeableConcept.coding contains sct 0..1 and atcde 0..1
-* medicationCodeableConcept.coding[sct] from MedicationPediatricsSCT (required)
-* medicationCodeableConcept.coding[atcde] from MedicationPediatricsATCDE (sct
+* medicationCodeableConcept
+  * coding ^slicing.discriminator.type = #pattern
+  * coding ^slicing.discriminator.path = "$this"
+  * coding ^slicing.rules = #open
+  * coding contains sct 0..1 and atcde 0..1
+  * coding[sct] from MedicationPediatricsSCT (required)
+  * coding[atcde] from MedicationPediatricsATCDE (required)
 
 Instance: PediatricMedicationSCT
 InstanceOf: pediatric-medication

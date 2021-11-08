@@ -1,4 +1,4 @@
-// Author: Sally
+// Author: Sally Brose
 // Berlin Institute of Health | Charité
 
 ValueSet: ImagingPediatrics

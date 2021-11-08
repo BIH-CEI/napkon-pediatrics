@@ -3,7 +3,7 @@
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: "napkon-pediatrics"
-canonical: "https://www.netzwerk-universitaetsmedizin.de/fhir"
+canonical: "https://www.napkon.de/fhir"
 name: "napkon-pediatrics"
 status: "draft"
 version: "0.1.0"

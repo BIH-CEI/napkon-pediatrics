@@ -1,22 +1,15 @@
 //Author: Sally Brose
 // Berlin Institute of Health | Charité
-
 Profile: TransfusionTherapy
-Parent: Procedure
+Parent: $mii-procedure
 Id: transfusion-therapy
 Title: "Transfusion Therapy"
 Description: "Application of a blood transfusion therapy"
 * insert napkon-metadata(2021-09-23, #draft, 0.1.0)
-* category.coding ^slicing.discriminator[0].type = #pattern
-* category.coding ^slicing.discriminator[0].path = "$this"
-* category.coding ^slicing.rules = #open
-* category.coding contains sct 1..1
-* category.coding[sct] = $sct#277132007 "Therapeutic procedure (procedure)" 
-* code 1..1 MS
-* code from BloodTransfusionTherapy (required)
-* subject 1..1 MS
-* subject only Reference(Patient)
-
+* insert mii-patient-reference
+* category.coding[sct] = $sct#277132007 "Therapeutic procedure (procedure)"
+* code.coding[sct] 1..1
+* code.coding[sct] from BloodTransfusionTherapy (required)
 
 Instance: TransfusionTherapy
 InstanceOf: transfusion-therapy

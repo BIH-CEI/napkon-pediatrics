@@ -8,15 +8,18 @@ Description: "Chronic haematologic diseases in the context of pediatrics and Cov
 
 * insert napkon-metadata(2021-08-04, #draft, 0.1.0)
 
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-haematologic-diseases-icd"
+// TODO: all codes below are actually contained in the "andere" condition - still keep?
+* include codes from system $icd10-gm where concept regex /^D5[5-9]\..*/ and child exists false // Hämolytische Anämien (D55-D59),  Thalassämie D56, G6PD-Mangel-Anämie - D55, Sichelzellanämie - D57
+* include codes from system $icd10-gm where concept regex /^D50\..*/ and child exists false // Eisenmangelanämie - D50.- Eisenmangelanämie
+* include codes from system $icd10-gm where concept regex /^D70\..*/ and child exists false // chronische Neutropenie - D70
+* include codes from system $icd10-gm where concept regex /^D46\..*/ and child exists false // myelodysplastisches Syndrom - D46.- Myelodysplastische Syndrome
+* include codes from system $icd10-gm where concept regex /^D6[5-8]\..*/ and child exists false //Gerinnungsstörung - D68.- Sonstige Koagulopathien, D67 Hereditärer Faktor-IX-Mangel, D66 Hereditärer Faktor-VIII-Mangel, D65.- Disseminierte intravasale Gerinnung [Defibrinationssyndrom]
 
-* $icd10-gm#D58.9 "Hereditäre hämolytische Anämie, nicht näher bezeichnet"
-* $icd10-gm#D56.9 "Thalassämie, nicht näher bezeichnet"
-* $icd10-gm#D57.1 "	Sichelzellenanämie ohne Krisen"
-* $icd10-gm#D55.0 "Anämie durch Glukose-6-Phosphat-Dehydrogenase[G6PD]-Mangel"
-* $icd10-gm#D50.9 "Eisenmangelanämie, nicht näher bezeichnet"
-* $icd10-gm#D70 "Agranulozytose und Neutropenie"
-* $icd10-gm#D46.9 "Myelodysplastisches Syndrom, nicht näher bezeichnet"
-* $icd10-gm#D68.9 "Koagulopathie, nicht näher bezeichnet"
-
-// Other fehlt
+// Andere
+* include codes from system $icd10-gm where concept regex /^D[5-7].*/ and child exists false
+// Krankheiten des Blutes und der blutbildenden Organe sowie bestimmte Störungen mit Beteiligung des Immunsystems (D50-D90)
+// D50-D53 Alimentäre Anämien
+// D55-D59 Hämolytische Anämien
+// D60-D64 Aplastische und sonstige Anämien
+// D65-D69 Koagulopathien, Purpura und sonstige hämorrhagische Diathesen
+// D70-D77 Sonstige Krankheiten des Blutes und der blutbildenden Organe

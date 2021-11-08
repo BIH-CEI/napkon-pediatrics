@@ -8,7 +8,7 @@ Title: "Body Mass Index"
 Description: "Body mass index of a patient in context of Pediatrics"
 
 * insert napkon-metadata(2021-08-10, #draft, 0.1.0)
-
+* insert mii-patient-reference
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
@@ -17,16 +17,7 @@ Description: "Body mass index of a patient in context of Pediatrics"
 * code.coding[loinc].system 1..
 * code.coding[loinc].code 1..
 
-* value[x] MS
-* value[x] only Quantity
-
-* valueQuantity.system 1.. MS
-* valueQuantity.system = "http://unitsofmeasure.org"
-* valueQuantity.value 1.. MS
-* valueQuantity.unit 1.. MS
-* valueQuantity.unit = "cm"
-* valueQuantity.code 1.. MS
-* valueQuantity.code = #cm
+* insert value-quantity(#kg/m2, "kilogram / meter ^ 2") // should be "kilogram / (meter ^ 2)" but this causes a sushi error
 
 //Instance
 Instance: instance-body-mass-index
@@ -34,7 +25,7 @@ InstanceOf: body-mass-index
 Usage: #example
 Title: "Instance of fhir resource body mass index in the context of pediatrics"
 Description: "Example of body mass index"
-
 //Values
 * valueQuantity.value = 25
 * status = #final
+* subject = Reference(ExamplePatient)

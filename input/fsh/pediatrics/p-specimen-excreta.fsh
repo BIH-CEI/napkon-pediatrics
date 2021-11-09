@@ -16,6 +16,7 @@ Usage: #example
 Title: "Specimen Stool"
 Description: "Stool sample"
 * type = $cs-v2-0486#STL "Stool = Fecal"
+* subject = Reference(ExamplePatient)
 
 Instance: SpecimenUrine
 InstanceOf: specimen-excreta
@@ -23,3 +24,4 @@ Usage: #example
 Title: "Specimen Urine"
 Description: "Urine sample"
 * type = $cs-v2-0486#UR "Urine"
+* subject = Reference(ExamplePatient)

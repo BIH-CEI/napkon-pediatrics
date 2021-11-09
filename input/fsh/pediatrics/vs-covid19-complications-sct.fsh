@@ -13,7 +13,7 @@ Description: "Complications due to COVID19"
 * $sct#304252001 "For resuscitation (finding)" // TODO: finding ok?
 * $sct#235859005 "Liver disorder due to infection (disorder)" // severity als Condition.severity statt im Code (Post-coordinated) // TODO: OK so?
 * $sct#230431001 "Situation-related seizures (disorder)"
-* $sct#271594007 "Syncope (finding)" // TODO: finding ok?
+* $sct#128613002 "Seizure disorder (disorder)"
 * $sct#271737000 "Anemia (disorder)"
 * $sct#11479008 "Organic mental disorder (disorder)" //Psychische Störung aufgrund einer körperlichen Krankheit // TODO: OK so?
 * $sct#1119303003 "Post-acute COVID-19 (disorder)"

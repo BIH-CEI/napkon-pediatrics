@@ -9,7 +9,7 @@ Description: "Occurrence of a viral infection"
   * coding ^slicing.discriminator[0].path = "$this"
   * coding ^slicing.rules = #open
   * coding contains sct 1..1
-  * coding[sct] = $sct#34014006 "Viral disease (disorder)"
+  * coding[sct] = $sct#394807007 "Infectious diseases (specialty) (qualifier value)"
 * code
   * coding[sct] 1..1 MS
   * coding[sct] from ViralInfectiousDiseases (required)

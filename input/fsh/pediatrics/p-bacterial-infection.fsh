@@ -9,7 +9,7 @@ Description: "Occurrence of a bacterial infection"
   * coding ^slicing.discriminator[0].path = "$this"
   * coding ^slicing.rules = #open
   * coding contains sct 1..1
-  * coding[sct] = $sct#87628006 "Bacterial infectious disease (disorder)"
+  * coding[sct] = $sct#394807007 "Infectious diseases (specialty) (qualifier value)"
 * code
   * coding[sct] 1..1 MS
   * coding[sct] from bacterial-infectious-diseases (required)

@@ -5,7 +5,6 @@ Title: "Bacterial Infectious Diseases"
 Description: "Value set of bacterial infections"
 * insert napkon-metadata(2021-10-04, #draft, 0.1.0)
 
-// TODO pulmonale und nicht-pulmonale Infektionen gemeinsam?
 * $sct#27836007 "Pertussis (disorder)" // Bordetella pertussis - ok
 * $sct#186464008 "Mycoplasma infection (disorder)" // Mykoplasmen - ok
 * $sct#105629000 "Chlamydial infection (disorder)" // Chlamydien - ok
@@ -28,4 +27,4 @@ Description: "Value set of bacterial infections"
 * $sct#721756002 "Infection caused by Klebsiella (disorder)" // Klebsiella spp. - ok
 * $sct#11218009  "Infection caused by Pseudomonas aeruginosa (disorder)" // Pseudomonas aeruginosa - ok
 * $sct#23511006 "Meningococcal infectious disease (disorder)" // Neisseria meningitidis - ok
-* $sct#87628006 "Bacterial infectious disease (disorder)" // für "Andere" (confirmed) und "Nein" (refuted) - TODO: OK?
+* $sct#87628006 "Bacterial infectious disease (disorder)" // für "Andere" (confirmed) und "Nein" (refuted)

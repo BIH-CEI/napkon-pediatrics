@@ -13,3 +13,5 @@ Description: "Gastrointestinal diseases in the context of pediatrics and Covid-1
 * $icd10-gm#K90.0 "Zöliakie" // Zoeliakie - ok
 * $icd10-gm#K83.9 "Krankheit der Gallenwege, nicht näher bezeichnet" // Kuhmilchproteinallergie - ok
 * $icd10-gm#Z91.0 "Allergie, ausgenommen Allergie gegenüber Arzneimitteln, Drogen oder biologisch aktiven Substanzen, in der Eigenanamnese" // Gallengangserkrankung - ok
+
+ // TODO: use filters on ICD10-gm instead

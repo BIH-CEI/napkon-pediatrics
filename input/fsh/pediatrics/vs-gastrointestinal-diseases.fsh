@@ -9,7 +9,7 @@ Description: "Gastrointestinal diseases in the context of pediatrics and Covid-1
 * insert napkon-metadata(2021-09-13, #draft, 0.1.0)
 
 * $sct#236069009 "Chronic constipation (disorder)" // Chronische Obstipation - ok
-* $sct#24526004:263502005=90734009 "Inflammatory bowel disease where Clinical course = Chronic" // Chronisch entzündliche Darmerkrankung - ok // TODO: YB, please check
+* $sct#24526004 "Inflammatory bowel disease" // Chronisch entzündliche Darmerkrankung - ok
 * $sct#396331005 "Celiac disease (disorder)" // Zoeliakie - ok
 * $sct#782555009 "Allergy to cow's milk protein (finding)" // Kuhmilchproteinallergie - ok
 * $sct#118926004 "Disorder of bile duct (disorder)" // Gallengangserkrankung - ok

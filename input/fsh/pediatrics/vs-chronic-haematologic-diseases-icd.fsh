@@ -16,3 +16,5 @@ Description: "Chronic haematologic diseases in the context of pediatrics and Cov
 * $icd10-gm#D70.7 "Neutropenie, nicht näher bezeichnet" // chronische Neutropenie - ok
 * $icd10-gm#D46.9 "Myelodysplastisches Syndrom, nicht näher bezeichnet" // myelodysplastisches Syndrom - ok
 * $icd10-gm#D68.9 "Koagulopathie, nicht näher bezeichnet" //  Gerinnungsstörung - ok
+
+// TODO: use filters on ICD10-gm instead

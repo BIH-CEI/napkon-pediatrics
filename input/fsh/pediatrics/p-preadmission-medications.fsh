@@ -14,7 +14,7 @@ Instance: preadmission-medications
 InstanceOf: preadmission-medications
 Usage: #example
 Title: "preadmission-medications"
-Description: ""
+Description: "Example list of medications before the admission of the patient to the hospital"
 * status = #current
 * mode = #working
 * entry[+].item = Reference(ImmunosuppresivePermanentMedication)

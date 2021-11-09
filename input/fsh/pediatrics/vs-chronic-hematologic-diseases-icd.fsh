@@ -1,10 +1,10 @@
 // Author: Thomas Haese
 // Charité – Universitätsmedizin Berlin
 
-ValueSet: ChronicHaematologicDiseasesICD
-Id: chronic-haematologic-diseases-icd
-Title: "Value Set of Chronic Haematologic Diseases ICD"
-Description: "Chronic haematologic diseases in the context of pediatrics and Covid-19"
+ValueSet: ChronicHematoloogicDiseasesICD
+Id: chronic-hematoloogic-diseases-icd
+Title: "Value Set of Chronic Hematoloogic Diseases ICD"
+Description: "Chronic hematoloogic diseases in the context of pediatrics and Covid-19"
 
 * insert napkon-metadata(2021-08-04, #draft, 0.1.0)
 

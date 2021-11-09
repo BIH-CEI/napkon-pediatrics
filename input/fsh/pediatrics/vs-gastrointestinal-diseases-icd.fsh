@@ -20,5 +20,4 @@ Description: "Gastrointestinal diseases in the context of pediatrics and Covid-1
 * $icd10-gm#Z91.0 "Allergie, ausgenommen Allergie gegenüber Arzneimitteln, Drogen oder biologisch aktiven Substanzen, in der Eigenanamnese"
 
 // Andere
-// Alle Codes unter K verfügbar machen
 * include codes from system $icd10-gm where concept regex /^K.*/ and child exists false

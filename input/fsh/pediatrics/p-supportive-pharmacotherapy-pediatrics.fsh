@@ -21,6 +21,6 @@ Usage: #example
 Title: "Instance of fhir resource supportive pharmacotherapy in the context of pediatrics"
 Description: "Example of a supportive pharmacotherapy"
 * status = #completed
-* code = $sct#127784009 "Inhaled bronchodilator therapy (procedure)"
+* code = $sct#243132000:363701004=6710000 "Inhaled drug administration where Direct substance = Nitric oxide"
 * subject = Reference(ExamplePatient)
 * performedDateTime = "2021-11-08"

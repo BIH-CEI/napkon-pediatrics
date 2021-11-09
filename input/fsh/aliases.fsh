@@ -24,6 +24,7 @@ Alias: $loinc-sars-cov2-variants = http://loinc.org/vs/LL5768-8
 // ValueSets
 Alias: $cardiovascular-diseases-icd = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/cardiovascular-diseases-icd
 Alias: $cardiovascular-diseases = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/cardiovascular-diseases
+Alias: $detected-not-detected-inconclusive = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive
 
 // GECCO resources
 Alias: $gecco-base-condition = https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition

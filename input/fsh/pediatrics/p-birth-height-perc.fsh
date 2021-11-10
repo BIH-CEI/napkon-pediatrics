@@ -14,7 +14,9 @@ Description: "Birth Height with unit percentiles in context of Pediatrics"
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains loinc 1..*
-* code.coding[loinc] = $loinc#89269-5
+//* code.coding[loinc] = $loinc#89269-5 "Body height Measured --at birth" // falscher code (ist für cm, nicht perzentile)
+// TODO: wie hat die KBV das gemacht? -> das übernehmen
+// 8303-0 	Body height [Percentile] --> aber das ist nicht für Geburt!
 * code.coding[loinc].system 1..
 * code.coding[loinc].code 1..
 * insert value-quantity(#{Percentile}, "Percentile")

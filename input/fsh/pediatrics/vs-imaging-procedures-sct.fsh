@@ -1,10 +1,9 @@
 // Author: Sally Brose
 // Berlin Institute of Health | Charité
-
-ValueSet: ImagingPediatrics
-Id: imaging-pediatrics
-Title: "ValueSetImagingPediatrics"
-Description:  "Imaging procedures used in the case of a of Covid-19 infection for a pediatric patient."
+ValueSet: ImagingProceduresSCT
+Id: imaging-procedures-sct
+Title: "Value Set of imaging procedures from SNOMED CT"
+Description: "Imaging procedures in the context of pediatrics and Covid-19"
 * insert napkon-metadata(2021-09-23, #draft, 0.1.0)
 
 * codes from system $sct where concept is-a #40701008 "Echocardiography (procedure)"

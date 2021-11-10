@@ -14,7 +14,7 @@ Description: "Birth Height of a patient in context of Pediatrics"
   * coding[loinc-pedi].system 1..
   * coding[loinc-pedi].code 1..
 
-* insert value-quantity(#cm, "centimeter")
+* insert value-quantity(#cm)
 
 Instance: instance-birth-height
 InstanceOf: birth-height

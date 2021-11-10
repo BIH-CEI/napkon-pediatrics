@@ -20,7 +20,7 @@ Description: "Body mass index with unit percentiles in context of Pediatrics"
   * coding[snomed] = $sct#60621009:370130000=415068004 "Body mass index where Property = Percentile value"
   * coding[snomed].system 1..
   * coding[snomed].code 1..
-* insert value-quantity(#%, "%")
+* insert value-quantity(#%)
 * derivedFrom 1..1 MS
 * derivedFrom only Reference(BodyMassIndex)
 

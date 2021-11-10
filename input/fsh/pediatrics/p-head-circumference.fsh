@@ -20,7 +20,7 @@ Description: "Head circumference of a patient in context of Pediatrics"
   * coding[snomed] = $sct#363812007 "Head circumference (observable entity)"
   * coding[snomed].system 1..
   * coding[snomed].code 1..
-* insert value-quantity(#cm, "centimeter")
+* insert value-quantity(#cm)
 
 Instance: instance-head-circumference
 InstanceOf: head-circumference

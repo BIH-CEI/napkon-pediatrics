@@ -11,4 +11,4 @@ Id: viral-infectious-diseases
 * $sct#1148698007 "Disease caused by Human bocavirus (disorder)" // Bocaviren - ok
 * $sct#27619001 "Disease caused by Coronaviridae (disorder)" // Andere Coronaviren - ok
 * $sct#12188008 "Parainfluenza (disorder)" // Parainfluenzaviren - ok
-* $sct#34014006 "Viral disease (disorder)" // für "Andere" (confirmed) und "Nein" (refuted) - TODO: OK?
+* codes from system $sct where concept is-a #34014006 "Viral disease (disorder)" // für "Andere" (confirmed) und "Nein" (refuted) - TODO: OK?

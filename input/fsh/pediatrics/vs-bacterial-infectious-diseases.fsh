@@ -27,4 +27,4 @@ Description: "Value set of bacterial infections"
 * $sct#721756002 "Infection caused by Klebsiella (disorder)" // Klebsiella spp. - ok
 * $sct#11218009  "Infection caused by Pseudomonas aeruginosa (disorder)" // Pseudomonas aeruginosa - ok
 * $sct#23511006 "Meningococcal infectious disease (disorder)" // Neisseria meningitidis - ok
-* $sct#87628006 "Bacterial infectious disease (disorder)" // für "Andere" (confirmed) und "Nein" (refuted)
+* codes from system $sct where concept is-a #87628006 "Bacterial infectious disease (disorder)" // für "Andere" (confirmed) und "Nein" (refuted)

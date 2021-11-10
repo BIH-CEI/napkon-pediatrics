@@ -23,6 +23,6 @@ Title: "Covid19 Complication"
 Description: "Example of a covid19 complication"
 * verificationStatus.coding[conditionVerificationStatus] = $cs-condition-ver-status#confirmed
 * verificationStatus.coding[snomed] = $sct#410605003 "Confirmed present (qualifier value)"
-* code.coding[sct] = $sct#235859005 "Liver disorder due to infection"
+* code.coding[sct] = $sct#417451006:363589002=439569004 "Procedure needed Where Associated procedure = Resuscitation"
 * subject = Reference(ExamplePatient)
 * recordedDate = "2021-02-19T09:30:35+01:00"

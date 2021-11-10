@@ -8,7 +8,8 @@ Alias: $ucum = http://unitsofmeasure.org
 
 Alias: $ops = http://fhir.de/CodeSystem/bfarm/ops
 Alias: $atcde = http://fhir.de/CodeSystem/bfarm/atc
-Alias: $icd10-gm = http://fhir.de/CodeSystem/dimdi/icd-10-gm
+Alias: $icd10-gm = http://fhir.de/CodeSystem/bfarm/icd-10-gm
+Alias: $dicom = http://dicom.nema.org/resources/ontology/DCM
 
 // HL7 / FHIR specific code systems
 Alias: $cs-observation-category = http://terminology.hl7.org/CodeSystem/observation-category
@@ -28,6 +29,7 @@ Alias: $cardiovascular-diseases = https://www.netzwerk-universitaetsmedizin.de/f
 // GECCO resources
 Alias: $gecco-base-condition = https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition
 Alias: $gecco-diagnosis-covid19 = https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnosis-covid-19
+Alias: $gecco-vital-signs-base = https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vital-signs-base
 // MII resources
 Alias: $mii-medication-statement = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement
 Alias: $mii-condition = https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose

@@ -9,6 +9,7 @@ Alias: $ucum = http://unitsofmeasure.org
 Alias: $ops = http://fhir.de/CodeSystem/bfarm/ops
 Alias: $atcde = http://fhir.de/CodeSystem/bfarm/atc
 Alias: $icd10-gm = http://fhir.de/CodeSystem/bfarm/icd-10-gm
+Alias: $dicom = http://dicom.nema.org/resources/ontology/DCM
 
 // HL7 / FHIR specific code systems
 Alias: $cs-observation-category = http://terminology.hl7.org/CodeSystem/observation-category

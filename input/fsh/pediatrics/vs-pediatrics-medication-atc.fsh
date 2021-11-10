@@ -7,8 +7,8 @@ Description: "Medication used in the case of a of Covid-19 infection for a pedia
 * insert napkon-metadata(2021-09-23, #draft, 0.1.0)
 
 * $atcde#A01AD05 "Acetylsalicylsäure" // ASS - ok
-* $atcde#L04AC07		"Tocilizumab" // Tocilizumab - ok
-* $atcde#L04AC03		"Anakinra" // Anakinra - ok
+* $atcde#L04AC07 "Tocilizumab" // Tocilizumab - ok
+* $atcde#L04AC03 "Anakinra" // Anakinra - ok
 * codes from system $atcde where concept is-a #J06B "IMMUNGLOBULINE" // Immunoglobuline - ok
 * codes from system $atcde where concept is-a #C01C "KARDIOSTIMULANZIEN, EXKL. HERZGLYKOSIDE" // inotropkia, vasopressoren
 * codes from system $atcde where concept is-a #J01 "ANTIBIOTIKA ZUR SYSTEMISCHEN ANWENDUNG " // systemische Antibiotika

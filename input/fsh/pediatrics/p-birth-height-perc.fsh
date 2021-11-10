@@ -1,27 +1,28 @@
-// Author: Thomas Haese
+// Author: Thomas Haese, Gregor Lichtner
 // Charité – Universitätsmedizin Berlin
-
 Profile: BirthHeightPercentiles
-Parent: Observation
+Parent: $gecco-vital-signs-base
 Id: birth-height-percentiles
 Title: "Birth Height with unit percentiles"
 Description: "Birth Height with unit percentiles in context of Pediatrics"
-
 * insert napkon-metadata(2021-08-10, #draft, 0.1.0)
 * insert mii-patient-reference
-
-* code.coding ^slicing.discriminator.type = #pattern
-* code.coding ^slicing.discriminator.path = "$this"
-* code.coding ^slicing.rules = #open
-* code.coding contains loinc 1..*
-//* code.coding[loinc] = $loinc#89269-5 "Body height Measured --at birth" // falscher code (ist für cm, nicht perzentile)
-// TODO: wie hat die KBV das gemacht? -> das übernehmen
-// 8303-0 	Body height [Percentile] --> aber das ist nicht für Geburt!
-* code.coding[loinc].system 1..
-* code.coding[loinc].code 1..
+* code 1..1
+  * coding 1..*
+  * coding ^slicing.discriminator.type = #pattern
+  * coding ^slicing.discriminator.path = "$this"
+  * coding ^slicing.rules = #open
+  * coding contains
+      loinc 1..1 and snomed 1..1
+  * coding[loinc] = $loinc#8303-0 "Body height [Percentile]"
+  * coding[loinc].system 1..
+  * coding[loinc].code 1..
+  * coding[snomed] = $sct#50373000:370130000=415068004 "Body height where Property = Percentile value"
+  * coding[snomed].system 1..
+  * coding[snomed].code 1..
 * insert value-quantity(#{Percentile}, "Percentile")
+* derivedFrom only Reference(BirthHeight)
 
-//Instance regarding percentiles
 Instance: birth-height-circumference-percentiles
 InstanceOf: birth-height-percentiles
 Usage: #example
@@ -30,3 +31,5 @@ Description: "Example of a birth height"
 * valueQuantity.value = 75
 * status = #final
 * subject = Reference(ExamplePatient)
+* derivedFrom = Reference(instance-birth-height)
+* effectiveDateTime = "2015-02-07T13:28:17-05:00"

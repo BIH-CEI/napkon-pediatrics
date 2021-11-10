@@ -1,31 +1,33 @@
 // Author: Thomas Haese
 // Charité – Universitätsmedizin Berlin
-
 Profile: BodyMassIndex
-Parent: Observation
+Parent: $gecco-vital-signs-base
 Id: body-mass-index
 Title: "Body Mass Index"
 Description: "Body mass index of a patient in context of Pediatrics"
-
 * insert napkon-metadata(2021-08-10, #draft, 0.1.0)
 * insert mii-patient-reference
-* code.coding ^slicing.discriminator.type = #pattern
-* code.coding ^slicing.discriminator.path = "$this"
-* code.coding ^slicing.rules = #open
-* code.coding contains loinc 1..*
-* code.coding[loinc] = $loinc#39156-5
-* code.coding[loinc].system 1..
-* code.coding[loinc].code 1..
+* code 1..1
+  * coding 1..*
+  * coding ^slicing.discriminator.type = #pattern
+  * coding ^slicing.discriminator.path = "$this"
+  * coding ^slicing.rules = #open
+  * coding contains
+    loinc 1..* and snomed 0..*
+  * coding[loinc] = $loinc#39156-5 "Body mass index (BMI) [Ratio]"
+  * coding[loinc].system 1..
+  * coding[loinc].code 1..
+  * coding[snomed] = $sct#60621009 "Body mass index (observable entity)"
+  * coding[snomed].system 1..
+  * coding[snomed].code 1..
+* insert value-quantity(#kg/m2, "kilogram / meter ^ 2") // should be "kilogram / (meter ^ 2)" but the parentheses causes a sushi error
 
-* insert value-quantity(#kg/m2, "kilogram / meter ^ 2") // should be "kilogram / (meter ^ 2)" but this causes a sushi error
-
-//Instance
 Instance: instance-body-mass-index
 InstanceOf: body-mass-index
 Usage: #example
 Title: "Instance of fhir resource body mass index in the context of pediatrics"
 Description: "Example of body mass index"
-//Values
 * valueQuantity.value = 25
 * status = #final
 * subject = Reference(ExamplePatient)
+* effectiveDateTime = "2015-02-07T13:28:17-05:00"

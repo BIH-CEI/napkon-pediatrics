@@ -14,3 +14,6 @@ Description: "Medication used in the case of a of Covid-19 infection for a pedia
 * codes from system $atcde where concept is-a #J01 "ANTIBIOTIKA ZUR SYSTEMISCHEN ANWENDUNG " // systemische Antibiotika
 * codes from system $atcde where concept is-a #B02B "VITAMIN K UND ANDERE HÄMOSTATIKA" // Hämostaseologische Therapien
 * codes from system $atcde where concept is-a #B05 "BLUTERSATZMITTEL UND PERFUSIONSLÖSUNGEN" // Transfusion
+* $atcde#N01AX13 "Distickstoffmonoxid" // NO
+* $atcde#N01AX63 "Distickstoffmonoxid, Kombinationen"  // NO
+* codes from system $atcde where concept is-a #R03 "MITTEL BEI OBSTRUKTIVEN ATEMWEGSERKRANKUNGEN" // Bronchodilatoren

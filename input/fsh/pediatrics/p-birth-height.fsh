@@ -1,21 +1,18 @@
 // Author: Thomas Haese
 // Charité – Universitätsmedizin Berlin
 Profile: BirthHeight
-Parent: $gecco-vital-signs-base
+Parent: $gecco-body-height
 Id: birth-height
 Title: "Birth Height"
 Description: "Birth Height of a patient in context of Pediatrics"
 * insert napkon-metadata(2021-08-10, #draft, 0.1.0)
 * code 1..1
   * coding 1..*
-  * coding ^slicing.discriminator.type = #pattern
-  * coding ^slicing.discriminator.path = "$this"
-  * coding ^slicing.rules = #open
   * coding contains
-      loinc 1..*
-  * coding[loinc] = $loinc#89269-5 "Body height Measured --at birth"
-  * coding[loinc].system 1..
-  * coding[loinc].code 1..
+      loinc-pedi 1..*
+  * coding[loinc-pedi] = $loinc#89269-5 "Body height Measured --at birth"
+  * coding[loinc-pedi].system 1..
+  * coding[loinc-pedi].code 1..
 
 * insert value-quantity(#cm, "centimeter")
 

@@ -20,7 +20,7 @@ Description: "Body mass index of a patient in context of Pediatrics"
   * coding[snomed] = $sct#60621009 "Body mass index (observable entity)"
   * coding[snomed].system 1..
   * coding[snomed].code 1..
-* insert value-quantity(#kg/m2, "kilogram / meter ^ 2") // should be "kilogram / (meter ^ 2)" but the parentheses causes a sushi error
+* insert value-quantity(#kg/m2, "kilogram / meter ^ 2") // TODO: don't use "unit" in Quantity
 
 Instance: instance-body-mass-index
 InstanceOf: body-mass-index

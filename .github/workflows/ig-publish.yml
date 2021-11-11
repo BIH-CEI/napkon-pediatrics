@@ -40,6 +40,10 @@ jobs:
         with:
           args: ln -s ./fhir-packages/packages packages
 
+      - name: Copy publisher image
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          args: mkdir ./input-cache/ && cp ./fhir-packages/publisher/publisher.jar ./input-cache/publisher.jar
 
       #- name: Update the image to the latest publisher
       #  uses: docker://hl7fhir/ig-publisher-base:latest

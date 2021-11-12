@@ -12,14 +12,14 @@ Description: "Application of a thoraric drainage"
   * coding[sct] = $sct#277132007 "Therapeutic procedure (procedure)"
 * code
   * coding[sct] 1..1
-  * coding[sct] = $sct#34193001 "Closed drainage of chest (procedure)"
+  * coding[sct] = $sct#264957007 "Insertion of pleural tube drain (procedure)"
 
 Instance: ThoracicDrainageCompleted
 InstanceOf: thoracic-drainage
 Usage: #example
 Title: "Thoracic Drainage Completed"
 Description: "Example of a thoracic drainage that was completed"
-* status = #completed 
+* status = #completed
 * subject = Reference(ExamplePatient)
 * performedDateTime = "2021-09-14T13:06:00+02:00"
 

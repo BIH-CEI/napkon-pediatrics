@@ -11,12 +11,16 @@ Description: "Total length of stay"
   * coding ^slicing.discriminator[0].type = #pattern
   * coding ^slicing.discriminator[0].path = "$this"
   * coding ^slicing.rules = #open
-  * coding contains loinc 1..*
+  * coding contains loinc 1..* and snomed 1..*
   * coding[loinc] = $loinc#78033-8 "Hospital stay duration"
   * coding[loinc]
     * system 1..
     * code 1..
-* insert value-quantity(#d, "day")
+  * coding[snomed] = $sct#183797002 "Duration of inpatient stay (observable entity)"
+  * coding[snomed]
+    * system 1..
+    * code 1..
+* insert value-quantity(#d)
 
 Instance: TotalLengthOfStay
 InstanceOf: total-length-of-stay

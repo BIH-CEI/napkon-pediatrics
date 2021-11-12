@@ -16,7 +16,7 @@ Description: "Duration of intensive care treatment"
   * coding[loinc]
     * system 1..
     * code 1..
-* insert value-quantity(#d, "day")
+* insert value-quantity(#d)
 
 Instance: IntensiveCareTreatmentDuration
 InstanceOf: intensive-care-treatment-duration

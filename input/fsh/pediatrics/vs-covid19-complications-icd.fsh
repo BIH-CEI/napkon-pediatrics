@@ -27,7 +27,7 @@ Description: "Complications due to COVID19"
 // signifikante Leberfunktionsstörung - ok
 * codes from system $icd10-gm where concept is-a #K72 "Leberversagen, anderenorts nicht klassifiziert" and child exists false
 * codes from system $icd10-gm where concept is-a #K75 "Sonstige entzündliche Leberkrankheiten" and child exists false
-* $icd10-gm#K77.0 "Leberkrankheiten bei anderenorts klassifizierten infektiösen und parasitären Krankheiten" and child exists false
+* $icd10-gm#K77.0 "Leberkrankheiten bei anderenorts klassifizierten infektiösen und parasitären Krankheiten"
 * codes from system $icd10-gm where concept is-a #K76 "Sonstige Krankheiten der Leber" and child exists false
 
 // Krampfanfälle - ok

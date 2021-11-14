@@ -40,3 +40,5 @@ Description: "Example of a fungal infection where the presence is unknown"
 * subject = Reference(ExamplePatient)
 * code.coding[sct] = $sct#3218000 "Mycosis (disorder)"
 * recordedDate = "2021-09-14T13:06:00+02:00"
+
+

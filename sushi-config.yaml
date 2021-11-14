@@ -3,7 +3,7 @@
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: "napkon-pediatrics"
-canonical: "https://www.netzwerk-universitaetsmedizin.de/fhir"
+canonical: "https://www.napkon.de/fhir"
 name: "napkon-pediatrics"
 status: "draft"
 version: "0.1.0"
@@ -16,7 +16,7 @@ publisher:
 dependencies:
   de.medizininformatikinitiative.kerndatensatz.prozedur:
     uri: https://simplifier.net/guide/medizininformatikinitiative-modulprozeduren-implementationguide
-    version: 2.0.0-alpha3
+    version: 2.0.0-alpha4
   de.medizininformatikinitiative.kerndatensatz.person:
     uri: https://simplifier.net/guide/medizininformatikinitiative-modulperson-implementationguide
     version: 2.0.0-alpha3

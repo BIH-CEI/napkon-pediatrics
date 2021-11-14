@@ -1,6 +1,6 @@
 Profile: Covid19Symptoms
 Parent: $gecco-base-condition
-Id: covid-19-Covid19-symptoms
+Id: covid19-symptoms
 Description: "Cover additional Covid 19 symptoms"
 * insert napkon-metadata(2021-11-10, #draft, 0.1.0)
 * category 1.. MS
@@ -19,7 +19,7 @@ Description: "Cover additional Covid 19 symptoms"
 * extension[dueTo].valueCodeableConcept = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
 
 Instance: Covid19Symptoms
-InstanceOf: covid-19-Covid19-symptoms
+InstanceOf: covid19-symptoms
 Usage: #example
 Title: "Covid19 Symptom"
 Description: "Example of a covid19 complication"

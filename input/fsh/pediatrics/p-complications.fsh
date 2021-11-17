@@ -11,10 +11,15 @@ Description: "Complication due to COVID19"
   * coding ^slicing.discriminator[0].path = "$this"
   * coding ^slicing.rules = #open
   * coding contains complication 1..1 MS
-  * coding[complication] = $sct#116223007:42752001=840539006 "Complication where Due to = Disease caused by 2019 novel coronavirus"
+  * coding[complication] = $sct#116223007 "Complication (disorder)"
+  * coding[complication].system 1.. MS
+  * coding[complication].code 1.. MS
 * code
   * coding[sct] from Covid19ComplicationsSCT (required)
   * coding[icd10-gm] from Covid19ComplicationsICD10GM (required)
+* extension contains $ext-condition-dueTo named dueTo 1..1
+* extension[dueTo].valueCodeableConcept 1..1
+* extension[dueTo].valueCodeableConcept = $sct#840539006 "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
 
 Instance: Covid19Complication
 InstanceOf: covid19-complication

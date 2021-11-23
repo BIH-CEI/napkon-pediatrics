@@ -1,5 +1,5 @@
 // Author: Thomas Haese
-// Charité – Universitätsmedizin Berlin
+// Charité - Universitätsmedizin Berlin
 Profile: BirthHeight
 Parent: $gecco-body-height
 Id: birth-height
@@ -13,7 +13,6 @@ Description: "Birth Height of a patient in context of Pediatrics"
   * coding[loinc-pedi] = $loinc#89269-5 "Body height Measured --at birth"
   * coding[loinc-pedi].system 1..
   * coding[loinc-pedi].code 1..
-
 * insert value-quantity(#cm)
 
 Instance: instance-birth-height

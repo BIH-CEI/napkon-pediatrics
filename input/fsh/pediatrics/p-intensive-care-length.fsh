@@ -1,5 +1,5 @@
 // Author: Gregor Lichtner
-// Berlin Institute of Health | Charité
+// Charité - Universitätsmedizin Berlin
 Profile: IntensiveCareTreatmentDuration
 Parent: Observation
 Id: intensive-care-treatment-duration

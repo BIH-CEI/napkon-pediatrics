@@ -1,13 +1,11 @@
 // Author: Thomas Haese
-// Charité – Universitätsmedizin Berlin
+// Charité - Universitätsmedizin Berlin
 Profile: GastrointestinalDiseases
 Parent: $gecco-base-condition
 Id: gastrointestinal-diseases
 Title: "Gastrointestinal Diseases"
 Description: "Gastrointestinal diseases in the field of pediatrics as a risk factor for a severe course of an infection with SARS-CoV-2."
-
 * insert napkon-metadata(2021-08-10, #draft, 0.1.0)
-
 * category 1.. MS
   * coding MS
   * coding ^slicing.discriminator.type = #pattern
@@ -17,11 +15,9 @@ Description: "Gastrointestinal diseases in the field of pediatrics as a risk fac
   * coding[gastroenterology] = $sct#394584008 "Gastroenterology (qualifier value)"
   * coding[gastroenterology].system 1.. MS
   * coding[gastroenterology].code 1.. MS
-
 * code.coding[icd10-gm] from GastrointestinalDiseasesICD (required)
 * code.coding[sct] from GastrointestinalDiseases (required)
 
-//Instances SCT + ICD
 Instance: instance-gastrointestinal-diseases
 InstanceOf: gastrointestinal-diseases
 Usage: #example

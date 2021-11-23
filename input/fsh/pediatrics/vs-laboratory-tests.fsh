@@ -1,3 +1,5 @@
+// Author: Gregor Lichtner
+// Charité - Universitätsmedizin Berlin
 ValueSet: LaboratoryTests
 Id: laboratory-tests
 Title: "Laboratory Tests"

@@ -1,5 +1,5 @@
 // Author: Thomas Haese, Gregor Lichtner
-// Charité – Universitätsmedizin Berlin
+// Charité - Universitätsmedizin Berlin
 Profile: HeadCircumferencePercentiles
 Parent: $gecco-vital-signs-base
 Id: head-circumference-percentiles
@@ -24,7 +24,6 @@ Description: "Head circumference with unit percentiles in context of Pediatrics"
 * derivedFrom 1..1 MS
 * derivedFrom only Reference(HeadCircumference)
 
-//Instance
 Instance: instance-head-circumference-percentiles
 InstanceOf: head-circumference-percentiles
 Usage: #example

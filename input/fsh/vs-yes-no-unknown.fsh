@@ -1,5 +1,5 @@
 // Author: Gregor Lichtner
-// Berlin Institute of Health | Charité
+// Charité - Universitätsmedizin Berlin
 ValueSet: YesNoUnknown
 Id: yes-no-unknown
 Title: "Yes No Unknown"

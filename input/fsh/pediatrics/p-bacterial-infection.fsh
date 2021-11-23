@@ -1,3 +1,5 @@
+// Author: Larissa Röhrig, Gregor Lichtner
+// Charité - Universitätsmedizin Berlin
 Profile: BacterialInfection
 Parent: $gecco-base-condition
 Id: bacterial-infection

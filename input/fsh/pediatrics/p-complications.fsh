@@ -1,5 +1,5 @@
 // Author: Gregor Lichtner
-// Berlin Institute of Health | Charité
+// Charité - Universitätsmedizin Berlin
 Profile: Covid19Complication
 Parent: $gecco-base-condition
 Id: covid19-complication

@@ -1,5 +1,5 @@
 // Author: Gregor Lichtner
-// Berlin Institute of Health | Charité
+// Charité - Universitätsmedizin Berlin
 ValueSet: PresentNotPresentUndeterminedOther
 Id: present-not-present-undetermined-other
 Title: "Present Not Present Undetermined Other"

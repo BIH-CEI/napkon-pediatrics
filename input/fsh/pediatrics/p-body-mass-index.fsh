@@ -1,5 +1,5 @@
 // Author: Thomas Haese
-// Charité – Universitätsmedizin Berlin
+// Charité - Universitätsmedizin Berlin
 Profile: BodyMassIndex
 Parent: $gecco-vital-signs-base
 Id: body-mass-index

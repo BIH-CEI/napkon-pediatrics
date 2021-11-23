@@ -1,5 +1,5 @@
 // Author: Gregor Lichtner
-// Berlin Institute of Health | Charité
+// Charité - Universitätsmedizin Berlin
 ValueSet: CongenitalDiseases
 Id: congenital-diseases
 Title: "Congenital Diseases"

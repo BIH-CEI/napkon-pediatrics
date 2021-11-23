@@ -1,5 +1,5 @@
 // Author: Gregor Lichtner
-// Berlin Institute of Health | Charité
+// Charité - Universitätsmedizin Berlin
 ValueSet: DetectedNotDetectedUnknownUndetermined
 Id: detected-not-detected-unknown-undetermined
 Title: "Detected Not Detected Unknown Undetermined"

@@ -1,5 +1,5 @@
 // Author: Sally Brose
-// Berlin Institute of Health | Charité
+// Charité - Universitätsmedizin Berlin
 Profile: MedicalHistoryStemCellTransplant
 Parent: $gecco-base-condition
 Id: medical-history-stem-cell-transplant

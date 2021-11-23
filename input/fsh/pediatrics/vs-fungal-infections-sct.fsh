@@ -1,5 +1,5 @@
 // Author: Gregor Lichtner
-// Berlin Institute of Health | Charité
+// Charité - Universitätsmedizin Berlin
 ValueSet: FungalInfectionsSCT
 Id: fungal-infections-sct
 Title: "Fungal Infections SNOMED CT"

@@ -1,10 +1,10 @@
 // Author: Sally Brose
-// Berlin Institute of Health | Charité
+// Charité - Universitätsmedizin Berlin
 Profile: PediatricMedication
 Parent: $mii-medication-statement
 Id: pediatric-medication
-Title: "- MedicationStatement - Medikation"
-Description: "Prescription of a medication or consumption by a pediatric patient."
+Title: "Pediatric Medication"
+Description: "Medication taken by or given to a pediatric patient."
 * insert napkon-metadata(2021-09-23, #draft, 0.1.0)
 * medication[x] only CodeableConcept
 * medicationCodeableConcept
@@ -15,7 +15,6 @@ Description: "Prescription of a medication or consumption by a pediatric patient
   * coding[sct] from MedicationPediatricsSCT (required)
   * coding[atcde] from MedicationPediatricsATCDE (required)
 // TODO: Mention in IG that "Anwendungsdauer" is coded by effectivePeriod
-
 
 Instance: PediatricMedicationSCT
 InstanceOf: pediatric-medication

@@ -1,5 +1,5 @@
 // Author: Sally Brose
-// Berlin Institute of Health | Charité
+// Charité - Universitätsmedizin Berlin
 Profile: ImagingProcedures
 Parent: $mii-procedure
 Id: imaging-procedures
@@ -27,8 +27,8 @@ Usage: #example
 Title: "imaging-procedure-instance"
 Description: "Example of a performed radiology/imaging procedure for pediatric patients when treating COVID-19."
 * status = #completed
-* code.coding[sct] = $sct#450436003 "Positron emission tomography with computed tomography (procedure)"
-* code.coding[dicom] = $dicom#PT "Positron emission tomography"
-//* code.coding[dicom] = $dicom#CT "Computed Tomography"
+* code.coding[+] = $sct#450436003 "Positron emission tomography with computed tomography (procedure)"
+* code.coding[+] = $dicom#PT "Positron emission tomography"
+* code.coding[+] = $dicom#CT "Computed Tomography"
 * subject = Reference(ExamplePatient)
 * performedDateTime = "2021-09-23T13:06:00+02:00"

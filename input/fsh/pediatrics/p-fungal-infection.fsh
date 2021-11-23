@@ -1,5 +1,5 @@
 // Author: Gregor Lichtner
-// Berlin Institute of Health | Charité
+// Charité - Universitätsmedizin Berlin
 Profile: FungalInfection
 Parent: $gecco-base-condition
 Id: fungal-infection
@@ -23,7 +23,7 @@ Description: "Occurrence of a fungal infection"
 Instance: FungalInfectionConfirmed
 InstanceOf: fungal-infection
 Usage: #example
-Title: "Fungal Infectin Confirmed"
+Title: "Fungal Infection Confirmed"
 Description: "Example of a confirmed fungal infection"
 * verificationStatus.coding[conditionVerificationStatus] = $cs-condition-ver-status#confirmed
 * verificationStatus.coding[snomed] = $sct#410605003 "Confirmed present (qualifier value)"
@@ -40,5 +40,3 @@ Description: "Example of a fungal infection where the presence is unknown"
 * subject = Reference(ExamplePatient)
 * code.coding[sct] = $sct#3218000 "Mycosis (disorder)"
 * recordedDate = "2021-09-14T13:06:00+02:00"
-
-

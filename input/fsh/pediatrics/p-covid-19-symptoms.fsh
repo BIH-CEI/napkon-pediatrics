@@ -1,3 +1,5 @@
+// Author: Gregor Lichtner
+// Charité - Universitätsmedizin Berlin
 Profile: Covid19Symptoms
 Parent: $gecco-base-condition
 Id: covid19-symptoms

@@ -1,5 +1,5 @@
 // Author: Gregor Lichtner
-// Berlin Institute of Health | Charité
+// Charité - Universitätsmedizin Berlin
 Profile: SarsCoV2RTPCRSpecimen
 Parent: $mii-observation-lab
 Id: sars-cov2-rt-pcr-specimen

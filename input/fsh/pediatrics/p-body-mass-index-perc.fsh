@@ -1,5 +1,5 @@
 // Author: Thomas Haese, Gregor Lichtner
-// Charité – Universitätsmedizin Berlin
+// Charité - Universitätsmedizin Berlin
 Profile: BodyMassIndexPercentiles
 Parent: $gecco-vital-signs-base
 Id: body-mass-index-percentiles

@@ -1,13 +1,13 @@
 // Author: Gregor Lichtner
-// Berlin Institute of Health | Charité
+// Charité - Universitätsmedizin Berlin
 Profile: PreadmissionMedications
 Parent: List
 Id: preadmission-medications
 Title: "Preadmission Medications"
-Description: ""
+Description: "List of medications taken before admission to a hospital"
 * insert mii-patient-reference
 * code 1..1 MS
-* code = $sct#281379000 "Pre-admission (qualifier value)"
+* code = $sct#394829006 "Past medication (situation)"
 * entry.item only Reference(ImmunosuppresivePermanentMedication)
 
 Instance: preadmission-medications

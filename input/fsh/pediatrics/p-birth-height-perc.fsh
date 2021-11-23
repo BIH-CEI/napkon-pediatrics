@@ -1,5 +1,5 @@
 // Author: Thomas Haese, Gregor Lichtner
-// Charité – Universitätsmedizin Berlin
+// Charité - Universitätsmedizin Berlin
 Profile: BirthHeightPercentiles
 Parent: $gecco-vital-signs-base
 Id: birth-height-percentiles

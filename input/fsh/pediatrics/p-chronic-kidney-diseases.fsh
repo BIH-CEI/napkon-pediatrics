@@ -1,5 +1,5 @@
 // Author: Thomas Haese
-// Charité – Universitätsmedizin Berlin
+// Charité - Universitätsmedizin Berlin
 Profile: ChronicKidneyDiseasesPediatrics
 Parent: $gecco-base-condition
 Id: chronic-kidney-diseases
@@ -16,7 +16,6 @@ Description: "Chronic kidney diseases in the context of pediatrics"
   * coding[nephrology] = $sct#394589003 "Nephrology (qualifier value)"
   * coding[nephrology].system 1.. MS
   * coding[nephrology].code 1.. MS
-
 * code.coding[sct] from ChronicKidneyDiseasesSCT (required)
 * code.coding[icd10-gm] from ChronicKidneyDiseasesICD (required)
 

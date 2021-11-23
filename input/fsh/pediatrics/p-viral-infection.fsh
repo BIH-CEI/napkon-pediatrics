@@ -1,3 +1,5 @@
+// Author: Gregor Lichtner
+// Charité - Universitätsmedizin Berlin
 Profile: ViralInfection
 Parent: $gecco-base-condition
 Id: viral-infection

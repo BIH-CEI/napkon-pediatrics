@@ -11,7 +11,7 @@ Description: "Chronic Hematologic diseases as a risk factor for a severe course 
   * coding ^slicing.discriminator.type = #pattern
   * coding ^slicing.discriminator.path = "$this"
   * coding ^slicing.rules = #open
-  * coding contains clinicalHematology  1..1 MS
+  * coding contains clinicalHematology 1..1 MS
   * coding[clinicalHematology] = $sct#394803006 "Clinical hematology (qualifier value)"
   * coding[clinicalHematology].system 1.. MS
   * coding[clinicalHematology].code 1.. MS

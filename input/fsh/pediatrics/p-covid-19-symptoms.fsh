@@ -6,14 +6,14 @@ Id: covid19-symptoms
 Description: "Cover additional Covid 19 symptoms"
 * insert napkon-metadata(2021-11-10, #draft, 0.1.0)
 * category 1.. MS
-* category.coding MS
-* category.coding ^slicing.discriminator.type = #pattern
-* category.coding ^slicing.discriminator.path = "$this"
-* category.coding ^slicing.rules = #open
-* category.coding contains pediatrics 1..1 MS
-* category.coding[pediatrics] = $sct#394537008 "Pediatric specialty (qualifier value)"
-* category.coding[pediatrics].system 1.. MS
-* category.coding[pediatrics].code 1.. MS
+  * coding MS
+  * coding ^slicing.discriminator.type = #pattern
+  * coding ^slicing.discriminator.path = "$this"
+  * coding ^slicing.rules = #open
+  * coding contains pediatrics 1..1 MS
+  * coding[pediatrics] = $sct#394537008 "Pediatric specialty (qualifier value)"
+  * coding[pediatrics].system 1.. MS
+  * coding[pediatrics].code 1.. MS
 * code.coding[sct] from covid-19-symptoms (required)
 * code.coding[icd10-gm] from covid-19-symptoms-icd-10-gm (required)
 * extension contains $ext-condition-dueTo named dueTo 1..1

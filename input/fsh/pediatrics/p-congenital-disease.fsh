@@ -10,8 +10,10 @@ Description: "Congenital disease in the context of the NAPKON pediatrics module"
   * coding ^slicing.discriminator[0].type = #pattern
   * coding ^slicing.discriminator[0].path = "$this"
   * coding ^slicing.rules = #open
-  * coding contains complication 1..1 MS
-  * coding[complication] = $sct#394537008 "Pediatric specialty (qualifier value)"
+  * coding contains pediatrics 1..1 and observationCategory 1..1 MS
+  * coding[pediatrics] = $sct#394537008 "Pediatric specialty (qualifier value)"
+  * coding[pediatrics].system 1.. MS
+  * coding[pediatrics].code 1.. MS
 * code
   * coding[sct] from CongenitalDiseases (required)
 

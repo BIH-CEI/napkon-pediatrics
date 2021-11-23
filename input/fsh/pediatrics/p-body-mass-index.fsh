@@ -13,7 +13,7 @@ Description: "Body mass index of a patient in context of Pediatrics"
   * coding ^slicing.discriminator.path = "$this"
   * coding ^slicing.rules = #open
   * coding contains
-    loinc 1..* and snomed 0..*
+      loinc 1..* and snomed 0..*
   * coding[loinc] = $loinc#39156-5 "Body mass index (BMI) [Ratio]"
   * coding[loinc].system 1..
   * coding[loinc].code 1..

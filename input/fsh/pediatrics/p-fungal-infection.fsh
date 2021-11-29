@@ -7,10 +7,13 @@ Title: "Fungal Infection"
 Description: "Occurrence of a fungal infection"
 * insert napkon-metadata(2021-09-22, #draft, 0.1.0)
 * category 1..* MS
-  * coding ^slicing.discriminator.type = #pattern
-  * coding ^slicing.discriminator.path = "$this"
+  * coding ^slicing.discriminator[0].type = #pattern
+  * coding ^slicing.discriminator[0].path = "$this"
   * coding ^slicing.rules = #open
-  * coding contains infectiousDiseases 1..1
+  * coding contains infectiousDiseases 1..1 MS and observationCategory 1..1 MS
+  * coding[observationCategory] = $cs-observation-category#laboratory "Laboratory"
+  * coding[observationCategory].system 1.. MS
+  * coding[observationCategory].code 1.. MS
   * coding[infectiousDiseases]
     * system 1.. MS
     * code 1.. MS

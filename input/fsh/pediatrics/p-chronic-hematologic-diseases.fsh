@@ -6,7 +6,7 @@ Id: chronic-Hematologic-diseases
 Title: "Chronic Hematologic Diseases"
 Description: "Chronic Hematologic diseases as a risk factor for a severe course of an infection with SARS-CoV-2 in the context of pediatrics"
 * insert napkon-metadata(2021-08-10, #draft, 0.1.0)
-* category 1..
+* category 1..* MS
   * coding MS
   * coding ^slicing.discriminator.type = #pattern
   * coding ^slicing.discriminator.path = "$this"

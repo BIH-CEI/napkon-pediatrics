@@ -5,12 +5,14 @@ Parent: $gecco-base-condition
 Id: covid19-symptoms
 Description: "Cover additional Covid 19 symptoms"
 * insert napkon-metadata(2021-11-10, #draft, 0.1.0)
-* category 1.. MS
-  * coding MS
-  * coding ^slicing.discriminator.type = #pattern
-  * coding ^slicing.discriminator.path = "$this"
+* category 1..* MS
+  * coding ^slicing.discriminator[0].type = #pattern
+  * coding ^slicing.discriminator[0].path = "$this"
   * coding ^slicing.rules = #open
-  * coding contains pediatrics 1..1 MS
+  * coding contains pediatrics 1..1 MS and observationCategory 1..1 MS
+  * coding[observationCategory] = $cs-observation-category#laboratory "Laboratory"
+  * coding[observationCategory].system 1.. MS
+  * coding[observationCategory].code 1.. MS
   * coding[pediatrics] = $sct#394537008 "Pediatric specialty (qualifier value)"
   * coding[pediatrics].system 1.. MS
   * coding[pediatrics].code 1.. MS

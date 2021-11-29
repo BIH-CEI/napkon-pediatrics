@@ -6,11 +6,15 @@ Id: viral-infection
 Title: "Viral Infection"
 Description: "Occurrence of a viral infection"
 * insert napkon-metadata(2021-10-03, #draft, 0.1.0)
-* category
+* insert mii-patient-reference
+* category 1..* MS
   * coding ^slicing.discriminator[0].type = #pattern
   * coding ^slicing.discriminator[0].path = "$this"
   * coding ^slicing.rules = #open
-  * coding contains infectiousDiseases 1..1
+  * coding contains infectiousDiseases 1..1 MS and observationCategory 1..1 MS
+  * coding[observationCategory] = $cs-observation-category#laboratory "Laboratory"
+  * coding[observationCategory].system 1.. MS
+  * coding[observationCategory].code 1.. MS
   * coding[infectiousDiseases] = $sct#394807007 "Infectious diseases (specialty) (qualifier value)"
   * coding[infectiousDiseases].system 1.. MS
   * coding[infectiousDiseases].code 1.. MS

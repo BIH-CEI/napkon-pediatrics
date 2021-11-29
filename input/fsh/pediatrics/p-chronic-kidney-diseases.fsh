@@ -7,7 +7,7 @@ Title: "Chronic Kidney Diseases"
 Description: "Chronic kidney diseases in the context of pediatrics"
 * insert napkon-metadata(2021-10-18, #draft, 0.1.0)
 * insert mii-patient-reference
-* category 1.. MS
+* category 1..* MS
   * coding 1..1
   * coding ^slicing.discriminator.type = #pattern
   * coding ^slicing.discriminator.path = "$this"

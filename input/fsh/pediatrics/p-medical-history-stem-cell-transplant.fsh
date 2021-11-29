@@ -7,7 +7,7 @@ Title: "Medical History Stem Cells Transplant"
 Description: "This profile describes a stem cell transplant for a pediatric patient."
 * insert napkon-metadata(2021-09-23, #draft, 0.1.0)
 * insert mii-patient-reference
-* category 1.. MS
+* category 1..* MS
   * coding 1..1
   * coding ^slicing.discriminator.type = #pattern
   * coding ^slicing.discriminator.path = "$this"

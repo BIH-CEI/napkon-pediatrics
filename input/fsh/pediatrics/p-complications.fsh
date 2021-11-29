@@ -6,7 +6,7 @@ Id: covid19-complication
 Title: "Covid19 complication"
 Description: "Complication due to COVID19"
 * insert napkon-metadata(2021-09-22, #draft, 0.1.0)
-* category
+* category 1..* MS
   * coding ^slicing.discriminator[0].type = #pattern
   * coding ^slicing.discriminator[0].path = "$this"
   * coding ^slicing.rules = #open

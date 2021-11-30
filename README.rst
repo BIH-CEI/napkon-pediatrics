@@ -34,15 +34,6 @@ Authors
 * `Sally Lucie Brose <https://github.com/BroseS8927>`_
 * `Larissa Röhrig <https://github.com/Larissa-MR>`_
 
-Branch overview
----------------
-::
-
-  +-- master      Main branch with released profiles
-  +-- staging     Staging branch with functional but not reviewed/published profiles
-  +-- fix/*       Bugfix branches
-  +-- feature/*   Feature development branches
-
 Credits
 -------
 This package was created with Cookiecutter_ and the `glichtner/cookiecutter-fhir-shorthand`_ project template.

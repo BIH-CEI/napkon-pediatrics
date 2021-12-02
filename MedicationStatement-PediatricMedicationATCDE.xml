@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="PediatricMedicationATCDE"/>
+  <meta>
+    <profile value="https://www.napkon.de/fhir/StructureDefinition/pediatric-medication"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <span title="Codes: {http://fhir.de/CodeSystem/bfarm/atc J06BA01}">Immunglobuline, normal human, zur extravasalen Anwendung</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>effective</b>: Sep 23, 2021, 11:06:00 AM --&gt; (ongoing)</p></div>
+  </text>
+  <status value="active"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+      <code value="J06BA01"/>
+      <display value="Immunglobuline, normal human, zur extravasalen Anwendung"/>
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2021-09-23T13:06:00+02:00"/>
+  </effectivePeriod>
+</MedicationStatement>

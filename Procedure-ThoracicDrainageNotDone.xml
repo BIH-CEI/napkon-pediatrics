@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="ThoracicDrainageNotDone"/>
+  <meta>
+    <profile value="https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: not-done</p><p><b>category</b>: <span title="Codes: {http://snomed.info/sct 277132007}">Therapeutic procedure (procedure)</span></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 264957007}">Insertion of pleural tube drain (procedure)</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>performed</b>: Sep 14, 2021, 11:06:00 AM</p></div>
+  </text>
+  <status value="not-done"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="277132007"/>
+      <display value="Therapeutic procedure (procedure)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="264957007"/>
+      <display value="Insertion of pleural tube drain (procedure)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <performedDateTime value="2021-09-14T13:06:00+02:00"/>
+</Procedure>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="covid-19-symptoms"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=162397003">162397003</a></td><td>Pain in throat (finding)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=30233002">30233002</a></td><td>Swallowing painful (finding)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=17450006">17450006</a></td><td>Myoclonus (finding)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2776000">2776000</a></td><td>Delirium (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=271807003">271807003</a></td><td>Eruption of skin (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=56940005">56940005</a></td><td>Palmar erythema (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=5920007">5920007</a></td><td>Raspberry tongue (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=80515008">80515008</a></td><td>Large liver (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=16294009">16294009</a></td><td>Splenomegaly (disorder)</td></tr></table></li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  404684003 (Clinical finding (finding))</li></ul></div>
+  </text>
+  <url value="https://www.napkon.de/fhir/ValueSet/covid-19-symptoms"/>
+  <version value="0.1.0"/>
+  <name value="Covid19SymptomsSCT"/>
+  <title value="Covid19 symptoms"/>
+  <status value="draft"/>
+  <date value="2020-11-11"/>
+  <publisher value="Charité - Universitätsmedizin Berlin"/>
+  <contact>
+    <name value="Charité - Universitätsmedizin Berlin"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Symptoms due to COVID19"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="162397003"/>
+        <display value="Pain in throat (finding)"/>
+      </concept>
+      <concept>
+        <code value="30233002"/>
+        <display value="Swallowing painful (finding)"/>
+      </concept>
+      <concept>
+        <code value="17450006"/>
+        <display value="Myoclonus (finding)"/>
+      </concept>
+      <concept>
+        <code value="2776000"/>
+        <display value="Delirium (disorder)"/>
+      </concept>
+      <concept>
+        <code value="271807003"/>
+        <display value="Eruption of skin (disorder)"/>
+      </concept>
+      <concept>
+        <code value="56940005"/>
+        <display value="Palmar erythema (disorder)"/>
+      </concept>
+      <concept>
+        <code value="5920007"/>
+        <display value="Raspberry tongue (disorder)"/>
+      </concept>
+      <concept>
+        <code value="80515008"/>
+        <display value="Large liver (disorder)"/>
+      </concept>
+      <concept>
+        <code value="16294009"/>
+        <display value="Splenomegaly (disorder)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="404684003"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

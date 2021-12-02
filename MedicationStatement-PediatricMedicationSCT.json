@@ -1,0 +1,29 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "PediatricMedicationSCT",
+  "meta": {
+    "profile": [
+      "https://www.napkon.de/fhir/StructureDefinition/pediatric-medication"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>medication</b>: <span title=\"Codes: {http://snomed.info/sct 387458008}\">Aspirin (substance)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>effective</b>: Sep 23, 2021, 11:06:00 AM --&gt; (ongoing)</p></div>"
+  },
+  "status": "active",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "387458008",
+        "display": "Aspirin (substance)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "effectivePeriod": {
+    "start": "2021-09-23T13:06:00+02:00"
+  }
+}

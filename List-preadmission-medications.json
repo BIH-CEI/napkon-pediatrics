@@ -1,0 +1,34 @@
+{
+  "resourceType": "List",
+  "id": "preadmission-medications",
+  "meta": {
+    "profile": [
+      "https://www.napkon.de/fhir/StructureDefinition/preadmission-medications"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"clstu\"><tr><td>Mode: workingStatus: currentCode: Past medication (situation)</td></tr><tr><td>Subject: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></td></tr></table><table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"><td><b>Items</b></td></tr><tr><td><a href=\"MedicationStatement-ImmunosuppresivePermanentMedication.html\">Generated Summary: status: completed; <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module P7}, {http://fhir.de/CodeSystem/bfarm/atc L01XC19}\">Anti-CD3/CD19 antibody</span>; effective: Sep 14, 2021, 11:06:00 AM</a></td></tr></table></div>"
+  },
+  "status": "current",
+  "mode": "working",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "394829006",
+        "display": "Past medication (situation)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "entry": [
+    {
+      "item": {
+        "reference": "MedicationStatement/ImmunosuppresivePermanentMedication"
+      }
+    }
+  ]
+}

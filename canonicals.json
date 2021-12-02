@@ -1,36 +1,400 @@
 [
   {
+    "id": "napkon-pediatrics-module",
+    "type": "CodeSystem",
+    "url": "https://www.napkon.de/fhir/CodeSystem/napkon-pediatrics-module",
+    "version": "0.1.0",
+    "name": "NapkonPediatricsModule"
+  },
+  {
     "id": "napkon-pediatrics",
     "type": "ImplementationGuide",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-pediatrics",
+    "url": "https://www.napkon.de/fhir/ImplementationGuide/napkon-pediatrics",
     "version": "0.1.0",
     "name": "napkonpediatrics"
   },
   {
+    "id": "bacterial-infection",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/bacterial-infection",
+    "version": "0.1.0",
+    "name": "BacterialInfection"
+  },
+  {
+    "id": "birth-height",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/birth-height",
+    "version": "0.1.0",
+    "name": "BirthHeight"
+  },
+  {
+    "id": "birth-height-percentiles",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/birth-height-percentiles",
+    "version": "0.1.0",
+    "name": "BirthHeightPercentiles"
+  },
+  {
+    "id": "body-mass-index",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/body-mass-index",
+    "version": "0.1.0",
+    "name": "BodyMassIndex"
+  },
+  {
+    "id": "body-mass-index-percentiles",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/body-mass-index-percentiles",
+    "version": "0.1.0",
+    "name": "BodyMassIndexPercentiles"
+  },
+  {
+    "id": "chronic-Hematologic-diseases",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases",
+    "version": "0.1.0",
+    "name": "ChronicHematologicDiseases"
+  },
+  {
+    "id": "chronic-kidney-diseases",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/chronic-kidney-diseases",
+    "version": "0.1.0",
+    "name": "ChronicKidneyDiseasesPediatrics"
+  },
+  {
+    "id": "congenital-disease",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/congenital-disease",
+    "version": "0.1.0",
+    "name": "CongenitalDisease"
+  },
+  {
+    "id": "covid19-complication",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/covid19-complication",
+    "version": "0.1.0",
+    "name": "Covid19Complication"
+  },
+  {
+    "id": "covid19-symptoms",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/covid19-symptoms",
+    "version": "0.1.0",
+    "name": "Covid19Symptoms"
+  },
+  {
+    "id": "fungal-infection",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/fungal-infection",
+    "version": "0.1.0",
+    "name": "FungalInfection"
+  },
+  {
+    "id": "gastrointestinal-diseases",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/gastrointestinal-diseases",
+    "version": "0.1.0",
+    "name": "GastrointestinalDiseases"
+  },
+  {
+    "id": "head-circumference",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/head-circumference",
+    "version": "0.1.0",
+    "name": "HeadCircumference"
+  },
+  {
+    "id": "head-circumference-percentiles",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/head-circumference-percentiles",
+    "version": "0.1.0",
+    "name": "HeadCircumferencePercentiles"
+  },
+  {
+    "id": "imaging-procedures",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/imaging-procedures",
+    "version": "0.1.0",
+    "name": "ImagingProcedures"
+  },
+  {
+    "id": "immunosuppresive-permanent-medication",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/immunosuppresive-permanent-medication",
+    "version": "0.1.0",
+    "name": "ImmunosuppresivePermanentMedication"
+  },
+  {
+    "id": "intensive-care-treatment-duration",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/intensive-care-treatment-duration",
+    "version": "0.1.0",
+    "name": "IntensiveCareTreatmentDuration"
+  },
+  {
+    "id": "medical-history-stem-cell-transplant",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/medical-history-stem-cell-transplant",
+    "version": "0.1.0",
+    "name": "MedicalHistoryStemCellTransplant"
+  },
+  {
+    "id": "pediatric-imaging-study",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/pediatric-imaging-study",
+    "version": "0.1.0",
+    "name": "PediatricImagingStudy"
+  },
+  {
+    "id": "pediatric-medication",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/pediatric-medication",
+    "version": "0.1.0",
+    "name": "PediatricMedication"
+  },
+  {
+    "id": "preadmission-medications",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/preadmission-medications",
+    "version": "0.1.0",
+    "name": "PreadmissionMedications"
+  },
+  {
+    "id": "sars-cov2-rt-pcr-specimen",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/sars-cov2-rt-pcr-specimen",
+    "version": "0.1.0",
+    "name": "SarsCoV2RTPCRSpecimen"
+  },
+  {
+    "id": "specimen-excreta",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/specimen-excreta",
+    "version": "0.1.0",
+    "name": "SpecimenExcreta"
+  },
+  {
+    "id": "thoracic-drainage",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage",
+    "version": "0.1.0",
+    "name": "ThoracicDrainage"
+  },
+  {
+    "id": "total-length-of-stay",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/total-length-of-stay",
+    "version": "0.1.0",
+    "name": "TotalLengthOfStay"
+  },
+  {
+    "id": "viral-infection",
+    "type": "StructureDefinition",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/viral-infection",
+    "version": "0.1.0",
+    "name": "ViralInfection"
+  },
+  {
+    "id": "Excreta",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/Excreta",
+    "version": "0.1.0",
+    "name": "Excreta"
+  },
+  {
+    "id": "bacterial-infectious-diseases",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/bacterial-infectious-diseases",
+    "version": "0.1.0",
+    "name": "BacterialInfectiousDiseases"
+  },
+  {
+    "id": "chronic-Hematologic-diseases-icd",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/chronic-Hematologic-diseases-icd",
+    "version": "0.1.0",
+    "name": "ChronicHematologicDiseasesICD"
+  },
+  {
+    "id": "chronic-Hematologic-diseases-sct",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/chronic-Hematologic-diseases-sct",
+    "version": "0.1.0",
+    "name": "ChronicHematologicDiseases"
+  },
+  {
+    "id": "chronic-kidney-diseases-icd",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/chronic-kidney-diseases-icd",
+    "version": "0.1.0",
+    "name": "ChronicKidneyDiseasesICD"
+  },
+  {
+    "id": "chronic-kidney-diseases-sct",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/chronic-kidney-diseases-sct",
+    "version": "0.1.0",
+    "name": "ChronicKidneyDiseasesSCT"
+  },
+  {
+    "id": "congenital-diseases",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/congenital-diseases",
+    "version": "0.1.0",
+    "name": "CongenitalDiseases"
+  },
+  {
+    "id": "covid-19-symptoms",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/covid-19-symptoms",
+    "version": "0.1.0",
+    "name": "Covid19SymptomsSCT"
+  },
+  {
+    "id": "covid-19-symptoms-icd-10-gm",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/covid-19-symptoms-icd-10-gm",
+    "version": "0.1.0",
+    "name": "Covid19SymptomsICD10GM"
+  },
+  {
+    "id": "covid19-complications",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/covid19-complications",
+    "version": "0.1.0",
+    "name": "Covid19ComplicationsSCT"
+  },
+  {
+    "id": "covid19-complications-icd10-gm",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/covid19-complications-icd10-gm",
+    "version": "0.1.0",
+    "name": "Covid19ComplicationsICD10GM"
+  },
+  {
     "id": "detected-not-detected-unknown-undetermined",
     "type": "ValueSet",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-unknown-undetermined",
+    "url": "https://www.napkon.de/fhir/ValueSet/detected-not-detected-unknown-undetermined",
     "version": "0.1.0",
     "name": "DetectedNotDetectedUnknownUndetermined"
   },
   {
+    "id": "fungal-infections-icd10-gm",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/fungal-infections-icd10-gm",
+    "version": "0.1.0",
+    "name": "FungalInfectionsICD10GM"
+  },
+  {
+    "id": "fungal-infections-sct",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/fungal-infections-sct",
+    "version": "0.1.0",
+    "name": "FungalInfectionsSCT"
+  },
+  {
+    "id": "gastrointestinal-diseases-icd",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/gastrointestinal-diseases-icd",
+    "version": "0.1.0",
+    "name": "GastrointestinalDiseasesICD"
+  },
+  {
+    "id": "gastrointestinal-diseases-sct",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/gastrointestinal-diseases-sct",
+    "version": "0.1.0",
+    "name": "GastrointestinalDiseases"
+  },
+  {
+    "id": "imaging-procedures-dicom",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/imaging-procedures-dicom",
+    "version": "0.1.0",
+    "name": "ImagingProceduresDICOM"
+  },
+  {
+    "id": "imaging-procedures-sct",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/imaging-procedures-sct",
+    "version": "0.1.0",
+    "name": "ImagingProceduresSCT"
+  },
+  {
+    "id": "immunosuppressive-permament-medications",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/immunosuppressive-permament-medications",
+    "version": "0.1.0",
+    "name": "ImmunosuppressivePermanentMedications"
+  },
+  {
+    "id": "immunosuppressive-permament-medications-atc",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/immunosuppressive-permament-medications-atc",
+    "version": "0.1.0",
+    "name": "ImmunosuppressivePermanentMedicationsATC"
+  },
+  {
+    "id": "laboratory-tests",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/laboratory-tests",
+    "version": "0.1.0",
+    "name": "LaboratoryTests"
+  },
+  {
+    "id": "medical-history-stem-cell-transplant",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/medical-history-stem-cell-transplant",
+    "version": "0.1.0",
+    "name": "MedicalHistoryStemCellTransplant"
+  },
+  {
+    "id": "medical-history-stem-cell-transplant-icd",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/medical-history-stem-cell-transplant-icd",
+    "version": "0.1.0",
+    "name": "MedicalHistoryStemCellTransplantICD"
+  },
+  {
+    "id": "medication-pediatrics-atc-de",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/medication-pediatrics-atc-de",
+    "version": "0.1.0",
+    "name": "MedicationPediatricsATCDE"
+  },
+  {
+    "id": "medication-pediatrics-sct",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/medication-pediatrics-sct",
+    "version": "0.1.0",
+    "name": "MedicationPediatricsSCT"
+  },
+  {
     "id": "present-not-present-undetermined-other",
     "type": "ValueSet",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/present-not-present-undetermined-other",
+    "url": "https://www.napkon.de/fhir/ValueSet/present-not-present-undetermined-other",
     "version": "0.1.0",
     "name": "PresentNotPresentUndeterminedOther"
   },
   {
     "id": "restricted-event-status",
     "type": "ValueSet",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/restricted-event-status",
+    "url": "https://www.napkon.de/fhir/ValueSet/restricted-event-status",
     "version": "0.1.0",
     "name": "RestrictedEventStatus"
   },
   {
+    "id": "viral-infectious-diseases",
+    "type": "ValueSet",
+    "url": "https://www.napkon.de/fhir/ValueSet/viral-infectious-diseases",
+    "version": "0.1.0",
+    "name": "ViralInfectiousDiseases"
+  },
+  {
     "id": "yes-no-unknown",
     "type": "ValueSet",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown",
+    "url": "https://www.napkon.de/fhir/ValueSet/yes-no-unknown",
     "version": "0.1.0",
     "name": "YesNoUnknown"
   }

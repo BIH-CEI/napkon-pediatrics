@@ -1,0 +1,36 @@
+{
+  "resourceType": "Procedure",
+  "id": "ImagingProcedures",
+  "meta": {
+    "profile": [
+      "https://www.napkon.de/fhir/StructureDefinition/imaging-procedures"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>category</b>: <span title=\"Codes: {http://snomed.info/sct 103693007}\">Diagnostic procedure (procedure)</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 450436003}\">Positron emission tomography with computed tomography (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>performed</b>: Sep 23, 2021, 11:06:00 AM</p></div>"
+  },
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "103693007",
+        "display": "Diagnostic procedure (procedure)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "450436003",
+        "display": "Positron emission tomography with computed tomography (procedure)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "performedDateTime": "2021-09-23T13:06:00+02:00"
+}

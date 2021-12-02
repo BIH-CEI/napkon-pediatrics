@@ -1,0 +1,116 @@
+{
+  "resourceType": "ValueSet",
+  "id": "medication-pediatrics-atc-de",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>http://fhir.de/CodeSystem/bfarm/atc</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"?ngen-14?.html#CodeSystemATC2021-A01AD05\">A01AD05</a></td><td>Acetylsalicylsäure</td></tr><tr><td><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC07\">L04AC07</a></td><td>Tocilizumab</td></tr><tr><td><a href=\"?ngen-14?.html#CodeSystemATC2021-L04AC03\">L04AC03</a></td><td>Anakinra</td></tr><tr><td><a href=\"?ngen-14?.html#CodeSystemATC2021-N01AX13\">N01AX13</a></td><td>Distickstoffmonoxid</td></tr><tr><td><a href=\"?ngen-14?.html#CodeSystemATC2021-N01AX63\">N01AX63</a></td><td>Distickstoffmonoxid, Kombinationen</td></tr></table></li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/atc</code> where concept  is-a  <a href=\"?ngen-14?.html#CodeSystemATC2021-J06B\">J06B</a></li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/atc</code> where concept  is-a  <a href=\"?ngen-14?.html#CodeSystemATC2021-C01C\">C01C</a></li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/atc</code> where concept  is-a  <a href=\"?ngen-14?.html#CodeSystemATC2021-J01\">J01</a></li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/atc</code> where concept  is-a  <a href=\"?ngen-14?.html#CodeSystemATC2021-B02B\">B02B</a></li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/atc</code> where concept  is-a  <a href=\"?ngen-14?.html#CodeSystemATC2021-B05\">B05</a></li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/atc</code> where concept  is-a  <a href=\"?ngen-14?.html#CodeSystemATC2021-R03\">R03</a></li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/medication-pediatrics-atc-de",
+  "version": "0.1.0",
+  "name": "MedicationPediatricsATCDE",
+  "title": "Medication Pediatrics ATC DE",
+  "status": "draft",
+  "date": "2021-09-23",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "Medication used in the case of a of Covid-19 infection for a pediatric patient",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "concept": [
+          {
+            "code": "A01AD05",
+            "display": "Acetylsalicylsäure"
+          },
+          {
+            "code": "L04AC07",
+            "display": "Tocilizumab"
+          },
+          {
+            "code": "L04AC03",
+            "display": "Anakinra"
+          },
+          {
+            "code": "N01AX13",
+            "display": "Distickstoffmonoxid"
+          },
+          {
+            "code": "N01AX63",
+            "display": "Distickstoffmonoxid, Kombinationen"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "J06B"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "C01C"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "J01"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "B02B"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "B05"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "R03"
+          }
+        ]
+      }
+    ]
+  }
+}

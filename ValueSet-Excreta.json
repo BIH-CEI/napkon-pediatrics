@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "id": "Excreta",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0487</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-UR\">UR</a></td><td>Urine</td><td>Urine</td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-STL\">STL</a></td><td>Stool = Fecal</td><td>Stool = Fecal</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/Excreta",
+  "version": "0.1.0",
+  "name": "Excreta",
+  "title": "Excreta",
+  "status": "active",
+  "date": "2021-12-02T17:22:35+00:00",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "Codes for excreta (stool and urine)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "concept": [
+          {
+            "code": "UR",
+            "display": "Urine"
+          },
+          {
+            "code": "STL",
+            "display": "Stool = Fecal"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="chronic-kidney-diseases-icd"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^Q6[0-4].* and child doesn't exist</li></ul></div>
+  </text>
+  <url value="https://www.napkon.de/fhir/ValueSet/chronic-kidney-diseases-icd"/>
+  <version value="0.1.0"/>
+  <name value="ChronicKidneyDiseasesICD"/>
+  <title value="Value Set of Chronic Kidney Diseases"/>
+  <status value="draft"/>
+  <date value="2021-10-18"/>
+  <publisher value="Charité - Universitätsmedizin Berlin"/>
+  <contact>
+    <name value="Charité - Universitätsmedizin Berlin"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Chronic kidney diseases in the context of pediatrics"/>
+  <compose>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+      <version value="2022"/>
+      <filter>
+        <property value="concept"/>
+        <op value="regex"/>
+        <value value="^Q6[0-4].*"/>
+      </filter>
+      <filter>
+        <property value="child"/>
+        <op value="exists"/>
+        <value value="false"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

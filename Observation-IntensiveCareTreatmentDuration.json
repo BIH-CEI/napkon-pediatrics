@@ -1,0 +1,31 @@
+{
+  "resourceType": "Observation",
+  "id": "IntensiveCareTreatmentDuration",
+  "meta": {
+    "profile": [
+      "https://www.napkon.de/fhir/StructureDefinition/intensive-care-treatment-duration"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 74200-7}\">Days in intensive care unit</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>value</b>: 10 d</p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "74200-7",
+        "display": "Days in intensive care unit"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "valueQuantity": {
+    "value": 10,
+    "system": "http://unitsofmeasure.org",
+    "code": "d"
+  }
+}

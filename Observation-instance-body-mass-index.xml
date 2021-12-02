@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="instance-body-mass-index"/>
+  <meta>
+    <profile value="https://www.napkon.de/fhir/StructureDefinition/body-mass-index"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 39156-5}">Body mass index (BMI) [Ratio]</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>effective</b>: Feb 7, 2015, 6:28:17 PM</p><p><b>value</b>: 25 kg/m2</p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="39156-5"/>
+      <display value="Body mass index (BMI) [Ratio]"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <effectiveDateTime value="2015-02-07T13:28:17-05:00"/>
+  <valueQuantity>
+    <value value="25"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="kg/m2"/>
+  </valueQuantity>
+</Observation>

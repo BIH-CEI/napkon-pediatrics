@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="imaging-procedures-dicom"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://dicom.nema.org/resources/ontology/DCM"><code>http://dicom.nema.org/resources/ontology/DCM</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>EC</td><td>Echocardiography</td></tr><tr><td>PT</td><td>Positron emission tomography</td></tr><tr><td>CT</td><td>Computed Tomography</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.napkon.de/fhir/ValueSet/imaging-procedures-dicom"/>
+  <version value="0.1.0"/>
+  <name value="ImagingProceduresDICOM"/>
+  <title value="Value Set of imaging procedures in dicom format"/>
+  <status value="draft"/>
+  <date value="2021-11-04"/>
+  <publisher value="Charité - Universitätsmedizin Berlin"/>
+  <contact>
+    <name value="Charité - Universitätsmedizin Berlin"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Imaging procedures in the context of pediatrics and Covid-19"/>
+  <compose>
+    <include>
+      <system value="http://dicom.nema.org/resources/ontology/DCM"/>
+      <concept>
+        <code value="EC"/>
+        <display value="Echocardiography"/>
+      </concept>
+      <concept>
+        <code value="PT"/>
+        <display value="Positron emission tomography"/>
+      </concept>
+      <concept>
+        <code value="CT"/>
+        <display value="Computed Tomography"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="instance-head-circumference-percentiles"/>
+  <meta>
+    <profile value="https://www.napkon.de/fhir/StructureDefinition/head-circumference-percentiles"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 8289-1}, {http://snomed.info/sct 363812007:370130000=415068004}">Head Occipital-frontal circumference Percentile</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>effective</b>: Feb 7, 2015, 6:28:17 PM</p><p><b>value</b>: 75 %</p><p><b>derivedFrom</b>: <a href="Observation-instance-head-circumference.html">Generated Summary: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span>; <span title="Codes: {http://loinc.org 9843-4}">Head Occipital-frontal circumference</span>; effective: Feb 7, 2015, 6:28:17 PM; 10 centimeter</a></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8289-1"/>
+      <display value="Head Occipital-frontal circumference Percentile"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="363812007:370130000=415068004"/>
+      <display value="Head circumference where Property = Percentile value"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <effectiveDateTime value="2015-02-07T13:28:17-05:00"/>
+  <valueQuantity>
+    <value value="75"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="%"/>
+  </valueQuantity>
+  <derivedFrom>
+    <reference value="Observation/instance-head-circumference"/>
+  </derivedFrom>
+</Observation>

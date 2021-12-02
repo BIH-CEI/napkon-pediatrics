@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="napkon-pediatrics"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>napkonpediatrics</h2><p>The official URL for this implementation guide is: </p><pre>https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-pediatrics</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>napkonpediatrics</h2><p>The official URL for this implementation guide is: </p><pre>https://www.napkon.de/fhir/ImplementationGuide/napkon-pediatrics</pre></div>
   </text>
-  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-pediatrics"/>
+  <url value="https://www.napkon.de/fhir/ImplementationGuide/napkon-pediatrics"/>
   <version value="0.1.0"/>
   <name value="napkonpediatrics"/>
   <status value="draft"/>
-  <date value="2021-11-10T19:09:31+00:00"/>
+  <date value="2021-12-02T17:22:35+00:00"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
     <name value="Charité - Universitätsmedizin Berlin"/>
@@ -24,7 +24,7 @@
   <dependsOn id="de_medizininformatikinitiative_kerndatensatz_prozedur">
     <uri value="https://simplifier.net/guide/medizininformatikinitiative-modulprozeduren-implementationguide"/>
     <packageId value="de.medizininformatikinitiative.kerndatensatz.prozedur"/>
-    <version value="2.0.0-alpha3"/>
+    <version value="2.0.0-alpha4"/>
   </dependsOn>
   <dependsOn id="de_medizininformatikinitiative_kerndatensatz_person">
     <uri value="https://simplifier.net/guide/medizininformatikinitiative-modulperson-implementationguide"/>
@@ -126,7 +126,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://www.netzwerk-universitaetsmedizin.de/fhir/history.html"/>
+        <valueString value="https://www.napkon.de/fhir/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -211,6 +211,402 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/bacterial-infection"/>
+      </reference>
+      <name value="Bacterial Infection"/>
+      <description value="Occurrence of a bacterial infection"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/birth-height"/>
+      </reference>
+      <name value="Birth Height"/>
+      <description value="Birth Height of a patient in context of Pediatrics"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/birth-height-percentiles"/>
+      </reference>
+      <name value="Birth Height with unit percentiles"/>
+      <description value="Birth Height with unit percentiles in context of Pediatrics"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/body-mass-index"/>
+      </reference>
+      <name value="Body Mass Index"/>
+      <description value="Body mass index of a patient in context of Pediatrics"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/body-mass-index-percentiles"/>
+      </reference>
+      <name value="Body Mass Index with unit percentiles"/>
+      <description value="Body mass index with unit percentiles in context of Pediatrics"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/chronic-Hematologic-diseases"/>
+      </reference>
+      <name value="Chronic Hematologic Diseases"/>
+      <description value="Chronic Hematologic diseases as a risk factor for a severe course of an infection with SARS-CoV-2 in the context of pediatrics"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/chronic-kidney-diseases"/>
+      </reference>
+      <name value="Chronic Kidney Diseases"/>
+      <description value="Chronic kidney diseases in the context of pediatrics"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/congenital-disease"/>
+      </reference>
+      <name value="Congenital Disease"/>
+      <description value="Congenital disease in the context of the NAPKON pediatrics module"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/covid19-complication"/>
+      </reference>
+      <name value="Covid19 complication"/>
+      <description value="Complication due to COVID19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/covid19-symptoms"/>
+      </reference>
+      <name value="Covid19Symptoms"/>
+      <description value="Cover additional Covid 19 symptoms"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fungal-infection"/>
+      </reference>
+      <name value="Fungal Infection"/>
+      <description value="Occurrence of a fungal infection"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/gastrointestinal-diseases"/>
+      </reference>
+      <name value="Gastrointestinal Diseases"/>
+      <description value="Gastrointestinal diseases in the field of pediatrics as a risk factor for a severe course of an infection with SARS-CoV-2."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/head-circumference"/>
+      </reference>
+      <name value="Head circumference"/>
+      <description value="Head circumference of a patient in context of Pediatrics"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/head-circumference-percentiles"/>
+      </reference>
+      <name value="Head circumference with unit percentiles"/>
+      <description value="Head circumference with unit percentiles in context of Pediatrics"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/imaging-procedures"/>
+      </reference>
+      <name value="Imaging Procedures"/>
+      <description value="Records an application of a radiological imaging procedures performed on the patient (COVID-19 imaging procedures)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/immunosuppresive-permanent-medication"/>
+      </reference>
+      <name value="Immunosuppresive Permanent Medication"/>
+      <description value="Immunosuppresive Permanent Medication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/intensive-care-treatment-duration"/>
+      </reference>
+      <name value="Intensive care treatment duration"/>
+      <description value="Duration of intensive care treatment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medical-history-stem-cell-transplant"/>
+      </reference>
+      <name value="Medical History Stem Cells Transplant"/>
+      <description value="This profile describes a stem cell transplant for a pediatric patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pediatric-imaging-study"/>
+      </reference>
+      <name value="Pediatric Imaging Study"/>
+      <description value="Records an application of a radiological imaging procedures performed on the patient (COVID-19 imaging procedures)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pediatric-medication"/>
+      </reference>
+      <name value="Pediatric Medication"/>
+      <description value="Medication taken by or given to a pediatric patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/preadmission-medications"/>
+      </reference>
+      <name value="Preadmission Medications"/>
+      <description value="List of medications taken before admission to a hospital"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sars-cov2-rt-pcr-specimen"/>
+      </reference>
+      <name value="SARS-CoV-2 RT PCR Specimen"/>
+      <description value="Qualitative detection of SARS-CoV-2 in specimens by RT-PCR"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/specimen-excreta"/>
+      </reference>
+      <name value="Specimen Excreta"/>
+      <description value="Urine and Stool samples"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/thoracic-drainage"/>
+      </reference>
+      <name value="Thoracic Drainge"/>
+      <description value="Application of a thoracic drainage"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/total-length-of-stay"/>
+      </reference>
+      <name value="Total length of stay"/>
+      <description value="Total length of stay"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/viral-infection"/>
+      </reference>
+      <name value="Viral Infection"/>
+      <description value="Occurrence of a viral infection"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/bacterial-infectious-diseases"/>
+      </reference>
+      <name value="Bacterial Infectious Diseases"/>
+      <description value="Value set of bacterial infections"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/chronic-Hematologic-diseases-sct"/>
+      </reference>
+      <name value="Value Set of Chronic Hematologic Diseases"/>
+      <description value="Chronic Hematologic diseases the context of pediatrics and Covid-19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/chronic-Hematologic-diseases-icd"/>
+      </reference>
+      <name value="Chronic hematologic diseases (ICD10-GM)"/>
+      <description value="Chronic hematologic diseases in the context of pediatrics and COVID-19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/chronic-kidney-diseases-icd"/>
+      </reference>
+      <name value="Value Set of Chronic Kidney Diseases"/>
+      <description value="Chronic kidney diseases in the context of pediatrics"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/chronic-kidney-diseases-sct"/>
+      </reference>
+      <name value="Value Set of Chronic Kidney Diseases"/>
+      <description value="Chronic kidney diseases in the context of pediatrics"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/congenital-diseases"/>
+      </reference>
+      <name value="Congenital Diseases"/>
+      <description value="Congenital diseases"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/covid19-complications-icd10-gm"/>
+      </reference>
+      <name value="Covid19 complications ICD10 GM"/>
+      <description value="Complications due to COVID19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/covid19-complications"/>
+      </reference>
+      <name value="Covid19 complications"/>
+      <description value="Complications due to COVID19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/covid-19-symptoms-icd-10-gm"/>
+      </reference>
+      <name value="Covid19 symptoms"/>
+      <description value="Symptoms due to COVID19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/covid-19-symptoms"/>
+      </reference>
+      <name value="Covid19 symptoms"/>
+      <description value="Symptoms due to COVID19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -218,6 +614,160 @@
       </reference>
       <name value="Detected Not Detected Unknown Undetermined"/>
       <description value="Values for laboratory observations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Excreta"/>
+      </reference>
+      <name value="Excreta"/>
+      <description value="Codes for excreta (stool and urine)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fungal-infections-icd10-gm"/>
+      </reference>
+      <name value="Fungal Infections ICD10 GM"/>
+      <description value="Value set of fungal infections"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fungal-infections-sct"/>
+      </reference>
+      <name value="Fungal Infections SNOMED CT"/>
+      <description value="Value set of fungal infections"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/gastrointestinal-diseases-sct"/>
+      </reference>
+      <name value="Value Set of Gastrointestinal Diseases"/>
+      <description value="Gastrointestinal diseases in the context of pediatrics and Covid-19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/gastrointestinal-diseases-icd"/>
+      </reference>
+      <name value="Value Set of Gastrointestinal Diseases ICD"/>
+      <description value="Gastrointestinal diseases in the context of pediatrics and Covid-19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/imaging-procedures-dicom"/>
+      </reference>
+      <name value="Value Set of imaging procedures in dicom format"/>
+      <description value="Imaging procedures in the context of pediatrics and Covid-19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/imaging-procedures-sct"/>
+      </reference>
+      <name value="Value Set of imaging procedures from SNOMED CT"/>
+      <description value="Imaging procedures in the context of pediatrics and Covid-19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/immunosuppressive-permament-medications"/>
+      </reference>
+      <name value="Immunosuppressive Permanent Medications"/>
+      <description value="Immunosuppressive medications"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/immunosuppressive-permament-medications-atc"/>
+      </reference>
+      <name value="Immunosuppressive Permanent Medications ATC"/>
+      <description value="Immunosuppressive Medications ATC codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/laboratory-tests"/>
+      </reference>
+      <name value="Laboratory Tests"/>
+      <description value="Laboratory tests in the context of NAPKON Pediatrics Module"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/medical-history-stem-cell-transplant"/>
+      </reference>
+      <name value="Medical History Stem Cell Transplants"/>
+      <description value="Medical history linked to stem cells or bone marrow transplant for pediatric patients"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/medical-history-stem-cell-transplant-icd"/>
+      </reference>
+      <name value="Medical History Stem Cell Transplants ICD"/>
+      <description value="Medical history linked to stem cells or bone marrow transplant for pediatric patients"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/medication-pediatrics-atc-de"/>
+      </reference>
+      <name value="Medication Pediatrics ATC DE"/>
+      <description value="Medication used in the case of a of Covid-19 infection for a pediatric patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/medication-pediatrics-sct"/>
+      </reference>
+      <name value="Medication Pediatrics SNOMED CT"/>
+      <description value="Medication used in the case of a of Covid-19 infection for a pediatric patient"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -247,11 +797,87 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/viral-infectious-diseases"/>
+      </reference>
+      <name value="ViralInfectiousDiseases"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/yes-no-unknown"/>
       </reference>
       <name value="Yes No Unknown"/>
       <description value="Yes / No / Unknown"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/napkon-pediatrics-module"/>
+      </reference>
+      <name value="NapkonPediatricsModule"/>
+      <description value="NAPKON Pediatrics Module Code System - Collection of pediatrics module-specific codes that are missing from common terminologies such as SNOMED CT"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/BacterialInfectionConfirmed"/>
+      </reference>
+      <name value="Bacterial Infection Confirmed"/>
+      <description value="Example of a confirmed bacterial infection"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/bacterial-infection"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/BacterialInfectionRefuted"/>
+      </reference>
+      <name value="Bacterial Infection Refuted"/>
+      <description value="Example of a refuted bacterial infection"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/bacterial-infection"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/CongenitalAtransferrinemiaConfirmed"/>
+      </reference>
+      <name value="Congenital Atransferrinemia confirmed"/>
+      <description value="Example: Confirmed congenital atransferrinemia"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/congenital-disease"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/Covid19Complication"/>
+      </reference>
+      <name value="Covid19 Complication"/>
+      <description value="Example of a covid19 complication"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/covid19-complication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/Covid19Symptoms"/>
+      </reference>
+      <name value="Covid19 Symptom"/>
+      <description value="Example of a covid19 complication"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/covid19-symptoms"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -263,6 +889,369 @@
       <name value="ExamplePatient"/>
       <description value="Example patient to be used as reference in other instances"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/FungalInfectionConfirmed"/>
+      </reference>
+      <name value="Fungal Infection Confirmed"/>
+      <description value="Example of a confirmed fungal infection"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/fungal-infection"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/FungalInfectionUnknown"/>
+      </reference>
+      <name value="Fungal Infection Unknown"/>
+      <description value="Example of a fungal infection where the presence is unknown"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/fungal-infection"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ImagingProcedures"/>
+      </reference>
+      <name value="imaging-procedure-instance"/>
+      <description value="Example of a performed radiology/imaging procedure for pediatric patients when treating COVID-19."/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/imaging-procedures"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ImagingStudy"/>
+      </extension>
+      <reference>
+        <reference value="ImagingStudy/ImagingStudyPTHeart"/>
+      </reference>
+      <name value="Imaging Study"/>
+      <description value="Example of a concrete imaging study performed on a patient"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/pediatric-imaging-study"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/ImmunosuppresivePermanentMedication"/>
+      </reference>
+      <name value="Immunosuppresive Permanent Medication"/>
+      <description value="Example of a Immunosuppresive Permanent Medication"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/immunosuppresive-permanent-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/IntensiveCareTreatmentDuration"/>
+      </reference>
+      <name value="Intensive Care Treatment Duration"/>
+      <description value="Example of an intensive care treatment duration"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/intensive-care-treatment-duration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/PediatricMedicationATCDE"/>
+      </reference>
+      <name value="Pediatric Medication ATC DE"/>
+      <description value="Example prescription of a medication or consumption by a pediatric patient "/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/pediatric-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/PediatricMedicationSCT"/>
+      </reference>
+      <name value="Pediatric Medication SNOMED CT"/>
+      <description value="Example prescription of a medication or consumption by a pediatric patient "/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/pediatric-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/SarsCoV2RTPCRStoolDetected"/>
+      </reference>
+      <name value="SARS-CoV-2 RT PCR Stool Detected"/>
+      <description value="Example of a SARS-CoV-2 RT PCR from a stool sample that is detected"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/sars-cov2-rt-pcr-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/SarsCoV2RTPCRStoolNotDetected"/>
+      </reference>
+      <name value="SARS-CoV-2 RT PCR Stool Not Detected"/>
+      <description value="Example of a SARS-CoV-2 RT PCR from a stool sample that is not detected"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/sars-cov2-rt-pcr-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/SarsCoV2RTPCRUrineInconclusive"/>
+      </reference>
+      <name value="SARS-CoV-2 RT PCR Urine Inconclusive"/>
+      <description value="Example of a SARS-CoV-2 RT PCR from a urine sample that is inconclusive"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/sars-cov2-rt-pcr-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/SpecimenStool"/>
+      </reference>
+      <name value="Specimen Stool"/>
+      <description value="Stool sample"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/specimen-excreta"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/SpecimenUrine"/>
+      </reference>
+      <name value="Specimen Urine"/>
+      <description value="Urine sample"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/specimen-excreta"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ThoracicDrainageCompleted"/>
+      </reference>
+      <name value="Thoracic Drainage Completed"/>
+      <description value="Example of a thoracic drainage that was completed"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ThoracicDrainageNotDone"/>
+      </reference>
+      <name value="Thoracic Drainage Not Done"/>
+      <description value="Example of a thoracic drainage that was not performed"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ThoracicDrainageUnknown"/>
+      </reference>
+      <name value="Thoracic Drainage Unknown"/>
+      <description value="Example of a thoracic drainage for which it is not known if it was performed or not"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/TotalLengthOfStay"/>
+      </reference>
+      <name value="Total Length of Stay"/>
+      <description value="Example of an total length of stay"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/total-length-of-stay"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ViralInfectionConfirmed"/>
+      </reference>
+      <name value="Viral Infection Confirmed"/>
+      <description value="Example of a confirmed viral infection"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/viral-infection"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ViralInfectionRefuted"/>
+      </reference>
+      <name value="Viral Infection Refuted"/>
+      <description value="Example of a refuted viral infection"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/viral-infection"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/birth-height-circumference-percentiles"/>
+      </reference>
+      <name value="Instance of fhir resource birth height (unit percentiles) in the context of pediatrics"/>
+      <description value="Example of a birth height"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/birth-height-percentiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/instance-birth-height"/>
+      </reference>
+      <name value="Instance of fhir resource birth height in the context of pediatrics"/>
+      <description value="Example of birth height"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/birth-height"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/instance-body-mass-index"/>
+      </reference>
+      <name value="Instance of fhir resource body mass index in the context of pediatrics"/>
+      <description value="Example of body mass index"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/body-mass-index"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/instance-body-mass-index-percentiles"/>
+      </reference>
+      <name value="Instance of fhir resource body mass index in the context of pediatrics"/>
+      <description value="Example of body mass index with unit percentiles"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/body-mass-index-percentiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/instance-chronic-Hematologic-diseases"/>
+      </reference>
+      <name value="Instance of fhir resource chronic Hematologic diseases in the context of pediatrics"/>
+      <description value="Example of a chronic Hematologic diseases"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/instance-chronic-Hematologic-diseases-icd"/>
+      </reference>
+      <name value="Instance of fhir resource chronic Hematologic diseases in the context of pediatrics"/>
+      <description value="Example of a chronic Hematologic diseases"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/instance-chronic-kidney-diseases-icd"/>
+      </reference>
+      <name value="Instance of fhir resource chronic kidney diseases in the context of pediatrics"/>
+      <description value="Example or chronic kidney diseases"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/chronic-kidney-diseases"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/instance-chronic-kidney-diseases-sct"/>
+      </reference>
+      <name value="Instance of fhir resource chronic kidney diseases in the context of pediatrics"/>
+      <description value="Example or chronic kidney diseases"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/chronic-kidney-diseases"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/instance-gastrointestinal-diseases"/>
+      </reference>
+      <name value="Instance of fhir resource sgastrointestinal-diseases in the context of pediatrics"/>
+      <description value="Example of a gastrointestinal disease"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/gastrointestinal-diseases"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/instance-gastrointestinal-diseases-icd"/>
+      </reference>
+      <name value="Instance of fhir resource sgastrointestinal-diseases in the context of pediatrics"/>
+      <description value="Example of a gastrointestinal disease"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/gastrointestinal-diseases"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/instance-head-circumference"/>
+      </reference>
+      <name value="Instance of fhir resource head circumference (unit cm) in the context of pediatrics"/>
+      <description value="Example of a head circumference"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/head-circumference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/instance-head-circumference-percentiles"/>
+      </reference>
+      <name value="Instance of fhir resource head circumference (unit percentiles) in thr context of pediatrics"/>
+      <description value="Example of a head circumference"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/head-circumference-percentiles"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/medical-history-stem-cell-transplant-instance"/>
+      </reference>
+      <name value="medical-history-stem-cell-transplant-instance"/>
+      <description value="This profile describes a stem cell transplant for a pediatric patient."/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/medical-history-stem-cell-transplant"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="List"/>
+      </extension>
+      <reference>
+        <reference value="List/preadmission-medications"/>
+      </reference>
+      <name value="preadmission-medications"/>
+      <description value="Example list of medications before the admission of the patient to the hospital"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/preadmission-medications"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

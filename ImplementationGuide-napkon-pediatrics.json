@@ -3,13 +3,13 @@
   "id": "napkon-pediatrics",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>napkonpediatrics</h2><p>The official URL for this implementation guide is: </p><pre>https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-pediatrics</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>napkonpediatrics</h2><p>The official URL for this implementation guide is: </p><pre>https://www.napkon.de/fhir/ImplementationGuide/napkon-pediatrics</pre></div>"
   },
-  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-pediatrics",
+  "url": "https://www.napkon.de/fhir/ImplementationGuide/napkon-pediatrics",
   "version": "0.1.0",
   "name": "napkonpediatrics",
   "status": "draft",
-  "date": "2021-11-10T19:09:31+00:00",
+  "date": "2021-12-02T17:22:35+00:00",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [
     {
@@ -32,7 +32,7 @@
       "id": "de_medizininformatikinitiative_kerndatensatz_prozedur",
       "uri": "https://simplifier.net/guide/medizininformatikinitiative-modulprozeduren-implementationguide",
       "packageId": "de.medizininformatikinitiative.kerndatensatz.prozedur",
-      "version": "2.0.0-alpha3"
+      "version": "2.0.0-alpha4"
     },
     {
       "id": "de_medizininformatikinitiative_kerndatensatz_person",
@@ -185,7 +185,7 @@
           },
           {
             "url": "value",
-            "valueString": "https://www.netzwerk-universitaetsmedizin.de/fhir/history.html"
+            "valueString": "https://www.napkon.de/fhir/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -326,6 +326,510 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/bacterial-infection"
+        },
+        "name": "Bacterial Infection",
+        "description": "Occurrence of a bacterial infection",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/birth-height"
+        },
+        "name": "Birth Height",
+        "description": "Birth Height of a patient in context of Pediatrics",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/birth-height-percentiles"
+        },
+        "name": "Birth Height with unit percentiles",
+        "description": "Birth Height with unit percentiles in context of Pediatrics",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/body-mass-index"
+        },
+        "name": "Body Mass Index",
+        "description": "Body mass index of a patient in context of Pediatrics",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/body-mass-index-percentiles"
+        },
+        "name": "Body Mass Index with unit percentiles",
+        "description": "Body mass index with unit percentiles in context of Pediatrics",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/chronic-Hematologic-diseases"
+        },
+        "name": "Chronic Hematologic Diseases",
+        "description": "Chronic Hematologic diseases as a risk factor for a severe course of an infection with SARS-CoV-2 in the context of pediatrics",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/chronic-kidney-diseases"
+        },
+        "name": "Chronic Kidney Diseases",
+        "description": "Chronic kidney diseases in the context of pediatrics",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/congenital-disease"
+        },
+        "name": "Congenital Disease",
+        "description": "Congenital disease in the context of the NAPKON pediatrics module",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/covid19-complication"
+        },
+        "name": "Covid19 complication",
+        "description": "Complication due to COVID19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/covid19-symptoms"
+        },
+        "name": "Covid19Symptoms",
+        "description": "Cover additional Covid 19 symptoms",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/fungal-infection"
+        },
+        "name": "Fungal Infection",
+        "description": "Occurrence of a fungal infection",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/gastrointestinal-diseases"
+        },
+        "name": "Gastrointestinal Diseases",
+        "description": "Gastrointestinal diseases in the field of pediatrics as a risk factor for a severe course of an infection with SARS-CoV-2.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/head-circumference"
+        },
+        "name": "Head circumference",
+        "description": "Head circumference of a patient in context of Pediatrics",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/head-circumference-percentiles"
+        },
+        "name": "Head circumference with unit percentiles",
+        "description": "Head circumference with unit percentiles in context of Pediatrics",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/imaging-procedures"
+        },
+        "name": "Imaging Procedures",
+        "description": "Records an application of a radiological imaging procedures performed on the patient (COVID-19 imaging procedures)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/immunosuppresive-permanent-medication"
+        },
+        "name": "Immunosuppresive Permanent Medication",
+        "description": "Immunosuppresive Permanent Medication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/intensive-care-treatment-duration"
+        },
+        "name": "Intensive care treatment duration",
+        "description": "Duration of intensive care treatment",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/medical-history-stem-cell-transplant"
+        },
+        "name": "Medical History Stem Cells Transplant",
+        "description": "This profile describes a stem cell transplant for a pediatric patient.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/pediatric-imaging-study"
+        },
+        "name": "Pediatric Imaging Study",
+        "description": "Records an application of a radiological imaging procedures performed on the patient (COVID-19 imaging procedures)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/pediatric-medication"
+        },
+        "name": "Pediatric Medication",
+        "description": "Medication taken by or given to a pediatric patient.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/preadmission-medications"
+        },
+        "name": "Preadmission Medications",
+        "description": "List of medications taken before admission to a hospital",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/sars-cov2-rt-pcr-specimen"
+        },
+        "name": "SARS-CoV-2 RT PCR Specimen",
+        "description": "Qualitative detection of SARS-CoV-2 in specimens by RT-PCR",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/specimen-excreta"
+        },
+        "name": "Specimen Excreta",
+        "description": "Urine and Stool samples",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/thoracic-drainage"
+        },
+        "name": "Thoracic Drainge",
+        "description": "Application of a thoracic drainage",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/total-length-of-stay"
+        },
+        "name": "Total length of stay",
+        "description": "Total length of stay",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/viral-infection"
+        },
+        "name": "Viral Infection",
+        "description": "Occurrence of a viral infection",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/bacterial-infectious-diseases"
+        },
+        "name": "Bacterial Infectious Diseases",
+        "description": "Value set of bacterial infections",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/chronic-Hematologic-diseases-sct"
+        },
+        "name": "Value Set of Chronic Hematologic Diseases",
+        "description": "Chronic Hematologic diseases the context of pediatrics and Covid-19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/chronic-Hematologic-diseases-icd"
+        },
+        "name": "Chronic hematologic diseases (ICD10-GM)",
+        "description": "Chronic hematologic diseases in the context of pediatrics and COVID-19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/chronic-kidney-diseases-icd"
+        },
+        "name": "Value Set of Chronic Kidney Diseases",
+        "description": "Chronic kidney diseases in the context of pediatrics",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/chronic-kidney-diseases-sct"
+        },
+        "name": "Value Set of Chronic Kidney Diseases",
+        "description": "Chronic kidney diseases in the context of pediatrics",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/congenital-diseases"
+        },
+        "name": "Congenital Diseases",
+        "description": "Congenital diseases",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/covid19-complications-icd10-gm"
+        },
+        "name": "Covid19 complications ICD10 GM",
+        "description": "Complications due to COVID19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/covid19-complications"
+        },
+        "name": "Covid19 complications",
+        "description": "Complications due to COVID19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/covid-19-symptoms-icd-10-gm"
+        },
+        "name": "Covid19 symptoms",
+        "description": "Symptoms due to COVID19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/covid-19-symptoms"
+        },
+        "name": "Covid19 symptoms",
+        "description": "Symptoms due to COVID19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -334,6 +838,202 @@
         },
         "name": "Detected Not Detected Unknown Undetermined",
         "description": "Values for laboratory observations",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/Excreta"
+        },
+        "name": "Excreta",
+        "description": "Codes for excreta (stool and urine)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/fungal-infections-icd10-gm"
+        },
+        "name": "Fungal Infections ICD10 GM",
+        "description": "Value set of fungal infections",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/fungal-infections-sct"
+        },
+        "name": "Fungal Infections SNOMED CT",
+        "description": "Value set of fungal infections",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/gastrointestinal-diseases-sct"
+        },
+        "name": "Value Set of Gastrointestinal Diseases",
+        "description": "Gastrointestinal diseases in the context of pediatrics and Covid-19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/gastrointestinal-diseases-icd"
+        },
+        "name": "Value Set of Gastrointestinal Diseases ICD",
+        "description": "Gastrointestinal diseases in the context of pediatrics and Covid-19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/imaging-procedures-dicom"
+        },
+        "name": "Value Set of imaging procedures in dicom format",
+        "description": "Imaging procedures in the context of pediatrics and Covid-19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/imaging-procedures-sct"
+        },
+        "name": "Value Set of imaging procedures from SNOMED CT",
+        "description": "Imaging procedures in the context of pediatrics and Covid-19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/immunosuppressive-permament-medications"
+        },
+        "name": "Immunosuppressive Permanent Medications",
+        "description": "Immunosuppressive medications",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/immunosuppressive-permament-medications-atc"
+        },
+        "name": "Immunosuppressive Permanent Medications ATC",
+        "description": "Immunosuppressive Medications ATC codes",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/laboratory-tests"
+        },
+        "name": "Laboratory Tests",
+        "description": "Laboratory tests in the context of NAPKON Pediatrics Module",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/medical-history-stem-cell-transplant"
+        },
+        "name": "Medical History Stem Cell Transplants",
+        "description": "Medical history linked to stem cells or bone marrow transplant for pediatric patients",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/medical-history-stem-cell-transplant-icd"
+        },
+        "name": "Medical History Stem Cell Transplants ICD",
+        "description": "Medical history linked to stem cells or bone marrow transplant for pediatric patients",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/medication-pediatrics-atc-de"
+        },
+        "name": "Medication Pediatrics ATC DE",
+        "description": "Medication used in the case of a of Covid-19 infection for a pediatric patient",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/medication-pediatrics-sct"
+        },
+        "name": "Medication Pediatrics SNOMED CT",
+        "description": "Medication used in the case of a of Covid-19 infection for a pediatric patient",
         "exampleBoolean": false
       },
       {
@@ -372,11 +1072,108 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/viral-infectious-diseases"
+        },
+        "name": "ViralInfectiousDiseases",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/yes-no-unknown"
         },
         "name": "Yes No Unknown",
         "description": "Yes / No / Unknown",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/napkon-pediatrics-module"
+        },
+        "name": "NapkonPediatricsModule",
+        "description": "NAPKON Pediatrics Module Code System - Collection of pediatrics module-specific codes that are missing from common terminologies such as SNOMED CT",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/BacterialInfectionConfirmed"
+        },
+        "name": "Bacterial Infection Confirmed",
+        "description": "Example of a confirmed bacterial infection",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/bacterial-infection"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/BacterialInfectionRefuted"
+        },
+        "name": "Bacterial Infection Refuted",
+        "description": "Example of a refuted bacterial infection",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/bacterial-infection"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/CongenitalAtransferrinemiaConfirmed"
+        },
+        "name": "Congenital Atransferrinemia confirmed",
+        "description": "Example: Confirmed congenital atransferrinemia",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/congenital-disease"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/Covid19Complication"
+        },
+        "name": "Covid19 Complication",
+        "description": "Example of a covid19 complication",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/covid19-complication"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/Covid19Symptoms"
+        },
+        "name": "Covid19 Symptom",
+        "description": "Example of a covid19 complication",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/covid19-symptoms"
       },
       {
         "extension": [
@@ -391,6 +1188,468 @@
         "name": "ExamplePatient",
         "description": "Example patient to be used as reference in other instances",
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/FungalInfectionConfirmed"
+        },
+        "name": "Fungal Infection Confirmed",
+        "description": "Example of a confirmed fungal infection",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/fungal-infection"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/FungalInfectionUnknown"
+        },
+        "name": "Fungal Infection Unknown",
+        "description": "Example of a fungal infection where the presence is unknown",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/fungal-infection"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Procedure"
+          }
+        ],
+        "reference": {
+          "reference": "Procedure/ImagingProcedures"
+        },
+        "name": "imaging-procedure-instance",
+        "description": "Example of a performed radiology/imaging procedure for pediatric patients when treating COVID-19.",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/imaging-procedures"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ImagingStudy"
+          }
+        ],
+        "reference": {
+          "reference": "ImagingStudy/ImagingStudyPTHeart"
+        },
+        "name": "Imaging Study",
+        "description": "Example of a concrete imaging study performed on a patient",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/pediatric-imaging-study"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/ImmunosuppresivePermanentMedication"
+        },
+        "name": "Immunosuppresive Permanent Medication",
+        "description": "Example of a Immunosuppresive Permanent Medication",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/immunosuppresive-permanent-medication"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/IntensiveCareTreatmentDuration"
+        },
+        "name": "Intensive Care Treatment Duration",
+        "description": "Example of an intensive care treatment duration",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/intensive-care-treatment-duration"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/PediatricMedicationATCDE"
+        },
+        "name": "Pediatric Medication ATC DE",
+        "description": "Example prescription of a medication or consumption by a pediatric patient ",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/pediatric-medication"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationStatement"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationStatement/PediatricMedicationSCT"
+        },
+        "name": "Pediatric Medication SNOMED CT",
+        "description": "Example prescription of a medication or consumption by a pediatric patient ",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/pediatric-medication"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/SarsCoV2RTPCRStoolDetected"
+        },
+        "name": "SARS-CoV-2 RT PCR Stool Detected",
+        "description": "Example of a SARS-CoV-2 RT PCR from a stool sample that is detected",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/sars-cov2-rt-pcr-specimen"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/SarsCoV2RTPCRStoolNotDetected"
+        },
+        "name": "SARS-CoV-2 RT PCR Stool Not Detected",
+        "description": "Example of a SARS-CoV-2 RT PCR from a stool sample that is not detected",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/sars-cov2-rt-pcr-specimen"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/SarsCoV2RTPCRUrineInconclusive"
+        },
+        "name": "SARS-CoV-2 RT PCR Urine Inconclusive",
+        "description": "Example of a SARS-CoV-2 RT PCR from a urine sample that is inconclusive",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/sars-cov2-rt-pcr-specimen"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Specimen"
+          }
+        ],
+        "reference": {
+          "reference": "Specimen/SpecimenStool"
+        },
+        "name": "Specimen Stool",
+        "description": "Stool sample",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/specimen-excreta"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Specimen"
+          }
+        ],
+        "reference": {
+          "reference": "Specimen/SpecimenUrine"
+        },
+        "name": "Specimen Urine",
+        "description": "Urine sample",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/specimen-excreta"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Procedure"
+          }
+        ],
+        "reference": {
+          "reference": "Procedure/ThoracicDrainageCompleted"
+        },
+        "name": "Thoracic Drainage Completed",
+        "description": "Example of a thoracic drainage that was completed",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Procedure"
+          }
+        ],
+        "reference": {
+          "reference": "Procedure/ThoracicDrainageNotDone"
+        },
+        "name": "Thoracic Drainage Not Done",
+        "description": "Example of a thoracic drainage that was not performed",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Procedure"
+          }
+        ],
+        "reference": {
+          "reference": "Procedure/ThoracicDrainageUnknown"
+        },
+        "name": "Thoracic Drainage Unknown",
+        "description": "Example of a thoracic drainage for which it is not known if it was performed or not",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/TotalLengthOfStay"
+        },
+        "name": "Total Length of Stay",
+        "description": "Example of an total length of stay",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/total-length-of-stay"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/ViralInfectionConfirmed"
+        },
+        "name": "Viral Infection Confirmed",
+        "description": "Example of a confirmed viral infection",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/viral-infection"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/ViralInfectionRefuted"
+        },
+        "name": "Viral Infection Refuted",
+        "description": "Example of a refuted viral infection",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/viral-infection"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/birth-height-circumference-percentiles"
+        },
+        "name": "Instance of fhir resource birth height (unit percentiles) in the context of pediatrics",
+        "description": "Example of a birth height",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/birth-height-percentiles"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/instance-birth-height"
+        },
+        "name": "Instance of fhir resource birth height in the context of pediatrics",
+        "description": "Example of birth height",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/birth-height"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/instance-body-mass-index"
+        },
+        "name": "Instance of fhir resource body mass index in the context of pediatrics",
+        "description": "Example of body mass index",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/body-mass-index"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/instance-body-mass-index-percentiles"
+        },
+        "name": "Instance of fhir resource body mass index in the context of pediatrics",
+        "description": "Example of body mass index with unit percentiles",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/body-mass-index-percentiles"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/instance-chronic-Hematologic-diseases"
+        },
+        "name": "Instance of fhir resource chronic Hematologic diseases in the context of pediatrics",
+        "description": "Example of a chronic Hematologic diseases",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/instance-chronic-Hematologic-diseases-icd"
+        },
+        "name": "Instance of fhir resource chronic Hematologic diseases in the context of pediatrics",
+        "description": "Example of a chronic Hematologic diseases",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/instance-chronic-kidney-diseases-icd"
+        },
+        "name": "Instance of fhir resource chronic kidney diseases in the context of pediatrics",
+        "description": "Example or chronic kidney diseases",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/chronic-kidney-diseases"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/instance-chronic-kidney-diseases-sct"
+        },
+        "name": "Instance of fhir resource chronic kidney diseases in the context of pediatrics",
+        "description": "Example or chronic kidney diseases",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/chronic-kidney-diseases"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/instance-gastrointestinal-diseases"
+        },
+        "name": "Instance of fhir resource sgastrointestinal-diseases in the context of pediatrics",
+        "description": "Example of a gastrointestinal disease",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/gastrointestinal-diseases"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/instance-gastrointestinal-diseases-icd"
+        },
+        "name": "Instance of fhir resource sgastrointestinal-diseases in the context of pediatrics",
+        "description": "Example of a gastrointestinal disease",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/gastrointestinal-diseases"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/instance-head-circumference"
+        },
+        "name": "Instance of fhir resource head circumference (unit cm) in the context of pediatrics",
+        "description": "Example of a head circumference",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/head-circumference"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/instance-head-circumference-percentiles"
+        },
+        "name": "Instance of fhir resource head circumference (unit percentiles) in thr context of pediatrics",
+        "description": "Example of a head circumference",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/head-circumference-percentiles"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/medical-history-stem-cell-transplant-instance"
+        },
+        "name": "medical-history-stem-cell-transplant-instance",
+        "description": "This profile describes a stem cell transplant for a pediatric patient.",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/medical-history-stem-cell-transplant"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "List"
+          }
+        ],
+        "reference": {
+          "reference": "List/preadmission-medications"
+        },
+        "name": "preadmission-medications",
+        "description": "Example list of medications before the admission of the patient to the hospital",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/preadmission-medications"
       }
     ],
     "page": {

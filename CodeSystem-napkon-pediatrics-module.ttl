@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.napkon.de/fhir/CodeSystem/napkon-pediatrics-module> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "napkon-pediatrics-module"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.napkon.de/fhir/CodeSystem/napkon-pediatrics-module defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">P1<a name=\"napkon-pediatrics-module-P1\"> </a></td><td>Sphingosine analogue</td></tr><tr><td style=\"white-space:nowrap\">P2<a name=\"napkon-pediatrics-module-P2\"> </a></td><td>Interleukin 2 receptor antagonist</td></tr><tr><td style=\"white-space:nowrap\">P3<a name=\"napkon-pediatrics-module-P3\"> </a></td><td>Interleukin 17 receptor antagonist</td></tr><tr><td style=\"white-space:nowrap\">P4<a name=\"napkon-pediatrics-module-P4\"> </a></td><td>Anti-CD20 antibody</td></tr><tr><td style=\"white-space:nowrap\">P5<a name=\"napkon-pediatrics-module-P5\"> </a></td><td>Anti-CD52 antibody</td></tr><tr><td style=\"white-space:nowrap\">P6<a name=\"napkon-pediatrics-module-P6\"> </a></td><td>Anti-CD3 antibody</td></tr><tr><td style=\"white-space:nowrap\">P7<a name=\"napkon-pediatrics-module-P7\"> </a></td><td>Anti-CD3/CD19 antibody</td></tr><tr><td style=\"white-space:nowrap\">P8<a name=\"napkon-pediatrics-module-P8\"> </a></td><td>Integrin inhibitor</td></tr><tr><td style=\"white-space:nowrap\">P9<a name=\"napkon-pediatrics-module-P9\"> </a></td><td>B cell activating factor inhibitor</td></tr><tr><td style=\"white-space:nowrap\">P10<a name=\"napkon-pediatrics-module-P10\"> </a></td><td>Mammalian target of rapamycin (mTOR)-Kinase inhibitor</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://www.napkon.de/fhir/CodeSystem/napkon-pediatrics-module"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "NapkonPediatricsModule"];
+  fhir:CodeSystem.title [ fhir:value "NapkonPediatricsModule"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-12-02T17:22:35+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Charité - Universitätsmedizin Berlin" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "NAPKON Pediatrics Module Code System - Collection of pediatrics module-specific codes that are missing from common terminologies such as SNOMED CT"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "10"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "P1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sphingosine analogue" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "P2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Interleukin 2 receptor antagonist" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "P3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Interleukin 17 receptor antagonist" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "P4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Anti-CD20 antibody" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "P5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Anti-CD52 antibody" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "P6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Anti-CD3 antibody" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "P7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Anti-CD3/CD19 antibody" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "P8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Integrin inhibitor" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "P9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "B cell activating factor inhibitor" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "P10" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mammalian target of rapamycin (mTOR)-Kinase inhibitor" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.napkon.de/fhir/CodeSystem/napkon-pediatrics-module.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="IntensiveCareTreatmentDuration"/>
+  <meta>
+    <profile value="https://www.napkon.de/fhir/StructureDefinition/intensive-care-treatment-duration"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://loinc.org 74200-7}">Days in intensive care unit</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>value</b>: 10 d</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="74200-7"/>
+      <display value="Days in intensive care unit"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <valueQuantity>
+    <value value="10"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="d"/>
+  </valueQuantity>
+</Observation>

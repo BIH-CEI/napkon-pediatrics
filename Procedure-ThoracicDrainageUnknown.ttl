@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.napkon.de/fhir/Procedure/ThoracicDrainageUnknown> a fhir:Procedure;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ThoracicDrainageUnknown"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage";
+       fhir:index 0;
+       fhir:link <https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: unknown</p><p><b>category</b>: <span title=\"Codes: {http://snomed.info/sct 277132007}\">Therapeutic procedure (procedure)</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 264957007}\">Insertion of pleural tube drain (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>performed</b>: Sep 14, 2021, 11:06:00 AM</p></div>"
+  ];
+  fhir:Procedure.status [ fhir:value "unknown"];
+  fhir:Procedure.category [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:277132007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "277132007" ];
+       fhir:Coding.display [ fhir:value "Therapeutic procedure (procedure)" ]
+     ]
+  ];
+  fhir:Procedure.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:264957007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "264957007" ];
+       fhir:Coding.display [ fhir:value "Insertion of pleural tube drain (procedure)" ]
+     ]
+  ];
+  fhir:Procedure.subject [
+     fhir:link <https://www.napkon.de/fhir/Patient/ExamplePatient>;
+     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
+  ];
+  fhir:Procedure.performedDateTime [ fhir:value "2021-09-14T13:06:00+02:00"^^xsd:dateTime] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.napkon.de/fhir/Procedure/ThoracicDrainageUnknown.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

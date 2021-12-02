@@ -1,0 +1,134 @@
+{
+  "resourceType": "ValueSet",
+  "id": "bacterial-infectious-diseases",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=27836007\">27836007</a></td><td>Pertussis (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=186464008\">186464008</a></td><td>Mycoplasma infection (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=105629000\">105629000</a></td><td>Chlamydial infection (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=26726000\">26726000</a></td><td>Legionella infection (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=95883001\">95883001</a></td><td>Bacterial meningitis (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=48245008\">48245008</a></td><td>Bacterial arthritis (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=61011009\">61011009</a></td><td>Bacterial osteomyelitis (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=45816000\">45816000</a></td><td>Pyelonephritis (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=301183007\">301183007</a></td><td>Bacterial endocarditis (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406614006\">406614006</a></td><td>Invasive Group A beta-hemolytic streptococcal disease (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=431193003\">431193003</a></td><td>Infection of bloodstream (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406602003\">406602003</a></td><td>Infection caused by Staphylococcus aureus (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406617004\">406617004</a></td><td>Invasive Streptococcus pneumoniae disease (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=108661000119109\">108661000119109</a></td><td>Infection caused by Streptococcus viridans group (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=302809008\">302809008</a></td><td>Streptococcus pyogenes infection (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=426933007\">426933007</a></td><td>Streptococcus agalactiae infection (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=406574007\">406574007</a></td><td>Infection caused by enterococcus (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=91428005\">91428005</a></td><td>Haemophilus influenzae infection (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=71057007\">71057007</a></td><td>Infection caused by Escherichia coli (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=721756002\">721756002</a></td><td>Infection caused by Klebsiella (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=11218009\">11218009</a></td><td>Infection caused by Pseudomonas aeruginosa (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=23511006\">23511006</a></td><td>Meningococcal infectious disease (disorder)</td></tr></table></li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  87628006 (Bacterial infectious disease)</li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/bacterial-infectious-diseases",
+  "version": "0.1.0",
+  "name": "BacterialInfectiousDiseases",
+  "title": "Bacterial Infectious Diseases",
+  "status": "draft",
+  "date": "2021-10-04",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "Value set of bacterial infections",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "27836007",
+            "display": "Pertussis (disorder)"
+          },
+          {
+            "code": "186464008",
+            "display": "Mycoplasma infection (disorder)"
+          },
+          {
+            "code": "105629000",
+            "display": "Chlamydial infection (disorder)"
+          },
+          {
+            "code": "26726000",
+            "display": "Legionella infection (disorder)"
+          },
+          {
+            "code": "95883001",
+            "display": "Bacterial meningitis (disorder)"
+          },
+          {
+            "code": "48245008",
+            "display": "Bacterial arthritis (disorder)"
+          },
+          {
+            "code": "61011009",
+            "display": "Bacterial osteomyelitis (disorder)"
+          },
+          {
+            "code": "45816000",
+            "display": "Pyelonephritis (disorder)"
+          },
+          {
+            "code": "301183007",
+            "display": "Bacterial endocarditis (disorder)"
+          },
+          {
+            "code": "406614006",
+            "display": "Invasive Group A beta-hemolytic streptococcal disease (disorder)"
+          },
+          {
+            "code": "431193003",
+            "display": "Infection of bloodstream (disorder)"
+          },
+          {
+            "code": "406602003",
+            "display": "Infection caused by Staphylococcus aureus (disorder)"
+          },
+          {
+            "code": "406617004",
+            "display": "Invasive Streptococcus pneumoniae disease (disorder)"
+          },
+          {
+            "code": "108661000119109",
+            "display": "Infection caused by Streptococcus viridans group (disorder)"
+          },
+          {
+            "code": "302809008",
+            "display": "Streptococcus pyogenes infection (disorder)"
+          },
+          {
+            "code": "426933007",
+            "display": "Streptococcus agalactiae infection (disorder)"
+          },
+          {
+            "code": "406574007",
+            "display": "Infection caused by enterococcus (disorder)"
+          },
+          {
+            "code": "91428005",
+            "display": "Haemophilus influenzae infection (disorder)"
+          },
+          {
+            "code": "71057007",
+            "display": "Infection caused by Escherichia coli (disorder)"
+          },
+          {
+            "code": "721756002",
+            "display": "Infection caused by Klebsiella (disorder)"
+          },
+          {
+            "code": "11218009",
+            "display": "Infection caused by Pseudomonas aeruginosa (disorder)"
+          },
+          {
+            "code": "23511006",
+            "display": "Meningococcal infectious disease (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "87628006"
+          }
+        ]
+      }
+    ]
+  }
+}

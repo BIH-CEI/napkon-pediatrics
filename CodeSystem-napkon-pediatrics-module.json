@@ -1,0 +1,71 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "napkon-pediatrics-module",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.napkon.de/fhir/CodeSystem/napkon-pediatrics-module defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">P1<a name=\"napkon-pediatrics-module-P1\"> </a></td><td>Sphingosine analogue</td></tr><tr><td style=\"white-space:nowrap\">P2<a name=\"napkon-pediatrics-module-P2\"> </a></td><td>Interleukin 2 receptor antagonist</td></tr><tr><td style=\"white-space:nowrap\">P3<a name=\"napkon-pediatrics-module-P3\"> </a></td><td>Interleukin 17 receptor antagonist</td></tr><tr><td style=\"white-space:nowrap\">P4<a name=\"napkon-pediatrics-module-P4\"> </a></td><td>Anti-CD20 antibody</td></tr><tr><td style=\"white-space:nowrap\">P5<a name=\"napkon-pediatrics-module-P5\"> </a></td><td>Anti-CD52 antibody</td></tr><tr><td style=\"white-space:nowrap\">P6<a name=\"napkon-pediatrics-module-P6\"> </a></td><td>Anti-CD3 antibody</td></tr><tr><td style=\"white-space:nowrap\">P7<a name=\"napkon-pediatrics-module-P7\"> </a></td><td>Anti-CD3/CD19 antibody</td></tr><tr><td style=\"white-space:nowrap\">P8<a name=\"napkon-pediatrics-module-P8\"> </a></td><td>Integrin inhibitor</td></tr><tr><td style=\"white-space:nowrap\">P9<a name=\"napkon-pediatrics-module-P9\"> </a></td><td>B cell activating factor inhibitor</td></tr><tr><td style=\"white-space:nowrap\">P10<a name=\"napkon-pediatrics-module-P10\"> </a></td><td>Mammalian target of rapamycin (mTOR)-Kinase inhibitor</td></tr></table></div>"
+  },
+  "url": "https://www.napkon.de/fhir/CodeSystem/napkon-pediatrics-module",
+  "version": "0.1.0",
+  "name": "NapkonPediatricsModule",
+  "title": "NapkonPediatricsModule",
+  "status": "active",
+  "date": "2021-12-02T17:22:35+00:00",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "NAPKON Pediatrics Module Code System - Collection of pediatrics module-specific codes that are missing from common terminologies such as SNOMED CT",
+  "content": "complete",
+  "count": 10,
+  "concept": [
+    {
+      "code": "P1",
+      "display": "Sphingosine analogue"
+    },
+    {
+      "code": "P2",
+      "display": "Interleukin 2 receptor antagonist"
+    },
+    {
+      "code": "P3",
+      "display": "Interleukin 17 receptor antagonist"
+    },
+    {
+      "code": "P4",
+      "display": "Anti-CD20 antibody"
+    },
+    {
+      "code": "P5",
+      "display": "Anti-CD52 antibody"
+    },
+    {
+      "code": "P6",
+      "display": "Anti-CD3 antibody"
+    },
+    {
+      "code": "P7",
+      "display": "Anti-CD3/CD19 antibody"
+    },
+    {
+      "code": "P8",
+      "display": "Integrin inhibitor"
+    },
+    {
+      "code": "P9",
+      "display": "B cell activating factor inhibitor"
+    },
+    {
+      "code": "P10",
+      "display": "Mammalian target of rapamycin (mTOR)-Kinase inhibitor"
+    }
+  ]
+}

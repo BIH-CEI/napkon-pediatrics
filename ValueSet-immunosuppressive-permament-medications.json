@@ -1,0 +1,226 @@
+{
+  "resourceType": "ValueSet",
+  "id": "immunosuppressive-permament-medications",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #768759001</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #416587008</li><li>Include these codes as defined in <code>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>P10</td><td>Mammalian target of rapamycin (mTOR)-Kinase inhibitor</td></tr><tr><td>P1</td><td>Sphingosine analogue</td></tr><tr><td>P2</td><td>Interleukin 2 receptor antagonist</td></tr><tr><td>P3</td><td>Interleukin 17 receptor antagonist</td></tr><tr><td>P4</td><td>Anti-CD20 antibody</td></tr><tr><td>P5</td><td>Anti-CD52 antibody</td></tr><tr><td>P6</td><td>Anti-CD3 antibody</td></tr><tr><td>P7</td><td>Anti-CD3/CD19 antibody</td></tr><tr><td>P8</td><td>Integrin inhibitor</td></tr><tr><td>P9</td><td>B cell activating factor inhibitor</td></tr></table></li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #58760003</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #19768003</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #416897008</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #430817009</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #784015001</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #771678003</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #870401008</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #786198001</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #704315005</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #129557000</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #48583005</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #768865007</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  69431002 (Medicinal product acting as immunosuppressant (product))</li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/immunosuppressive-permament-medications",
+  "version": "0.1.0",
+  "name": "ImmunosuppressivePermanentMedications",
+  "title": "Immunosuppressive Permanent Medications",
+  "status": "draft",
+  "date": "2021-10-05",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "Immunosuppressive medications",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "#768759001"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "#416587008"
+          }
+        ]
+      },
+      {
+        "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module",
+        "concept": [
+          {
+            "code": "P10",
+            "display": "Mammalian target of rapamycin (mTOR)-Kinase inhibitor"
+          },
+          {
+            "code": "P1",
+            "display": "Sphingosine analogue"
+          },
+          {
+            "code": "P2",
+            "display": "Interleukin 2 receptor antagonist"
+          },
+          {
+            "code": "P3",
+            "display": "Interleukin 17 receptor antagonist"
+          },
+          {
+            "code": "P4",
+            "display": "Anti-CD20 antibody"
+          },
+          {
+            "code": "P5",
+            "display": "Anti-CD52 antibody"
+          },
+          {
+            "code": "P6",
+            "display": "Anti-CD3 antibody"
+          },
+          {
+            "code": "P7",
+            "display": "Anti-CD3/CD19 antibody"
+          },
+          {
+            "code": "P8",
+            "display": "Integrin inhibitor"
+          },
+          {
+            "code": "P9",
+            "display": "B cell activating factor inhibitor"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "#58760003"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "#19768003"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "#416897008"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "#430817009"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "#784015001"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "#771678003"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "#870401008"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "#786198001"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "#704315005"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "#129557000"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "#48583005"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "#768865007"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "69431002"
+          }
+        ]
+      }
+    ]
+  }
+}

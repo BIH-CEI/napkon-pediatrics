@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="gastrointestinal-diseases-icd"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^K59\.0* and child doesn't exist</li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^K5[0-2].* and child doesn't exist</li><li>Include these codes as defined in <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> version <code>2022</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>K90.0</td><td>Zöliakie</td></tr><tr><td>T78.1</td><td>Sonstige Nahrungsmittelunverträglichkeit, anderenorts nicht klassifiziert</td></tr><tr><td>T78.0</td><td>Anaphylaktischer Schock durch Nahrungsmittelunverträglichkeit</td></tr><tr><td>L27.2</td><td>Dermatitis durch aufgenommene Nahrungsmittel</td></tr><tr><td>L23.6</td><td>Allergische Kontaktdermatitis durch Nahrungsmittel bei Hautkontakt</td></tr><tr><td>Z91.0</td><td>Allergie, ausgenommen Allergie gegenüber Arzneimitteln, Drogen oder biologisch aktiven Substanzen, in der Eigenanamnese</td></tr></table></li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^K83.* and child doesn't exist</li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^K.* and child doesn't exist</li></ul></div>
+  </text>
+  <url value="https://www.napkon.de/fhir/ValueSet/gastrointestinal-diseases-icd"/>
+  <version value="0.1.0"/>
+  <name value="GastrointestinalDiseasesICD"/>
+  <title value="Value Set of Gastrointestinal Diseases ICD"/>
+  <status value="draft"/>
+  <date value="2021-09-13"/>
+  <publisher value="Charité - Universitätsmedizin Berlin"/>
+  <contact>
+    <name value="Charité - Universitätsmedizin Berlin"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Gastrointestinal diseases in the context of pediatrics and Covid-19"/>
+  <compose>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+      <version value="2022"/>
+      <filter>
+        <property value="concept"/>
+        <op value="regex"/>
+        <value value="^K59\.0*"/>
+      </filter>
+      <filter>
+        <property value="child"/>
+        <op value="exists"/>
+        <value value="false"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+      <version value="2022"/>
+      <filter>
+        <property value="concept"/>
+        <op value="regex"/>
+        <value value="^K5[0-2].*"/>
+      </filter>
+      <filter>
+        <property value="child"/>
+        <op value="exists"/>
+        <value value="false"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+      <version value="2022"/>
+      <concept>
+        <code value="K90.0"/>
+        <display value="Zöliakie"/>
+      </concept>
+      <concept>
+        <code value="T78.1"/>
+        <display value="Sonstige Nahrungsmittelunverträglichkeit, anderenorts nicht klassifiziert"/>
+      </concept>
+      <concept>
+        <code value="T78.0"/>
+        <display value="Anaphylaktischer Schock durch Nahrungsmittelunverträglichkeit"/>
+      </concept>
+      <concept>
+        <code value="L27.2"/>
+        <display value="Dermatitis durch aufgenommene Nahrungsmittel"/>
+      </concept>
+      <concept>
+        <code value="L23.6"/>
+        <display value="Allergische Kontaktdermatitis durch Nahrungsmittel bei Hautkontakt"/>
+      </concept>
+      <concept>
+        <code value="Z91.0"/>
+        <display value="Allergie, ausgenommen Allergie gegenüber Arzneimitteln, Drogen oder biologisch aktiven Substanzen, in der Eigenanamnese"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+      <version value="2022"/>
+      <filter>
+        <property value="concept"/>
+        <op value="regex"/>
+        <value value="^K83.*"/>
+      </filter>
+      <filter>
+        <property value="child"/>
+        <op value="exists"/>
+        <value value="false"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+      <version value="2022"/>
+      <filter>
+        <property value="concept"/>
+        <op value="regex"/>
+        <value value="^K.*"/>
+      </filter>
+      <filter>
+        <property value="child"/>
+        <op value="exists"/>
+        <value value="false"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

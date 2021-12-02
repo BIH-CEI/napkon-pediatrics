@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="covid-19-symptoms-icd-10-gm"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> version <code>2022</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>R07.0</td><td>Halsschmerzen</td></tr><tr><td>R19.88</td><td>Sonstige näher bezeichnete Symptome, die das Verdauungssystem und das Abdomen betreffen</td></tr><tr><td>G25.3</td><td>Myoklonus</td></tr><tr><td>L53.8</td><td>Sonstige näher bezeichnete erythematöse Krankheiten</td></tr><tr><td>K14.8</td><td>Sonstige Krankheiten der Zunge</td></tr></table></li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  is-a  IF05 and child doesn't exist</li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  is-a  IR21 and child doesn't exist</li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  is-a  IR16 and child doesn't exist</li></ul></div>
+  </text>
+  <url value="https://www.napkon.de/fhir/ValueSet/covid-19-symptoms-icd-10-gm"/>
+  <version value="0.1.0"/>
+  <name value="Covid19SymptomsICD10GM"/>
+  <title value="Covid19 symptoms"/>
+  <status value="draft"/>
+  <date value="2020-11-11"/>
+  <publisher value="Charité - Universitätsmedizin Berlin"/>
+  <contact>
+    <name value="Charité - Universitätsmedizin Berlin"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Symptoms due to COVID19"/>
+  <compose>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+      <version value="2022"/>
+      <concept>
+        <code value="R07.0"/>
+        <display value="Halsschmerzen"/>
+      </concept>
+      <concept>
+        <code value="R19.88"/>
+        <display value="Sonstige näher bezeichnete Symptome, die das Verdauungssystem und das Abdomen betreffen"/>
+      </concept>
+      <concept>
+        <code value="G25.3"/>
+        <display value="Myoklonus"/>
+      </concept>
+      <concept>
+        <code value="L53.8"/>
+        <display value="Sonstige näher bezeichnete erythematöse Krankheiten"/>
+      </concept>
+      <concept>
+        <code value="K14.8"/>
+        <display value="Sonstige Krankheiten der Zunge"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+      <version value="2022"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="IF05"/>
+      </filter>
+      <filter>
+        <property value="child"/>
+        <op value="exists"/>
+        <value value="false"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+      <version value="2022"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="IR21"/>
+      </filter>
+      <filter>
+        <property value="child"/>
+        <op value="exists"/>
+        <value value="false"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+      <version value="2022"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="IR16"/>
+      </filter>
+      <filter>
+        <property value="child"/>
+        <op value="exists"/>
+        <value value="false"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,66 @@
+{
+  "resourceType": "ValueSet",
+  "id": "gastrointestinal-diseases-sct",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=236069009\">236069009</a></td><td>Chronic constipation (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=24526004\">24526004</a></td><td>Inflammatory bowel disease</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=396331005\">396331005</a></td><td>Celiac disease (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=782555009\">782555009</a></td><td>Allergy to cow's milk protein (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=118926004\">118926004</a></td><td>Disorder of bile duct (disorder)</td></tr></table></li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  119292006 (Disorder of gastrointestinal tract (disorder))</li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/gastrointestinal-diseases-sct",
+  "version": "0.1.0",
+  "name": "GastrointestinalDiseases",
+  "title": "Value Set of Gastrointestinal Diseases",
+  "status": "draft",
+  "date": "2021-09-13",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "Gastrointestinal diseases in the context of pediatrics and Covid-19",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "236069009",
+            "display": "Chronic constipation (disorder)"
+          },
+          {
+            "code": "24526004",
+            "display": "Inflammatory bowel disease"
+          },
+          {
+            "code": "396331005",
+            "display": "Celiac disease (disorder)"
+          },
+          {
+            "code": "782555009",
+            "display": "Allergy to cow's milk protein (finding)"
+          },
+          {
+            "code": "118926004",
+            "display": "Disorder of bile duct (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "119292006"
+          }
+        ]
+      }
+    ]
+  }
+}

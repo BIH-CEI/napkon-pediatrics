@@ -5,18 +5,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-pediatrics> a fhir:ImplementationGuide;
+<https://www.napkon.de/fhir/ImplementationGuide/napkon-pediatrics> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "napkon-pediatrics"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>napkonpediatrics</h2><p>The official URL for this implementation guide is: </p><pre>https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-pediatrics</pre></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>napkonpediatrics</h2><p>The official URL for this implementation guide is: </p><pre>https://www.napkon.de/fhir/ImplementationGuide/napkon-pediatrics</pre></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-pediatrics"];
+  fhir:ImplementationGuide.url [ fhir:value "https://www.napkon.de/fhir/ImplementationGuide/napkon-pediatrics"];
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "napkonpediatrics"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-11-10T19:09:31+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-12-02T17:22:35+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -41,7 +41,7 @@
        fhir:link <https://simplifier.net/guide/medizininformatikinitiative-modulprozeduren-implementationguide>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "de.medizininformatikinitiative.kerndatensatz.prozedur" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.0.0-alpha3" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.0.0-alpha4" ]
   ], [
      fhir:index 1;
      fhir:Element.id [ fhir:value "de_medizininformatikinitiative_kerndatensatz_person" ];
@@ -203,7 +203,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "https://www.netzwerk-universitaetsmedizin.de/fhir/history.html" ]
+         fhir:Extension.valueString [ fhir:value "https://www.napkon.de/fhir/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -332,71 +332,1444 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-unknown-undetermined>;
-         fhir:Reference.reference [ fhir:value "ValueSet/detected-not-detected-unknown-undetermined" ]
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/bacterial-infection>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/bacterial-infection" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Detected Not Detected Unknown Undetermined" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values for laboratory observations" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bacterial Infection" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Occurrence of a bacterial infection" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/present-not-present-undetermined-other>;
-         fhir:Reference.reference [ fhir:value "ValueSet/present-not-present-undetermined-other" ]
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/birth-height>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/birth-height" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Present Not Present Undetermined Other" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values for laboratory observations" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Birth Height" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Birth Height of a patient in context of Pediatrics" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/restricted-event-status>;
-         fhir:Reference.reference [ fhir:value "ValueSet/restricted-event-status" ]
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/birth-height-percentiles>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/birth-height-percentiles" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RestrictedEventStatus" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EventStatus value set restricted to codes not-done, active, completed and unknown" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Birth Height with unit percentiles" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Birth Height with unit percentiles in context of Pediatrics" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown>;
-         fhir:Reference.reference [ fhir:value "ValueSet/yes-no-unknown" ]
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/body-mass-index>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/body-mass-index" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Yes No Unknown" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Yes / No / Unknown" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Body Mass Index" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Body mass index of a patient in context of Pediatrics" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/body-mass-index-percentiles>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/body-mass-index-percentiles" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Body Mass Index with unit percentiles" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Body mass index with unit percentiles in context of Pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/chronic-Hematologic-diseases" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Chronic Hematologic Diseases" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Chronic Hematologic diseases as a risk factor for a severe course of an infection with SARS-CoV-2 in the context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/chronic-kidney-diseases>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/chronic-kidney-diseases" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Chronic Kidney Diseases" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Chronic kidney diseases in the context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/congenital-disease>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/congenital-disease" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Congenital Disease" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Congenital disease in the context of the NAPKON pediatrics module" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-complication>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/covid19-complication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19 complication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Complication due to COVID19" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-symptoms>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/covid19-symptoms" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19Symptoms" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cover additional Covid 19 symptoms" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/fungal-infection>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fungal-infection" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Fungal Infection" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Occurrence of a fungal infection" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/gastrointestinal-diseases>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/gastrointestinal-diseases" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Gastrointestinal Diseases" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Gastrointestinal diseases in the field of pediatrics as a risk factor for a severe course of an infection with SARS-CoV-2." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/head-circumference>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/head-circumference" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Head circumference" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Head circumference of a patient in context of Pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/head-circumference-percentiles>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/head-circumference-percentiles" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Head circumference with unit percentiles" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Head circumference with unit percentiles in context of Pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/imaging-procedures>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/imaging-procedures" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Imaging Procedures" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Records an application of a radiological imaging procedures performed on the patient (COVID-19 imaging procedures)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/immunosuppresive-permanent-medication>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/immunosuppresive-permanent-medication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Immunosuppresive Permanent Medication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Immunosuppresive Permanent Medication" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/intensive-care-treatment-duration>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/intensive-care-treatment-duration" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Intensive care treatment duration" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Duration of intensive care treatment" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/medical-history-stem-cell-transplant>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medical-history-stem-cell-transplant" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medical History Stem Cells Transplant" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile describes a stem cell transplant for a pediatric patient." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/pediatric-imaging-study>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pediatric-imaging-study" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Pediatric Imaging Study" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Records an application of a radiological imaging procedures performed on the patient (COVID-19 imaging procedures)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/pediatric-medication>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pediatric-medication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Pediatric Medication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication taken by or given to a pediatric patient." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/preadmission-medications>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/preadmission-medications" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Preadmission Medications" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "List of medications taken before admission to a hospital" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/sars-cov2-rt-pcr-specimen>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sars-cov2-rt-pcr-specimen" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SARS-CoV-2 RT PCR Specimen" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Qualitative detection of SARS-CoV-2 in specimens by RT-PCR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/specimen-excreta>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/specimen-excreta" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Specimen Excreta" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Urine and Stool samples" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/thoracic-drainage" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Thoracic Drainge" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Application of a thoracic drainage" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/total-length-of-stay>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/total-length-of-stay" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Total length of stay" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Total length of stay" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/viral-infection>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/viral-infection" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Viral Infection" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Occurrence of a viral infection" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/bacterial-infectious-diseases>;
+         fhir:Reference.reference [ fhir:value "ValueSet/bacterial-infectious-diseases" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bacterial Infectious Diseases" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set of bacterial infections" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/chronic-Hematologic-diseases-sct>;
+         fhir:Reference.reference [ fhir:value "ValueSet/chronic-Hematologic-diseases-sct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Value Set of Chronic Hematologic Diseases" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Chronic Hematologic diseases the context of pediatrics and Covid-19" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/chronic-Hematologic-diseases-icd>;
+         fhir:Reference.reference [ fhir:value "ValueSet/chronic-Hematologic-diseases-icd" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Chronic hematologic diseases (ICD10-GM)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Chronic hematologic diseases in the context of pediatrics and COVID-19" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/chronic-kidney-diseases-icd>;
+         fhir:Reference.reference [ fhir:value "ValueSet/chronic-kidney-diseases-icd" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Value Set of Chronic Kidney Diseases" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Chronic kidney diseases in the context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/chronic-kidney-diseases-sct>;
+         fhir:Reference.reference [ fhir:value "ValueSet/chronic-kidney-diseases-sct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Value Set of Chronic Kidney Diseases" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Chronic kidney diseases in the context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/congenital-diseases>;
+         fhir:Reference.reference [ fhir:value "ValueSet/congenital-diseases" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Congenital Diseases" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Congenital diseases" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/covid19-complications-icd10-gm>;
+         fhir:Reference.reference [ fhir:value "ValueSet/covid19-complications-icd10-gm" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19 complications ICD10 GM" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Complications due to COVID19" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/covid19-complications>;
+         fhir:Reference.reference [ fhir:value "ValueSet/covid19-complications" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19 complications" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Complications due to COVID19" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/covid-19-symptoms-icd-10-gm>;
+         fhir:Reference.reference [ fhir:value "ValueSet/covid-19-symptoms-icd-10-gm" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19 symptoms" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Symptoms due to COVID19" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/covid-19-symptoms>;
+         fhir:Reference.reference [ fhir:value "ValueSet/covid-19-symptoms" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19 symptoms" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Symptoms due to COVID19" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/detected-not-detected-unknown-undetermined>;
+         fhir:Reference.reference [ fhir:value "ValueSet/detected-not-detected-unknown-undetermined" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Detected Not Detected Unknown Undetermined" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values for laboratory observations" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/Excreta>;
+         fhir:Reference.reference [ fhir:value "ValueSet/Excreta" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Excreta" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes for excreta (stool and urine)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/fungal-infections-icd10-gm>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fungal-infections-icd10-gm" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Fungal Infections ICD10 GM" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set of fungal infections" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/fungal-infections-sct>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fungal-infections-sct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Fungal Infections SNOMED CT" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set of fungal infections" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/gastrointestinal-diseases-sct>;
+         fhir:Reference.reference [ fhir:value "ValueSet/gastrointestinal-diseases-sct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Value Set of Gastrointestinal Diseases" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Gastrointestinal diseases in the context of pediatrics and Covid-19" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/gastrointestinal-diseases-icd>;
+         fhir:Reference.reference [ fhir:value "ValueSet/gastrointestinal-diseases-icd" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Value Set of Gastrointestinal Diseases ICD" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Gastrointestinal diseases in the context of pediatrics and Covid-19" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/imaging-procedures-dicom>;
+         fhir:Reference.reference [ fhir:value "ValueSet/imaging-procedures-dicom" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Value Set of imaging procedures in dicom format" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Imaging procedures in the context of pediatrics and Covid-19" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/imaging-procedures-sct>;
+         fhir:Reference.reference [ fhir:value "ValueSet/imaging-procedures-sct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Value Set of imaging procedures from SNOMED CT" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Imaging procedures in the context of pediatrics and Covid-19" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/immunosuppressive-permament-medications>;
+         fhir:Reference.reference [ fhir:value "ValueSet/immunosuppressive-permament-medications" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Immunosuppressive Permanent Medications" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Immunosuppressive medications" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/immunosuppressive-permament-medications-atc>;
+         fhir:Reference.reference [ fhir:value "ValueSet/immunosuppressive-permament-medications-atc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Immunosuppressive Permanent Medications ATC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Immunosuppressive Medications ATC codes" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/laboratory-tests>;
+         fhir:Reference.reference [ fhir:value "ValueSet/laboratory-tests" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laboratory Tests" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Laboratory tests in the context of NAPKON Pediatrics Module" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/medical-history-stem-cell-transplant>;
+         fhir:Reference.reference [ fhir:value "ValueSet/medical-history-stem-cell-transplant" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medical History Stem Cell Transplants" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medical history linked to stem cells or bone marrow transplant for pediatric patients" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/medical-history-stem-cell-transplant-icd>;
+         fhir:Reference.reference [ fhir:value "ValueSet/medical-history-stem-cell-transplant-icd" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medical History Stem Cell Transplants ICD" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medical history linked to stem cells or bone marrow transplant for pediatric patients" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/medication-pediatrics-atc-de>;
+         fhir:Reference.reference [ fhir:value "ValueSet/medication-pediatrics-atc-de" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Pediatrics ATC DE" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication used in the case of a of Covid-19 infection for a pediatric patient" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/medication-pediatrics-sct>;
+         fhir:Reference.reference [ fhir:value "ValueSet/medication-pediatrics-sct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Pediatrics SNOMED CT" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication used in the case of a of Covid-19 infection for a pediatric patient" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/present-not-present-undetermined-other>;
+         fhir:Reference.reference [ fhir:value "ValueSet/present-not-present-undetermined-other" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Present Not Present Undetermined Other" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values for laboratory observations" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/restricted-event-status>;
+         fhir:Reference.reference [ fhir:value "ValueSet/restricted-event-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RestrictedEventStatus" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EventStatus value set restricted to codes not-done, active, completed and unknown" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/viral-infectious-diseases>;
+         fhir:Reference.reference [ fhir:value "ValueSet/viral-infectious-diseases" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ViralInfectiousDiseases" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/yes-no-unknown>;
+         fhir:Reference.reference [ fhir:value "ValueSet/yes-no-unknown" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Yes No Unknown" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Yes / No / Unknown" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/CodeSystem/napkon-pediatrics-module>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/napkon-pediatrics-module" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NapkonPediatricsModule" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NAPKON Pediatrics Module Code System - Collection of pediatrics module-specific codes that are missing from common terminologies such as SNOMED CT" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/BacterialInfectionConfirmed>;
+         fhir:Reference.reference [ fhir:value "Condition/BacterialInfectionConfirmed" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bacterial Infection Confirmed" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a confirmed bacterial infection" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/bacterial-infection";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/bacterial-infection>
+       ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/BacterialInfectionRefuted>;
+         fhir:Reference.reference [ fhir:value "Condition/BacterialInfectionRefuted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bacterial Infection Refuted" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a refuted bacterial infection" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/bacterial-infection";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/bacterial-infection>
+       ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/CongenitalAtransferrinemiaConfirmed>;
+         fhir:Reference.reference [ fhir:value "Condition/CongenitalAtransferrinemiaConfirmed" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Congenital Atransferrinemia confirmed" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example: Confirmed congenital atransferrinemia" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/congenital-disease";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/congenital-disease>
+       ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/Covid19Complication>;
+         fhir:Reference.reference [ fhir:value "Condition/Covid19Complication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19 Complication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a covid19 complication" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/covid19-complication";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-complication>
+       ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/Covid19Symptoms>;
+         fhir:Reference.reference [ fhir:value "Condition/Covid19Symptoms" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19 Symptom" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a covid19 complication" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/covid19-symptoms";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-symptoms>
+       ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/Patient/ExamplePatient>;
+         fhir:link <https://www.napkon.de/fhir/Patient/ExamplePatient>;
          fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExamplePatient" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example patient to be used as reference in other instances" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/FungalInfectionConfirmed>;
+         fhir:Reference.reference [ fhir:value "Condition/FungalInfectionConfirmed" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Fungal Infection Confirmed" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a confirmed fungal infection" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/fungal-infection";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/fungal-infection>
+       ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/FungalInfectionUnknown>;
+         fhir:Reference.reference [ fhir:value "Condition/FungalInfectionUnknown" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Fungal Infection Unknown" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a fungal infection where the presence is unknown" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/fungal-infection";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/fungal-infection>
+       ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Procedure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Procedure/ImagingProcedures>;
+         fhir:Reference.reference [ fhir:value "Procedure/ImagingProcedures" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "imaging-procedure-instance" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a performed radiology/imaging procedure for pediatric patients when treating COVID-19." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/imaging-procedures";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/imaging-procedures>
+       ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ImagingStudy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ImagingStudy/ImagingStudyPTHeart>;
+         fhir:Reference.reference [ fhir:value "ImagingStudy/ImagingStudyPTHeart" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Imaging Study" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a concrete imaging study performed on a patient" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/pediatric-imaging-study";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/pediatric-imaging-study>
+       ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/MedicationStatement/ImmunosuppresivePermanentMedication>;
+         fhir:Reference.reference [ fhir:value "MedicationStatement/ImmunosuppresivePermanentMedication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Immunosuppresive Permanent Medication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a Immunosuppresive Permanent Medication" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/immunosuppresive-permanent-medication";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/immunosuppresive-permanent-medication>
+       ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Observation/IntensiveCareTreatmentDuration>;
+         fhir:Reference.reference [ fhir:value "Observation/IntensiveCareTreatmentDuration" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Intensive Care Treatment Duration" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of an intensive care treatment duration" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/intensive-care-treatment-duration";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/intensive-care-treatment-duration>
+       ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/MedicationStatement/PediatricMedicationATCDE>;
+         fhir:Reference.reference [ fhir:value "MedicationStatement/PediatricMedicationATCDE" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Pediatric Medication ATC DE" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example prescription of a medication or consumption by a pediatric patient " ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/pediatric-medication";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/pediatric-medication>
+       ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/MedicationStatement/PediatricMedicationSCT>;
+         fhir:Reference.reference [ fhir:value "MedicationStatement/PediatricMedicationSCT" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Pediatric Medication SNOMED CT" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example prescription of a medication or consumption by a pediatric patient " ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/pediatric-medication";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/pediatric-medication>
+       ]
+     ], [
+       fhir:index 70;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Observation/SarsCoV2RTPCRStoolDetected>;
+         fhir:Reference.reference [ fhir:value "Observation/SarsCoV2RTPCRStoolDetected" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SARS-CoV-2 RT PCR Stool Detected" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a SARS-CoV-2 RT PCR from a stool sample that is detected" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/sars-cov2-rt-pcr-specimen";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/sars-cov2-rt-pcr-specimen>
+       ]
+     ], [
+       fhir:index 71;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Observation/SarsCoV2RTPCRStoolNotDetected>;
+         fhir:Reference.reference [ fhir:value "Observation/SarsCoV2RTPCRStoolNotDetected" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SARS-CoV-2 RT PCR Stool Not Detected" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a SARS-CoV-2 RT PCR from a stool sample that is not detected" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/sars-cov2-rt-pcr-specimen";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/sars-cov2-rt-pcr-specimen>
+       ]
+     ], [
+       fhir:index 72;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Observation/SarsCoV2RTPCRUrineInconclusive>;
+         fhir:Reference.reference [ fhir:value "Observation/SarsCoV2RTPCRUrineInconclusive" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SARS-CoV-2 RT PCR Urine Inconclusive" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a SARS-CoV-2 RT PCR from a urine sample that is inconclusive" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/sars-cov2-rt-pcr-specimen";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/sars-cov2-rt-pcr-specimen>
+       ]
+     ], [
+       fhir:index 73;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Specimen" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Specimen/SpecimenStool>;
+         fhir:Reference.reference [ fhir:value "Specimen/SpecimenStool" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Specimen Stool" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Stool sample" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/specimen-excreta";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/specimen-excreta>
+       ]
+     ], [
+       fhir:index 74;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Specimen" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Specimen/SpecimenUrine>;
+         fhir:Reference.reference [ fhir:value "Specimen/SpecimenUrine" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Specimen Urine" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Urine sample" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/specimen-excreta";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/specimen-excreta>
+       ]
+     ], [
+       fhir:index 75;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Procedure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Procedure/ThoracicDrainageCompleted>;
+         fhir:Reference.reference [ fhir:value "Procedure/ThoracicDrainageCompleted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Thoracic Drainage Completed" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a thoracic drainage that was completed" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage>
+       ]
+     ], [
+       fhir:index 76;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Procedure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Procedure/ThoracicDrainageNotDone>;
+         fhir:Reference.reference [ fhir:value "Procedure/ThoracicDrainageNotDone" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Thoracic Drainage Not Done" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a thoracic drainage that was not performed" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage>
+       ]
+     ], [
+       fhir:index 77;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Procedure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Procedure/ThoracicDrainageUnknown>;
+         fhir:Reference.reference [ fhir:value "Procedure/ThoracicDrainageUnknown" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Thoracic Drainage Unknown" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a thoracic drainage for which it is not known if it was performed or not" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage>
+       ]
+     ], [
+       fhir:index 78;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Observation/TotalLengthOfStay>;
+         fhir:Reference.reference [ fhir:value "Observation/TotalLengthOfStay" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Total Length of Stay" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of an total length of stay" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/total-length-of-stay";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/total-length-of-stay>
+       ]
+     ], [
+       fhir:index 79;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/ViralInfectionConfirmed>;
+         fhir:Reference.reference [ fhir:value "Condition/ViralInfectionConfirmed" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Viral Infection Confirmed" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a confirmed viral infection" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/viral-infection";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/viral-infection>
+       ]
+     ], [
+       fhir:index 80;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/ViralInfectionRefuted>;
+         fhir:Reference.reference [ fhir:value "Condition/ViralInfectionRefuted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Viral Infection Refuted" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a refuted viral infection" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/viral-infection";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/viral-infection>
+       ]
+     ], [
+       fhir:index 81;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Observation/birth-height-circumference-percentiles>;
+         fhir:Reference.reference [ fhir:value "Observation/birth-height-circumference-percentiles" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of fhir resource birth height (unit percentiles) in the context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a birth height" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/birth-height-percentiles";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/birth-height-percentiles>
+       ]
+     ], [
+       fhir:index 82;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Observation/instance-birth-height>;
+         fhir:Reference.reference [ fhir:value "Observation/instance-birth-height" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of fhir resource birth height in the context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of birth height" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/birth-height";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/birth-height>
+       ]
+     ], [
+       fhir:index 83;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Observation/instance-body-mass-index>;
+         fhir:Reference.reference [ fhir:value "Observation/instance-body-mass-index" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of fhir resource body mass index in the context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of body mass index" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/body-mass-index";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/body-mass-index>
+       ]
+     ], [
+       fhir:index 84;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Observation/instance-body-mass-index-percentiles>;
+         fhir:Reference.reference [ fhir:value "Observation/instance-body-mass-index-percentiles" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of fhir resource body mass index in the context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of body mass index with unit percentiles" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/body-mass-index-percentiles";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/body-mass-index-percentiles>
+       ]
+     ], [
+       fhir:index 85;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/instance-chronic-Hematologic-diseases>;
+         fhir:Reference.reference [ fhir:value "Condition/instance-chronic-Hematologic-diseases" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of fhir resource chronic Hematologic diseases in the context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a chronic Hematologic diseases" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases>
+       ]
+     ], [
+       fhir:index 86;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/instance-chronic-Hematologic-diseases-icd>;
+         fhir:Reference.reference [ fhir:value "Condition/instance-chronic-Hematologic-diseases-icd" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of fhir resource chronic Hematologic diseases in the context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a chronic Hematologic diseases" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases>
+       ]
+     ], [
+       fhir:index 87;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/instance-chronic-kidney-diseases-icd>;
+         fhir:Reference.reference [ fhir:value "Condition/instance-chronic-kidney-diseases-icd" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of fhir resource chronic kidney diseases in the context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example or chronic kidney diseases" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/chronic-kidney-diseases";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/chronic-kidney-diseases>
+       ]
+     ], [
+       fhir:index 88;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/instance-chronic-kidney-diseases-sct>;
+         fhir:Reference.reference [ fhir:value "Condition/instance-chronic-kidney-diseases-sct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of fhir resource chronic kidney diseases in the context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example or chronic kidney diseases" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/chronic-kidney-diseases";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/chronic-kidney-diseases>
+       ]
+     ], [
+       fhir:index 89;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/instance-gastrointestinal-diseases>;
+         fhir:Reference.reference [ fhir:value "Condition/instance-gastrointestinal-diseases" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of fhir resource sgastrointestinal-diseases in the context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a gastrointestinal disease" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/gastrointestinal-diseases";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/gastrointestinal-diseases>
+       ]
+     ], [
+       fhir:index 90;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/instance-gastrointestinal-diseases-icd>;
+         fhir:Reference.reference [ fhir:value "Condition/instance-gastrointestinal-diseases-icd" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of fhir resource sgastrointestinal-diseases in the context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a gastrointestinal disease" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/gastrointestinal-diseases";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/gastrointestinal-diseases>
+       ]
+     ], [
+       fhir:index 91;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Observation/instance-head-circumference>;
+         fhir:Reference.reference [ fhir:value "Observation/instance-head-circumference" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of fhir resource head circumference (unit cm) in the context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a head circumference" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/head-circumference";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/head-circumference>
+       ]
+     ], [
+       fhir:index 92;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Observation/instance-head-circumference-percentiles>;
+         fhir:Reference.reference [ fhir:value "Observation/instance-head-circumference-percentiles" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of fhir resource head circumference (unit percentiles) in thr context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a head circumference" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/head-circumference-percentiles";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/head-circumference-percentiles>
+       ]
+     ], [
+       fhir:index 93;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/Condition/medical-history-stem-cell-transplant-instance>;
+         fhir:Reference.reference [ fhir:value "Condition/medical-history-stem-cell-transplant-instance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "medical-history-stem-cell-transplant-instance" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile describes a stem cell transplant for a pediatric patient." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/medical-history-stem-cell-transplant";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/medical-history-stem-cell-transplant>
+       ]
+     ], [
+       fhir:index 94;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "List" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/List/preadmission-medications>;
+         fhir:Reference.reference [ fhir:value "List/preadmission-medications" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "preadmission-medications" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example list of medications before the admission of the patient to the hospital" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/preadmission-medications";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/preadmission-medications>
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
@@ -474,7 +1847,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/napkon-pediatrics.ttl> a owl:Ontology;
+<https://www.napkon.de/fhir/ImplementationGuide/napkon-pediatrics.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

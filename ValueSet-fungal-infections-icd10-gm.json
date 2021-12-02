@@ -1,0 +1,105 @@
+{
+  "resourceType": "ValueSet",
+  "id": "fungal-infections-icd10-gm",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  is-a  B44 and child doesn't exist</li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  is-a  B37 and child doesn't exist</li><li>Include these codes as defined in <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> version <code>2022</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>B48</td><td>Sonstige Mykosen, anderenorts nicht klassifiziert</td></tr></table></li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^B3[5-9]\\..* and child doesn't exist</li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^B4[0-9]\\..* and child doesn't exist</li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/fungal-infections-icd10-gm",
+  "version": "0.1.0",
+  "name": "FungalInfectionsICD10GM",
+  "title": "Fungal Infections ICD10 GM",
+  "status": "draft",
+  "date": "2020-10-05",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "Value set of fungal infections",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "B44"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "B37"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "concept": [
+          {
+            "code": "B48",
+            "display": "Sonstige Mykosen, anderenorts nicht klassifiziert"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "regex",
+            "value": "^B3[5-9]\\..*"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "regex",
+            "value": "^B4[0-9]\\..*"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      }
+    ]
+  }
+}

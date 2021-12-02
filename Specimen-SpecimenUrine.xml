@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="SpecimenUrine"/>
+  <meta>
+    <profile value="https://www.napkon.de/fhir/StructureDefinition/specimen-excreta"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0487 UR}">Urine</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p></div>
+  </text>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0487"/>
+      <code value="UR"/>
+      <display value="Urine"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+</Specimen>

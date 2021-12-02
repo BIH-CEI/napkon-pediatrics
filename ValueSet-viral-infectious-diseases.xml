@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="viral-infectious-diseases"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=55735004">55735004</a></td><td>Respiratory syncytial virus infection (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=6142004">6142004</a></td><td>Influenza (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1087141000119106">1087141000119106</a></td><td>Human metapneumovirus infection (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=41546002">41546002</a></td><td>Disease caused by Rhinovirus (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=25225006">25225006</a></td><td>Disease caused by Adenovirus (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1148698007">1148698007</a></td><td>Disease caused by Human bocavirus (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=27619001">27619001</a></td><td>Disease caused by Coronaviridae (disorder)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=12188008">12188008</a></td><td>Parainfluenza (disorder)</td></tr></table></li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  34014006 (Viral disease)</li></ul></div>
+  </text>
+  <url value="https://www.napkon.de/fhir/ValueSet/viral-infectious-diseases"/>
+  <version value="0.1.0"/>
+  <name value="ViralInfectiousDiseases"/>
+  <status value="draft"/>
+  <date value="2021-05-28"/>
+  <publisher value="Charité - Universitätsmedizin Berlin"/>
+  <contact>
+    <name value="Charité - Universitätsmedizin Berlin"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="55735004"/>
+        <display value="Respiratory syncytial virus infection (disorder)"/>
+      </concept>
+      <concept>
+        <code value="6142004"/>
+        <display value="Influenza (disorder)"/>
+      </concept>
+      <concept>
+        <code value="1087141000119106"/>
+        <display value="Human metapneumovirus infection (disorder)"/>
+      </concept>
+      <concept>
+        <code value="41546002"/>
+        <display value="Disease caused by Rhinovirus (disorder)"/>
+      </concept>
+      <concept>
+        <code value="25225006"/>
+        <display value="Disease caused by Adenovirus (disorder)"/>
+      </concept>
+      <concept>
+        <code value="1148698007"/>
+        <display value="Disease caused by Human bocavirus (disorder)"/>
+      </concept>
+      <concept>
+        <code value="27619001"/>
+        <display value="Disease caused by Coronaviridae (disorder)"/>
+      </concept>
+      <concept>
+        <code value="12188008"/>
+        <display value="Parainfluenza (disorder)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="34014006"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

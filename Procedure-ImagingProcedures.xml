@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="ImagingProcedures"/>
+  <meta>
+    <profile value="https://www.napkon.de/fhir/StructureDefinition/imaging-procedures"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>category</b>: <span title="Codes: {http://snomed.info/sct 103693007}">Diagnostic procedure (procedure)</span></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 450436003}">Positron emission tomography with computed tomography (procedure)</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>performed</b>: Sep 23, 2021, 11:06:00 AM</p></div>
+  </text>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="103693007"/>
+      <display value="Diagnostic procedure (procedure)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="450436003"/>
+      <display value="Positron emission tomography with computed tomography (procedure)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <performedDateTime value="2021-09-23T13:06:00+02:00"/>
+</Procedure>

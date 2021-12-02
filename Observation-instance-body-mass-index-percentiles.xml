@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="instance-body-mass-index-percentiles"/>
+  <meta>
+    <profile value="https://www.napkon.de/fhir/StructureDefinition/body-mass-index-percentiles"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 59574-4}, {http://snomed.info/sct 60621009:370130000=415068004}">Body mass index (BMI) [Percentile]</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>effective</b>: Feb 7, 2015, 6:28:17 PM</p><p><b>value</b>: 75 %</p><p><b>derivedFrom</b>: <a href="Observation-instance-body-mass-index.html">Generated Summary: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span>; <span title="Codes: {http://loinc.org 39156-5}">Body mass index (BMI) [Ratio]</span>; effective: Feb 7, 2015, 6:28:17 PM; 25 kg/m2</a></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="59574-4"/>
+      <display value="Body mass index (BMI) [Percentile]"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="60621009:370130000=415068004"/>
+      <display value="Body mass index where Property = Percentile value"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <effectiveDateTime value="2015-02-07T13:28:17-05:00"/>
+  <valueQuantity>
+    <value value="75"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="%"/>
+  </valueQuantity>
+  <derivedFrom>
+    <reference value="Observation/instance-body-mass-index"/>
+  </derivedFrom>
+</Observation>

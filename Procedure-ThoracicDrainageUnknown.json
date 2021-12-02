@@ -1,0 +1,36 @@
+{
+  "resourceType": "Procedure",
+  "id": "ThoracicDrainageUnknown",
+  "meta": {
+    "profile": [
+      "https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: unknown</p><p><b>category</b>: <span title=\"Codes: {http://snomed.info/sct 277132007}\">Therapeutic procedure (procedure)</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 264957007}\">Insertion of pleural tube drain (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>performed</b>: Sep 14, 2021, 11:06:00 AM</p></div>"
+  },
+  "status": "unknown",
+  "category": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "277132007",
+        "display": "Therapeutic procedure (procedure)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "264957007",
+        "display": "Insertion of pleural tube drain (procedure)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "performedDateTime": "2021-09-14T13:06:00+02:00"
+}

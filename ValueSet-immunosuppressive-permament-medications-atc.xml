@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="immunosuppressive-permament-medications-atc"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/atc</code> where concept  is-a  <a href="?ngen-14?.html#CodeSystemATC2021-A14A">A14A</a></li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/atc</code> where concept  is-a  <a href="?ngen-14?.html#CodeSystemATC2021-L01EG">L01EG</a></li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/atc</code> where concept  is-a  <a href="?ngen-14?.html#CodeSystemATC2021-L04">L04</a></li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/atc</code> where concept  is-a  <a href="?ngen-14?.html#CodeSystemATC2021-L01B">L01B</a></li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/atc</code> where concept  is-a  <a href="?ngen-14?.html#CodeSystemATC2021-L01A">L01A</a></li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/atc</code> where concept  is-a  <a href="?ngen-14?.html#CodeSystemATC2021-L01XC">L01XC</a></li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/atc</code> where concept  is-a  <a href="?ngen-14?.html#CodeSystemATC2021-L01EJ">L01EJ</a></li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/atc</code> where concept  is-a  <a href="?ngen-14?.html#CodeSystemATC2021-L01E">L01E</a></li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/atc</code> where concept  is-a  <a href="?ngen-14?.html#CodeSystemATC2021-R03DX">R03DX</a></li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/atc</code> where concept  is-a  <a href="?ngen-14?.html#CodeSystemATC2021-L03AB">L03AB</a></li></ul></div>
+  </text>
+  <url value="https://www.napkon.de/fhir/ValueSet/immunosuppressive-permament-medications-atc"/>
+  <version value="0.1.0"/>
+  <name value="ImmunosuppressivePermanentMedicationsATC"/>
+  <title value="Immunosuppressive Permanent Medications ATC"/>
+  <status value="draft"/>
+  <date value="2021-10-05"/>
+  <publisher value="Charité - Universitätsmedizin Berlin"/>
+  <contact>
+    <name value="Charité - Universitätsmedizin Berlin"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Immunosuppressive Medications ATC codes"/>
+  <compose>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+      <version value="2021"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="A14A"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+      <version value="2021"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="L01EG"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+      <version value="2021"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="L04"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+      <version value="2021"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="L01B"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+      <version value="2021"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="L01A"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+      <version value="2021"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="L01XC"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+      <version value="2021"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="L01EJ"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+      <version value="2021"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="L01E"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+      <version value="2021"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="R03DX"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+      <version value="2021"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="L03AB"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

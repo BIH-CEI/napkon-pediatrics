@@ -3,13 +3,127 @@
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
   "extensions": [],
-  "profiles": {},
+  "profiles": {
+    "Condition": [
+      {
+        "url": "https://www.napkon.de/fhir/StructureDefinition/viral-infection",
+        "title": "Viral Infection"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://www.napkon.de/fhir/StructureDefinition/total-length-of-stay",
+        "title": "Total length of stay"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage",
+        "title": "Thoracic Drainge"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "https://www.napkon.de/fhir/StructureDefinition/pediatric-medication",
+        "title": "Pediatric Medication"
+      }
+    ],
+    "ImagingStudy": [
+      {
+        "url": "https://www.napkon.de/fhir/StructureDefinition/pediatric-imaging-study",
+        "title": "Pediatric Imaging Study"
+      }
+    ],
+    "List": [
+      {
+        "url": "https://www.napkon.de/fhir/StructureDefinition/preadmission-medications",
+        "title": "Preadmission Medications"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "https://www.napkon.de/fhir/StructureDefinition/specimen-excreta",
+        "title": "Specimen Excreta"
+      }
+    ]
+  },
   "usage": {
+    "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum": [
+      "Procedure"
+    ],
+    "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit": [
+      "Condition.code.coding"
+    ],
+    "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen": [
+      "Condition.code.coding"
+    ],
+    "http://fhir.de/StructureDefinition/lebensphase": [
+      "Condition.onset[x].end",
+      "Condition.onset[x].start"
+    ],
+    "http://fhir.de/StructureDefinition/seitenlokalisation": [
+      "Condition.code.coding",
+      "Procedure.code.coding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-dueTo": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-related": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum": [
+      "Observation.effective[x]"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht": [
+      "Procedure"
+    ],
+    "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence": [
+      "Condition"
     ]
   }
 }

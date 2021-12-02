@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="TotalLengthOfStay"/>
+  <meta>
+    <profile value="https://www.napkon.de/fhir/StructureDefinition/total-length-of-stay"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://loinc.org 78033-8}, {http://snomed.info/sct 183797002}">Hospital stay duration</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>value</b>: 10 d</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="78033-8"/>
+      <display value="Hospital stay duration"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="183797002"/>
+      <display value="Duration of inpatient stay (observable entity)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <valueQuantity>
+    <value value="10"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="d"/>
+  </valueQuantity>
+</Observation>

@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "id": "chronic-kidney-diseases-icd",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^Q6[0-4].* and child doesn't exist</li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/chronic-kidney-diseases-icd",
+  "version": "0.1.0",
+  "name": "ChronicKidneyDiseasesICD",
+  "title": "Value Set of Chronic Kidney Diseases",
+  "status": "draft",
+  "date": "2021-10-18",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "Chronic kidney diseases in the context of pediatrics",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "regex",
+            "value": "^Q6[0-4].*"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      }
+    ]
+  }
+}

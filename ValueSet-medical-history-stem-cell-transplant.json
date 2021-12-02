@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "id": "medical-history-stem-cell-transplant",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  2631000119108 (History of bone marrow transplant)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  153351000119102 (History of peripheral stem cell transplant (situation))</li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/medical-history-stem-cell-transplant",
+  "version": "0.1.0",
+  "name": "MedicalHistoryStemCellTransplant",
+  "title": "Medical History Stem Cell Transplants",
+  "status": "draft",
+  "date": "2021-10-08",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "Medical history linked to stem cells or bone marrow transplant for pediatric patients",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "2631000119108"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "153351000119102"
+          }
+        ]
+      }
+    ]
+  }
+}

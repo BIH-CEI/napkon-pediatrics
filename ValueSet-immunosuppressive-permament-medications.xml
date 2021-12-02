@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="immunosuppressive-permament-medications"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  #768759001</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  #416587008</li><li>Include these codes as defined in <code>https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>P10</td><td>Mammalian target of rapamycin (mTOR)-Kinase inhibitor</td></tr><tr><td>P1</td><td>Sphingosine analogue</td></tr><tr><td>P2</td><td>Interleukin 2 receptor antagonist</td></tr><tr><td>P3</td><td>Interleukin 17 receptor antagonist</td></tr><tr><td>P4</td><td>Anti-CD20 antibody</td></tr><tr><td>P5</td><td>Anti-CD52 antibody</td></tr><tr><td>P6</td><td>Anti-CD3 antibody</td></tr><tr><td>P7</td><td>Anti-CD3/CD19 antibody</td></tr><tr><td>P8</td><td>Integrin inhibitor</td></tr><tr><td>P9</td><td>B cell activating factor inhibitor</td></tr></table></li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  #58760003</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  #19768003</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  #416897008</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  #430817009</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  #784015001</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  #771678003</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  #870401008</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  #786198001</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  #704315005</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  #129557000</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  #48583005</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  #768865007</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  69431002 (Medicinal product acting as immunosuppressant (product))</li></ul></div>
+  </text>
+  <url value="https://www.napkon.de/fhir/ValueSet/immunosuppressive-permament-medications"/>
+  <version value="0.1.0"/>
+  <name value="ImmunosuppressivePermanentMedications"/>
+  <title value="Immunosuppressive Permanent Medications"/>
+  <status value="draft"/>
+  <date value="2021-10-05"/>
+  <publisher value="Charité - Universitätsmedizin Berlin"/>
+  <contact>
+    <name value="Charité - Universitätsmedizin Berlin"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Immunosuppressive medications"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="#768759001"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="#416587008"/>
+      </filter>
+    </include>
+    <include>
+      <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module"/>
+      <concept>
+        <code value="P10"/>
+        <display value="Mammalian target of rapamycin (mTOR)-Kinase inhibitor"/>
+      </concept>
+      <concept>
+        <code value="P1"/>
+        <display value="Sphingosine analogue"/>
+      </concept>
+      <concept>
+        <code value="P2"/>
+        <display value="Interleukin 2 receptor antagonist"/>
+      </concept>
+      <concept>
+        <code value="P3"/>
+        <display value="Interleukin 17 receptor antagonist"/>
+      </concept>
+      <concept>
+        <code value="P4"/>
+        <display value="Anti-CD20 antibody"/>
+      </concept>
+      <concept>
+        <code value="P5"/>
+        <display value="Anti-CD52 antibody"/>
+      </concept>
+      <concept>
+        <code value="P6"/>
+        <display value="Anti-CD3 antibody"/>
+      </concept>
+      <concept>
+        <code value="P7"/>
+        <display value="Anti-CD3/CD19 antibody"/>
+      </concept>
+      <concept>
+        <code value="P8"/>
+        <display value="Integrin inhibitor"/>
+      </concept>
+      <concept>
+        <code value="P9"/>
+        <display value="B cell activating factor inhibitor"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="#58760003"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="#19768003"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="#416897008"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="#430817009"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="#784015001"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="#771678003"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="#870401008"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="#786198001"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="#704315005"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="#129557000"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="#48583005"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="#768865007"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="69431002"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

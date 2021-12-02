@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.napkon.de/fhir/List/preadmission-medications> a fhir:List;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "preadmission-medications"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.napkon.de/fhir/StructureDefinition/preadmission-medications";
+       fhir:index 0;
+       fhir:link <https://www.napkon.de/fhir/StructureDefinition/preadmission-medications>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"clstu\"><tr><td>Mode: workingStatus: currentCode: Past medication (situation)</td></tr><tr><td>Subject: <a href=\"Patient-ExamplePatient.html\">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></td></tr></table><table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"><td><b>Items</b></td></tr><tr><td><a href=\"MedicationStatement-ImmunosuppresivePermanentMedication.html\">Generated Summary: status: completed; <span title=\"Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module P7}, {http://fhir.de/CodeSystem/bfarm/atc L01XC19}\">Anti-CD3/CD19 antibody</span>; effective: Sep 14, 2021, 11:06:00 AM</a></td></tr></table></div>"
+  ];
+  fhir:List.status [ fhir:value "current"];
+  fhir:List.mode [ fhir:value "working"];
+  fhir:List.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:394829006;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "394829006" ];
+       fhir:Coding.display [ fhir:value "Past medication (situation)" ]
+     ]
+  ];
+  fhir:List.subject [
+     fhir:link <https://www.napkon.de/fhir/Patient/ExamplePatient>;
+     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
+  ];
+  fhir:List.entry [
+     fhir:index 0;
+     fhir:List.entry.item [
+       fhir:link <https://www.napkon.de/fhir/MedicationStatement/ImmunosuppresivePermanentMedication>;
+       fhir:Reference.reference [ fhir:value "MedicationStatement/ImmunosuppresivePermanentMedication" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.napkon.de/fhir/List/preadmission-medications.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

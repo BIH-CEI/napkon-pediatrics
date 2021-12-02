@@ -1,0 +1,96 @@
+{
+  "resourceType": "ValueSet",
+  "id": "covid19-complications",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52702003\">52702003</a></td><td>Chronic fatigue syndrome (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=32398004\">32398004</a></td><td>Bronchitis (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=4120002\">4120002</a></td><td>Bronchiolitis (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=233981004\">233981004</a></td><td>Arterial aneurysm (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=417451006:363589002=439569004\">417451006:363589002=439569004</a></td><td>Procedure needed Where Associated procedure = Resuscitation</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=235856003\">235856003</a></td><td>Disorder of liver (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128613002\">128613002</a></td><td>Seizure disorder (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=271594007\">271594007</a></td><td>Syncope (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=271737000\">271737000</a></td><td>Anemia (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=11479008\">11479008</a></td><td>Organic mental disorder (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1119303003\">1119303003</a></td><td>Post-acute COVID-19 (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=64226004\">64226004</a></td><td>Colitis (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52457000\">52457000</a></td><td>Ileitis (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=48661000\">48661000</a></td><td>Peritonitis (disorder)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=389026000\">389026000</a></td><td>Ascites (disorder)</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.napkon.de/fhir/ValueSet/covid19-complications",
+  "version": "0.1.0",
+  "name": "Covid19ComplicationsSCT",
+  "title": "Covid19 complications",
+  "status": "draft",
+  "date": "2020-10-05",
+  "publisher": "Charité - Universitätsmedizin Berlin",
+  "contact": [
+    {
+      "name": "Charité - Universitätsmedizin Berlin",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "Complications due to COVID19",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "52702003",
+            "display": "Chronic fatigue syndrome (disorder)"
+          },
+          {
+            "code": "32398004",
+            "display": "Bronchitis (disorder)"
+          },
+          {
+            "code": "4120002",
+            "display": "Bronchiolitis (disorder)"
+          },
+          {
+            "code": "233981004",
+            "display": "Arterial aneurysm (disorder)"
+          },
+          {
+            "code": "417451006:363589002=439569004",
+            "display": "Procedure needed Where Associated procedure = Resuscitation"
+          },
+          {
+            "code": "235856003",
+            "display": "Disorder of liver (disorder)"
+          },
+          {
+            "code": "128613002",
+            "display": "Seizure disorder (disorder)"
+          },
+          {
+            "code": "271594007",
+            "display": "Syncope (finding)"
+          },
+          {
+            "code": "271737000",
+            "display": "Anemia (disorder)"
+          },
+          {
+            "code": "11479008",
+            "display": "Organic mental disorder (disorder)"
+          },
+          {
+            "code": "1119303003",
+            "display": "Post-acute COVID-19 (disorder)"
+          },
+          {
+            "code": "64226004",
+            "display": "Colitis (disorder)"
+          },
+          {
+            "code": "52457000",
+            "display": "Ileitis (disorder)"
+          },
+          {
+            "code": "48661000",
+            "display": "Peritonitis (disorder)"
+          },
+          {
+            "code": "389026000",
+            "display": "Ascites (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}

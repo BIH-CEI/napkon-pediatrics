@@ -1,5 +1,5 @@
 // Author: Gregor Lichtner
-// Berlin Institute of Health | Charité
+// Charité - Universitätsmedizin Berlin
 RuleSet: napkon-metadata(date, status, version)
 * ^status = {status}
 * ^version = "{version}"

@@ -5,7 +5,7 @@ Parent: $mii-medication-statement
 Id: immunosuppresive-permanent-medication
 Title: "Immunosuppresive Permanent Medication"
 Description: "Immunosuppresive Permanent Medication"
-* insert napkon-metadata(2021-09-13, #draft, 0.1.0)
+* insert napkon-metadata(2021-09-13, #active, 1.0.0)
 * medicationCodeableConcept
   * coding ^slicing.discriminator[0].type = #pattern
   * coding ^slicing.discriminator[0].path = "$this"

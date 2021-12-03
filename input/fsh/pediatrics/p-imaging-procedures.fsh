@@ -5,7 +5,7 @@ Parent: $mii-procedure
 Id: imaging-procedures
 Title: "Imaging Procedures"
 Description: "Records an application of a radiological imaging procedures performed on the patient (COVID-19 imaging procedures)"
-* insert napkon-metadata(2021-09-23, #draft, 0.1.0)
+* insert napkon-metadata(2021-09-23, #active, 1.0.0)
 * category 1..1 MS
   * coding[sct] 1..1
   * coding[sct] = $sct#103693007 "Diagnostic procedure (procedure)"

@@ -5,7 +5,7 @@ Parent: ImagingStudy
 Id: pediatric-imaging-study
 Title: "Pediatric Imaging Study"
 Description: "Records an application of a radiological imaging procedures performed on the patient (COVID-19 imaging procedures)"
-* insert napkon-metadata(2021-09-23, #draft, 0.1.0)
+* insert napkon-metadata(2021-09-23, #active, 1.0.0)
 * insert mii-patient-reference
 * status = #registered
 * modality 1..* MS

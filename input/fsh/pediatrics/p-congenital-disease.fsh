@@ -5,7 +5,7 @@ Parent: $gecco-base-condition
 Id: congenital-disease
 Title: "Congenital Disease"
 Description: "Congenital disease in the context of the NAPKON pediatrics module"
-* insert napkon-metadata(2021-11-17, #draft, 0.1.0)
+* insert napkon-metadata(2021-11-17, #active, 1.0.0)
 * category 1..* MS
   * coding ^slicing.discriminator[0].type = #pattern
   * coding ^slicing.discriminator[0].path = "$this"

@@ -4,7 +4,7 @@ ValueSet: Covid19SymptomsICD10GM
 Id: covid-19-symptoms-icd-10-gm
 Title: "Covid19 symptoms"
 Description: "Symptoms due to COVID19"
-* insert napkon-metadata(2020-11-11, #draft, 0.1.0)
+* insert napkon-metadata(2020-11-11, #active, 1.0.0)
 * $icd10-gm#R07.0 "Halsschmerzen" // Halschmerzen
 * $icd10-gm#R19.88 "Sonstige näher bezeichnete Symptome, die das Verdauungssystem und das Abdomen betreffen" // Schluckbeschwerden
 * $icd10-gm#G25.3 "Myoklonus" // Myoklonien

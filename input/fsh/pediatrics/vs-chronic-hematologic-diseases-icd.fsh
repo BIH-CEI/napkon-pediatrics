@@ -4,7 +4,7 @@ ValueSet: ChronicHematologicDiseasesICD
 Id: chronic-Hematologic-diseases-icd
 Title: "Chronic hematologic diseases (ICD10-GM)"
 Description: "Chronic hematologic diseases in the context of pediatrics and COVID-19"
-* insert napkon-metadata(2021-08-04, #draft, 0.1.0)
+* insert napkon-metadata(2021-08-04, #active, 1.0.0)
 * include codes from system $icd10-gm where concept regex /^D5[5-9]\..*/ and child exists false // Hämolytische Anämien (D55-D59), Thalassämie D56, G6PD-Mangel-Anämie - D55, Sichelzellanämie - D57
 * include codes from system $icd10-gm where concept regex /^D50\..*/ and child exists false // Eisenmangelanämie - D50.- Eisenmangelanämie
 * include codes from system $icd10-gm where concept regex /^D70\..*/ and child exists false // chronische Neutropenie - D70

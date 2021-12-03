@@ -5,7 +5,7 @@ Parent: $gecco-vital-signs-base
 Id: birth-height-percentiles
 Title: "Birth Height with unit percentiles"
 Description: "Birth Height with unit percentiles in context of Pediatrics"
-* insert napkon-metadata(2021-08-10, #draft, 0.1.0)
+* insert napkon-metadata(2021-08-10, #active, 1.0.0)
 * insert mii-patient-reference
 * code 1..1
   * coding 1..*

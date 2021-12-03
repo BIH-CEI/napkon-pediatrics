@@ -5,7 +5,7 @@ Parent: $gecco-base-condition
 Id: fungal-infection
 Title: "Fungal Infection"
 Description: "Occurrence of a fungal infection"
-* insert napkon-metadata(2021-09-22, #draft, 0.1.0)
+* insert napkon-metadata(2021-09-22, #active, 1.0.0)
 * category 1..* MS
   * coding ^slicing.discriminator[0].type = #pattern
   * coding ^slicing.discriminator[0].path = "$this"

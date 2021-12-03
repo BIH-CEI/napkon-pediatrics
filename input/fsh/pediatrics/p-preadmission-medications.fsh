@@ -5,6 +5,7 @@ Parent: List
 Id: preadmission-medications
 Title: "Preadmission Medications"
 Description: "List of medications taken before admission to a hospital"
+* insert napkon-metadata(2021-12-03, #active, 1.0.0)
 * insert mii-patient-reference
 * code 1..1 MS
 * code = $sct#394829006 "Past medication (situation)"

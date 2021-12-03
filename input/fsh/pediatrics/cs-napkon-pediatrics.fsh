@@ -4,6 +4,7 @@ CodeSystem: NapkonPediatricsModule
 Id: napkon-pediatrics-module
 Title: "NapkonPediatricsModule"
 Description: "NAPKON Pediatrics Module Code System - Collection of pediatrics module-specific codes that are missing from common terminologies such as SNOMED CT"
+* insert napkon-metadata(2021-12-03, #active, 1.0.0)
 * #P1 "Sphingosine analogue"
 * #P2 "Interleukin 2 receptor antagonist"
 * #P3 "Interleukin 17 receptor antagonist"

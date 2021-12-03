@@ -4,6 +4,7 @@ ValueSet: LaboratoryTests
 Id: laboratory-tests
 Title: "Laboratory Tests"
 Description: "Laboratory tests in the context of NAPKON Pediatrics Module"
+* insert napkon-metadata(2021-12-03, #active, 1.0.0)
 * $loinc#42908-4 "Hematocrit [Volume Fraction] of Capillary blood"
 * $loinc#41654-5 "Hematocrit [Volume Fraction] of Venous blood"
 * $loinc#32354-3 "Hematocrit [Volume Fraction] of Arterial blood"

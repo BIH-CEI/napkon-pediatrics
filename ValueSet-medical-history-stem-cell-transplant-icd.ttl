@@ -13,10 +13,10 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> version <code>2022</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>Z94.80</td><td>Zustand nach hämatopoetischer Stammzelltransplantation ohne gegenwärtige Immunsuppression</td></tr><tr><td>Z94.81</td><td>Zustand nach hämatopoetischer Stammzelltransplantation mit gegenwärtiger Immunsuppression</td></tr></table></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "https://www.napkon.de/fhir/ValueSet/medical-history-stem-cell-transplant-icd"];
-  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.version [ fhir:value "1.0.0"];
   fhir:ValueSet.name [ fhir:value "MedicalHistoryStemCellTransplantICD"];
   fhir:ValueSet.title [ fhir:value "Medical History Stem Cell Transplants ICD"];
-  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.status [ fhir:value "active"];
   fhir:ValueSet.date [ fhir:value "2021-10-08"^^xsd:date];
   fhir:ValueSet.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
   fhir:ValueSet.contact [

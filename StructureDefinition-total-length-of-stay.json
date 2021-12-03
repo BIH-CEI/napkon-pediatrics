@@ -16,10 +16,10 @@
     }
   ],
   "url": "https://www.napkon.de/fhir/StructureDefinition/total-length-of-stay",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "TotalLengthOfStay",
   "title": "Total length of stay",
-  "status": "draft",
+  "status": "active",
   "date": "2021-09-15",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [

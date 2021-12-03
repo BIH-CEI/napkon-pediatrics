@@ -16,10 +16,10 @@
     }
   ],
   "url": "https://www.napkon.de/fhir/StructureDefinition/birth-height",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "BirthHeight",
   "title": "Birth Height",
-  "status": "draft",
+  "status": "active",
   "date": "2021-08-10",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [

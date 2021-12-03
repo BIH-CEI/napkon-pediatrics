@@ -6,10 +6,10 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  40701008 (Echocardiography)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  450436003 (Positron emission tomography with computed tomography)</li></ul></div>
   </text>
   <url value="https://www.napkon.de/fhir/ValueSet/imaging-procedures-sct"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="ImagingProceduresSCT"/>
   <title value="Value Set of imaging procedures from SNOMED CT"/>
-  <status value="draft"/>
+  <status value="active"/>
   <date value="2021-09-23"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>

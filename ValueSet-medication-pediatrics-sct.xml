@@ -6,10 +6,10 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  7947003 (Product containing aspirin (medicinal product))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  333711001 (Product containing human immunoglobulin (medicinal product))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  444649004 (Product containing tocilizumab (medicinal product))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  395279009 (Product containing anakinra (medicinal product))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  373213009 (Inotropic agent (substance))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  870406003 (Vasopressor)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  346325008 (Medicinal product acting as antibacterial agent (product))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  26370007 (Hemostatic agent)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  410652009 (Blood product (product))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  372580007 (Bronchodilator (substance))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  409378005 (Product containing nitric oxide (medicinal product))</li></ul></div>
   </text>
   <url value="https://www.napkon.de/fhir/ValueSet/medication-pediatrics-sct"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="MedicationPediatricsSCT"/>
   <title value="Medication Pediatrics SNOMED CT"/>
-  <status value="draft"/>
+  <status value="active"/>
   <date value="2021-09-23"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>

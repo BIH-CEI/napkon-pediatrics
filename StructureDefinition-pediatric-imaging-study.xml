@@ -18,10 +18,10 @@
     <valueCode value="patient"/>
   </extension>
   <url value="https://www.napkon.de/fhir/StructureDefinition/pediatric-imaging-study"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="PediatricImagingStudy"/>
   <title value="Pediatric Imaging Study"/>
-  <status value="draft"/>
+  <status value="active"/>
   <date value="2021-09-23"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>

@@ -16,10 +16,10 @@
     }
   ],
   "url": "https://www.napkon.de/fhir/StructureDefinition/head-circumference",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "HeadCircumference",
   "title": "Head circumference",
-  "status": "draft",
+  "status": "active",
   "date": "2021-08-10",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [

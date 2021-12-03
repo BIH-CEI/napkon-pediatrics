@@ -16,11 +16,11 @@
     }
   ],
   "url": "https://www.napkon.de/fhir/StructureDefinition/preadmission-medications",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "PreadmissionMedications",
   "title": "Preadmission Medications",
   "status": "active",
-  "date": "2021-12-02T17:22:35+00:00",
+  "date": "2021-12-03T09:19:30+00:00",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [
     {

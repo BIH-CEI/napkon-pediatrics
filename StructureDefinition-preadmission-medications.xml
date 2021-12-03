@@ -21,11 +21,11 @@
     <valueCode value="not-classified"/>
   </extension>
   <url value="https://www.napkon.de/fhir/StructureDefinition/preadmission-medications"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="PreadmissionMedications"/>
   <title value="Preadmission Medications"/>
   <status value="active"/>
-  <date value="2021-12-02T17:22:35+00:00"/>
+  <date value="2021-12-03T09:19:30+00:00"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
     <name value="Charité - Universitätsmedizin Berlin"/>

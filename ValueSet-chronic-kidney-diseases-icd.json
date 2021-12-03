@@ -6,10 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^Q6[0-4].* and child doesn't exist</li></ul></div>"
   },
   "url": "https://www.napkon.de/fhir/ValueSet/chronic-kidney-diseases-icd",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "ChronicKidneyDiseasesICD",
   "title": "Value Set of Chronic Kidney Diseases",
-  "status": "draft",
+  "status": "active",
   "date": "2021-10-18",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [

@@ -23,11 +23,11 @@
      fhir:Extension.valueCode [ fhir:value "not-classified" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "https://www.napkon.de/fhir/StructureDefinition/preadmission-medications"];
-  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
+  fhir:StructureDefinition.version [ fhir:value "1.0.0"];
   fhir:StructureDefinition.name [ fhir:value "PreadmissionMedications"];
   fhir:StructureDefinition.title [ fhir:value "Preadmission Medications"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-12-02T17:22:35+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-12-03T09:19:30+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

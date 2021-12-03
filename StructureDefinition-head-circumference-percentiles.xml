@@ -34,10 +34,10 @@
     <valueCode value="patient"/>
   </extension>
   <url value="https://www.napkon.de/fhir/StructureDefinition/head-circumference-percentiles"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="HeadCircumferencePercentiles"/>
   <title value="Head circumference with unit percentiles"/>
-  <status value="draft"/>
+  <status value="active"/>
   <date value="2021-08-10"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>

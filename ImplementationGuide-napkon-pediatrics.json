@@ -6,10 +6,10 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>napkonpediatrics</h2><p>The official URL for this implementation guide is: </p><pre>https://www.napkon.de/fhir/ImplementationGuide/napkon-pediatrics</pre></div>"
   },
   "url": "https://www.napkon.de/fhir/ImplementationGuide/napkon-pediatrics",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "napkonpediatrics",
-  "status": "draft",
-  "date": "2021-12-02T17:22:35+00:00",
+  "status": "active",
+  "date": "2021-12-03T09:19:30+00:00",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [
     {
@@ -94,7 +94,7 @@
           },
           {
             "url": "value",
-            "valueString": "ci-build"
+            "valueString": "trial-use"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"

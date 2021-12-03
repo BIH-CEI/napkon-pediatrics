@@ -6,10 +6,10 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  2631000119108 (History of bone marrow transplant)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  153351000119102 (History of peripheral stem cell transplant (situation))</li></ul></div>
   </text>
   <url value="https://www.napkon.de/fhir/ValueSet/medical-history-stem-cell-transplant"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="MedicalHistoryStemCellTransplant"/>
   <title value="Medical History Stem Cell Transplants"/>
-  <status value="draft"/>
+  <status value="active"/>
   <date value="2021-10-08"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>

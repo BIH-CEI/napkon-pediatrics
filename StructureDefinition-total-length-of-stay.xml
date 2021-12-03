@@ -33,10 +33,10 @@
     <valueCode value="patient"/>
   </extension>
   <url value="https://www.napkon.de/fhir/StructureDefinition/total-length-of-stay"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="TotalLengthOfStay"/>
   <title value="Total length of stay"/>
-  <status value="draft"/>
+  <status value="active"/>
   <date value="2021-09-15"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>

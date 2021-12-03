@@ -3,7 +3,7 @@
 
 err = 20, warn = 66, info = 9
 IG Publisher Version: 1.1.83 Out of date - current version is 1.1.89
-Generated Fri Dec 03 09:22:08 UTC 2021. FHIR version 4.0.1 for napkon-pediatrics#1.0.0 (canonical = https://www.napkon.de/fhir)
+Generated Fri Dec 03 10:02:17 UTC 2021. FHIR version 4.0.1 for napkon-pediatrics#1.0.0 (canonical = https://www.napkon.de/fhir)
  Build Errors : 1572 / 8 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-napkon-pediatrics-module : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-BacterialInfectionConfirmed : 0 / 0 / 1

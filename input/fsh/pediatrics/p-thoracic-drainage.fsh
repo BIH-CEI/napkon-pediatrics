@@ -5,7 +5,7 @@ Parent: $mii-procedure
 Id: thoracic-drainage
 Title: "Thoracic Drainge"
 Description: "Application of a thoracic drainage"
-* insert napkon-metadata(2021-09-13, #draft, 0.1.0)
+* insert napkon-metadata(2021-09-13, #active, 1.0.0)
 * status from RestrictedEventStatus
 * category 1..1 MS
   * coding[sct] 1..1

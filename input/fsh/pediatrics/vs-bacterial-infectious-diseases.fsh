@@ -4,7 +4,7 @@ ValueSet: BacterialInfectiousDiseases
 Id: bacterial-infectious-diseases
 Title: "Bacterial Infectious Diseases"
 Description: "Value set of bacterial infections"
-* insert napkon-metadata(2021-10-04, #draft, 0.1.0)
+* insert napkon-metadata(2021-10-04, #active, 1.0.0)
 * $sct#27836007 "Pertussis (disorder)" // Bordetella pertussis
 * $sct#186464008 "Mycoplasma infection (disorder)" // Mykoplasmen
 * $sct#105629000 "Chlamydial infection (disorder)" // Chlamydien

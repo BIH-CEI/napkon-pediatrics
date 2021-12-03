@@ -5,7 +5,7 @@ Parent: $gecco-base-condition
 Id: medical-history-stem-cell-transplant
 Title: "Medical History Stem Cells Transplant"
 Description: "This profile describes a stem cell transplant for a pediatric patient."
-* insert napkon-metadata(2021-09-23, #draft, 0.1.0)
+* insert napkon-metadata(2021-09-23, #active, 1.0.0)
 * insert mii-patient-reference
 * category 1..* MS
   * coding 1..1

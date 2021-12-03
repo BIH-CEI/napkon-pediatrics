@@ -5,11 +5,11 @@
 id: "napkon-pediatrics"
 canonical: "https://www.napkon.de/fhir"
 name: "napkon-pediatrics"
-status: "draft"
-version: "0.1.0"
+status: "active"
+version: "1.0.0"
 fhirVersion: "4.0.1"
 copyrightYear: 2021+
-releaseLabel: ci-build
+releaseLabel: trial-use
 publisher:
   name: "Charité - Universitätsmedizin Berlin"
   url: "https://www.netzwerk-universitaetsmedizin.de"

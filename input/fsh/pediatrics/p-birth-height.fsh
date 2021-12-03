@@ -5,7 +5,7 @@ Parent: $gecco-body-height
 Id: birth-height
 Title: "Birth Height"
 Description: "Birth Height of a patient in context of Pediatrics"
-* insert napkon-metadata(2021-08-10, #draft, 0.1.0)
+* insert napkon-metadata(2021-08-10, #active, 1.0.0)
 * code 1..1
   * coding 1..*
   * coding contains

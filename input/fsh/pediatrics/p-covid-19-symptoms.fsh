@@ -4,7 +4,7 @@ Profile: Covid19Symptoms
 Parent: $gecco-base-condition
 Id: covid19-symptoms
 Description: "Cover additional Covid 19 symptoms"
-* insert napkon-metadata(2021-11-10, #draft, 0.1.0)
+* insert napkon-metadata(2021-11-10, #active, 1.0.0)
 * category 1..* MS
   * coding ^slicing.discriminator[0].type = #pattern
   * coding ^slicing.discriminator[0].path = "$this"

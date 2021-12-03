@@ -5,7 +5,7 @@ Parent: $mii-observation-lab
 Id: sars-cov2-rt-pcr-specimen
 Title: "SARS-CoV-2 RT PCR Specimen"
 Description: "Qualitative detection of SARS-CoV-2 in specimens by RT-PCR"
-* insert napkon-metadata(2021-11-09, #draft, 0.1.0)
+* insert napkon-metadata(2021-11-09, #active, 1.0.0)
 * insert mii-patient-reference
 * code 1..1 MS
   * coding 1.. MS

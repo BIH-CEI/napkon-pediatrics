@@ -2,7 +2,7 @@
 // Charité - Universitätsmedizin Berlin
 ValueSet: ViralInfectiousDiseases
 Id: viral-infectious-diseases
-* insert napkon-metadata(2021-05-28, #draft, 0.1.0)
+* insert napkon-metadata(2021-05-28, #active, 1.0.0)
 * $sct#55735004 "Respiratory syncytial virus infection (disorder)" // RSV-Infektion
 * $sct#6142004 "Influenza (disorder)" // Influenza
 * $sct#1087141000119106 "Human metapneumovirus infection (disorder)" // Humanes Metapneumovirus

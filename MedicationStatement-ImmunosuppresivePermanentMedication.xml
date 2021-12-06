@@ -6,12 +6,12 @@
     <profile value="https://www.napkon.de/fhir/StructureDefinition/immunosuppresive-permanent-medication"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>medication</b>: <span title="Codes: {https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module P7}, {http://fhir.de/CodeSystem/bfarm/atc L01XC19}">Anti-CD3/CD19 antibody</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>effective</b>: Sep 14, 2021, 11:06:00 AM</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>medication</b>: <span title="Codes: {https://www.napkon.de/fhir/CodeSystem/napkon-pediatrics-module P7}, {http://fhir.de/CodeSystem/bfarm/atc L01XC19}">Anti-CD3/CD19 antibody</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: Medical record number: napkon-example-patient; maxi musterperson (OFFICIAL); gender: unknown; birthDate: 1990-08-08</a></p><p><b>effective</b>: Sep 14, 2021, 11:06:00 AM</p></div>
   </text>
   <status value="completed"/>
   <medicationCodeableConcept>
     <coding>
-      <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module"/>
+      <system value="https://www.napkon.de/fhir/CodeSystem/napkon-pediatrics-module"/>
       <code value="P7"/>
       <display value="Anti-CD3/CD19 antibody"/>
     </coding>

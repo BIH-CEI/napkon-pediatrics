@@ -1,9 +1,9 @@
 ﻿napkonpediatrics : Validation Results
 =========================================
 
-err = 20, warn = 66, info = 9
-IG Publisher Version: 1.1.83 Out of date - current version is 1.1.89
-Generated Fri Dec 03 10:02:17 UTC 2021. FHIR version 4.0.1 for napkon-pediatrics#1.0.0 (canonical = https://www.napkon.de/fhir)
+err = 21, warn = 64, info = 7
+IG Publisher Version: 1.1.83 Out of date - current version is 1.1.90
+Generated Mon Dec 06 21:01:05 UTC 2021. FHIR version 4.0.1 for napkon-pediatrics#1.0.0 (canonical = https://www.napkon.de/fhir)
  Build Errors : 1572 / 8 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-napkon-pediatrics-module : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-BacterialInfectionConfirmed : 0 / 0 / 1
@@ -25,7 +25,7 @@ Generated Fri Dec 03 10:02:17 UTC 2021. FHIR version 4.0.1 for napkon-pediatrics
  /github/workspace/fsh-generated/resources/ImagingStudy-ImagingStudyPTHeart : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-napkon-pediatrics : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/List-preadmission-medications : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/MedicationStatement-ImmunosuppresivePermanentMedication : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/MedicationStatement-ImmunosuppresivePermanentMedication : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationStatement-PediatricMedicationATCDE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationStatement-PediatricMedicationSCT : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Observation-IntensiveCareTreatmentDuration : 0 / 0 / 1
@@ -90,7 +90,7 @@ Generated Fri Dec 03 10:02:17 UTC 2021. FHIR version 4.0.1 for napkon-pediatrics
  /github/workspace/fsh-generated/resources/ValueSet-gastrointestinal-diseases-sct : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-imaging-procedures-dicom : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-imaging-procedures-sct : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-immunosuppressive-permament-medications : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-immunosuppressive-permament-medications : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-immunosuppressive-permament-medications-atc : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-laboratory-tests : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-medical-history-stem-cell-transplant : 0 / 0 / 1
@@ -1716,8 +1716,6 @@ WARNING: ImplementationGuide/napkon-pediatrics: ImplementationGuide.definition.r
 WARNING: ImplementationGuide/napkon-pediatrics: ImplementationGuide.definition.resource[69].description: value should not start or finish with whitespace
 == fsh-generated/resources/List-preadmission-medications.json ==
 == fsh-generated/resources/MedicationStatement-ImmunosuppresivePermanentMedication.json ==
-INFORMATION: MedicationStatement/ImmunosuppresivePermanentMedication: MedicationStatement.medication.ofType(CodeableConcept).coding[0]: Code System URI 'https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module' is unknown so the code cannot be validated
-INFORMATION: MedicationStatement/ImmunosuppresivePermanentMedication: MedicationStatement.medication.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile https://www.napkon.de/fhir/StructureDefinition/immunosuppresive-permanent-medication
 == fsh-generated/resources/MedicationStatement-PediatricMedicationATCDE.json ==
 == fsh-generated/resources/MedicationStatement-PediatricMedicationSCT.json ==
 INFORMATION: MedicationStatement/PediatricMedicationSCT: MedicationStatement.medication.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile https://www.napkon.de/fhir/StructureDefinition/pediatric-medication
@@ -1841,8 +1839,7 @@ WARNING: ValueSet.where(id = 'gastrointestinal-diseases-icd'): Error from server
 == fsh-generated/resources/ValueSet-imaging-procedures-dicom.json ==
 == fsh-generated/resources/ValueSet-imaging-procedures-sct.json ==
 == fsh-generated/resources/ValueSet-immunosuppressive-permament-medications.json ==
-WARNING: ValueSet/immunosuppressive-permament-medications: ValueSet.compose[0].include[2]: Unknown System specified, so Concepts and Filters can''t be checked
-WARNING: ValueSet.where(id = 'immunosuppressive-permament-medications'): Error from server: Unable to provide support for code system https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/napkon-pediatrics-module
+ERROR: ValueSet.where(id = 'immunosuppressive-permament-medications'): Error from server: The filter "concept is-a #768759001" was not understood in the context of http://snomed.info/sct
 == fsh-generated/resources/ValueSet-immunosuppressive-permament-medications-atc.json ==
 == fsh-generated/resources/ValueSet-laboratory-tests.json ==
 == fsh-generated/resources/ValueSet-medical-history-stem-cell-transplant.json ==

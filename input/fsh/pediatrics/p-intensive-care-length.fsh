@@ -5,7 +5,7 @@ Parent: Observation
 Id: intensive-care-treatment-duration
 Title: "Intensive care treatment duration"
 Description: "Duration of intensive care treatment"
-* insert napkon-metadata(2021-09-15, #draft, 0.1.0)
+* insert napkon-metadata(2021-09-15, #active, 1.0.0)
 * insert mii-patient-reference
 * code
   * coding ^slicing.discriminator[0].type = #pattern

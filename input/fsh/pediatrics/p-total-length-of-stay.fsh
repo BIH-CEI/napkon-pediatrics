@@ -5,7 +5,7 @@ Parent: Observation
 Id: total-length-of-stay
 Title: "Total length of stay"
 Description: "Total length of stay"
-* insert napkon-metadata(2021-09-15, #draft, 0.1.0)
+* insert napkon-metadata(2021-09-15, #active, 1.0.0)
 * insert mii-patient-reference
 * code
   * coding ^slicing.discriminator[0].type = #pattern

@@ -5,7 +5,7 @@ Parent: $gecco-base-condition
 Id: gastrointestinal-diseases
 Title: "Gastrointestinal Diseases"
 Description: "Gastrointestinal diseases in the field of pediatrics as a risk factor for a severe course of an infection with SARS-CoV-2."
-* insert napkon-metadata(2021-08-10, #draft, 0.1.0)
+* insert napkon-metadata(2021-08-10, #active, 1.0.0)
 * category 1..* MS
   * coding ^slicing.discriminator[0].type = #pattern
   * coding ^slicing.discriminator[0].path = "$this"

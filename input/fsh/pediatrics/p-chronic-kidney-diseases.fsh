@@ -5,7 +5,7 @@ Parent: $gecco-base-condition
 Id: chronic-kidney-diseases
 Title: "Chronic Kidney Diseases"
 Description: "Chronic kidney diseases in the context of pediatrics"
-* insert napkon-metadata(2021-10-18, #draft, 0.1.0)
+* insert napkon-metadata(2021-10-18, #active, 1.0.0)
 * insert mii-patient-reference
 * category 1..* MS
   * coding 1..1

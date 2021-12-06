@@ -5,7 +5,7 @@ Parent: $gecco-base-condition
 Id: viral-infection
 Title: "Viral Infection"
 Description: "Occurrence of a viral infection"
-* insert napkon-metadata(2021-10-03, #draft, 0.1.0)
+* insert napkon-metadata(2021-10-03, #active, 1.0.0)
 * insert mii-patient-reference
 * category 1..* MS
   * coding ^slicing.discriminator[0].type = #pattern

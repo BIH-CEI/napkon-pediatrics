@@ -4,7 +4,7 @@ ValueSet: Covid19SymptomsSCT
 Id: covid-19-symptoms
 Title: "Covid19 symptoms"
 Description: "Symptoms due to COVID19"
-* insert napkon-metadata(2020-11-11, #draft, 0.1.0)
+* insert napkon-metadata(2020-11-11, #active, 1.0.0)
 * $sct#162397003 "Pain in throat (finding)" // Halsschmerzen
 * $sct#30233002 "Swallowing painful (finding)" // Schluckbeschwerden
 * $sct#17450006 "Myoclonus (finding)" // Myoklonien

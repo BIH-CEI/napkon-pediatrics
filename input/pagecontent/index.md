@@ -1,6 +1,6 @@
 ### Summary
 
-The [NAPKON] module is an extension module to the [German Corona Consensus Dataset (GECCO)][GECCO].
+The [NAPKON] Pediatrics Module is an extension module to the [German Corona Consensus Dataset (GECCO)][GECCO].
 
 It was created in the context of the [National Pandemic Cohort Network (NAPKON)][NAPKON] project of the [National University Medicine Research Network on COVID-19 (NUM)][NUM].
 
@@ -35,6 +35,6 @@ It was created in the context of the [National Pandemic Cohort Network (NAPKON)]
 * [Nationales Pandemie Kohorten Netz (NAPKON)][NAPKON]
 * [German Corona Consensus Dataset (GECCO)][GECCO]
 * [GitHub project](https://github.com/BIH-CEI/{{site.data.fhir.packageId}}/)
-* [Dataset description in ART-DECOR](https://github.com/BIH-CEI/{{site.data.fhir.packageId}}/)
+* [Dataset description in ART-DECOR](https://art-decor.org/art-decor/decor-datasets--covid19f-?id=2.16.840.1.113883.3.1937.777.53.1.2&effectiveDate=2020-08-12T00%3A00%3A00&conceptId=2.16.840.1.113883.3.1937.777.53.2.12&conceptEffectiveDate=2020-09-18T09%3A20%3A12&language=en-US)
 
 {% include link-list.md %}

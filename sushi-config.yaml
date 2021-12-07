@@ -5,6 +5,7 @@
 id: "napkon-pediatrics"
 canonical: "https://www.napkon.de/fhir"
 name: "napkon-pediatrics"
+title: "NAPKON Pediatrics Module"
 status: "active"
 version: "1.0.0"
 fhirVersion: "4.0.1"

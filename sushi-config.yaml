@@ -39,7 +39,7 @@ dependencies:
 
 pages:
   index.md:
-    title: NAPKON Module Template
+    title: NAPKON Pediatrics Module
   profiles.md:
   codesystems.md:
     title: Code Systems

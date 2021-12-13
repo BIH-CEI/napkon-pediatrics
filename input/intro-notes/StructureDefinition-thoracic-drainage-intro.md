@@ -6,19 +6,21 @@
 
 | Parameter Case Report Form | FHIR Resource Attribute |
 | -------------------------- | ----------------------- |
-| ... | `...` |
+| Application of a thoracic drainage | `Prcodedure.code` |
 {:.grid}
 
 | Parameter Case Report Form | Response Options |
 | -------------------------- | ---------------- |
-| ... | ... |
+| Application of a thoracic drainage | Yes / No / Unknown |
 {:.grid}
 
 | Response Option | Code |
 | ------ | ---- |
-| ... | `...` |
+| Yes,currently | `#in-progress` |
+| Yes | `#completed` |
+| No | `#not-done` |
+| Unknown | `#unknown` |
 {:.grid}
-
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

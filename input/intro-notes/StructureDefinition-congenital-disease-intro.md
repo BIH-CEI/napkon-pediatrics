@@ -6,19 +6,8 @@
 
 | Parameter Case Report Form | FHIR Resource Attribute |
 | -------------------------- | ----------------------- |
-| ... | `...` |
+| Does the patient suffer from a congenital disease? Which congenital disease does the patient suffer from? | `Condition.code` |
 {:.grid}
-
-| Parameter Case Report Form | Response Options |
-| -------------------------- | ---------------- |
-| ... | ... |
-{:.grid}
-
-| Response Option | Code |
-| ------ | ---- |
-| ... | `...` |
-{:.grid}
-
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

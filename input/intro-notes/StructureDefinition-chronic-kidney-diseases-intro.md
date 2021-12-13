@@ -6,17 +6,13 @@
 
 | Parameter Case Report Form | FHIR Resource Attribute |
 | -------------------------- | ----------------------- |
-| ... | `...` |
+| Does the patient suffer from a chronic kidney disease? Which chronic kidney disease does the patient suffer from? | `Condition.code` |
 {:.grid}
 
-| Parameter Case Report Form | Response Options |
-| -------------------------- | ---------------- |
-| ... | ... |
-{:.grid}
-
-| Response Option | Code |
+| Response Option | Condition.Code |
 | ------ | ---- |
-| ... | `...` |
+| Angeborene Erkrankung der Nieren | `Kidney disease where Occurrence = Congenital` |
+| Angeborene Erkrankung der Harnwege | `Disorder of the urinary system where Occurrence = Congenital` |
 {:.grid}
 
 

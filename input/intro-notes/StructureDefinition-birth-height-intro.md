@@ -4,21 +4,12 @@
 
 ### Guidance
 
-| Parameter Case Report Form | FHIR Resource Attribute |
-| -------------------------- | ----------------------- |
-| ... | `...` |
-{:.grid}
-
 | Parameter Case Report Form | Response Options |
 | -------------------------- | ---------------- |
-| ... | ... |
+| Body height at birth | Body height in cm |
 {:.grid}
 
-| Response Option | Code |
-| ------ | ---- |
-| ... | `...` |
-{:.grid}
-
+The body height may be specified as a specific percentile value (e.g. 52 cm) in Observation.valueQuantity.
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

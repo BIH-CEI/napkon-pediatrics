@@ -6,19 +6,15 @@
 
 | Parameter Case Report Form | FHIR Resource Attribute |
 | -------------------------- | ----------------------- |
-| ... | `...` |
+| Duration of inpatient stay | `Observation.code` |
 {:.grid}
 
 | Parameter Case Report Form | Response Options |
 | -------------------------- | ---------------- |
-| ... | ... |
+| Duration of inpatient stay | uration of inpatient stay as explicit value in days |
 {:.grid}
 
-| Response Option | Code |
-| ------ | ---- |
-| ... | `...` |
-{:.grid}
-
+The duration of inpatient stay may be specified as a specific value (e.g. 14) in Observation.valueQuantity.
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

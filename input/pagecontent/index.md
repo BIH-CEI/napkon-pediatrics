@@ -6,7 +6,7 @@ It was created in the context of the [National Pandemic Cohort Network (NAPKON)]
 
 ### Authors
 * [Gregor Lichtner](https://github.com/glichtner) (Berlin Institute of Health (BIH))
-* [Thomas Haese](https://github.com/thaese) (Berlin Institute of Health (BIH))
+* [Thomas Haese](https://github.com/thaese) (Charité -- Universitätsmedizin Berlin)
 * [Sally Lucie Brose](https://github.com/BroseS8927) (Berlin Institute of Health (BIH))
 * [Larissa Röhrig](https://github.com/Larissa-MR) (Berlin Institute of Health (BIH))
 

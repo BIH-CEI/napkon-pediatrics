@@ -6,19 +6,14 @@
 
 | Parameter Case Report Form | FHIR Resource Attribute |
 | -------------------------- | ----------------------- |
-| ... | `...` |
-{:.grid}
-
-| Parameter Case Report Form | Response Options |
-| -------------------------- | ---------------- |
-| ... | ... |
+| Fungal infections in the context of co-infections | `Condition.code` |
 {:.grid}
 
 | Response Option | Code |
 | ------ | ---- |
 | ... | `...` |
 {:.grid}
-
+TODO: Wie "include[...]" abbilden? Reicht das über das VS?
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

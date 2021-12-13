@@ -6,18 +6,22 @@
 
 | Parameter Case Report Form | FHIR Resource Attribute |
 | -------------------------- | ----------------------- |
-| ... | `...` |
-{:.grid}
-
-| Parameter Case Report Form | Response Options |
-| -------------------------- | ---------------- |
-| ... | ... |
+| Viral infections in the context of co-infections | `Condition.code` |
 {:.grid}
 
 | Response Option | Code |
 | ------ | ---- |
-| ... | `...` |
+| RSV-Infektion | `Respiratory syncytial virus infection (disorder)` |
+| Influenza | `Influenza (disorder)` |
+| Humanes Metapneumovirus | `Human metapneumovirus infection (disorder)` |
+| Rhinoviren | `Disease caused by Rhinovirus (disorder)` |
+| Adenoviren | `Disease caused by Adenovirus (disorder)` |
+| Bocaviren | `Disease caused by Human bocavirus (disorder)` |
+| Parainfluenzaviren | `Parainfluenza (disorder)` |
+| Andere Coronaviren | `Disease caused by Coronaviridae (disorder)` |
+| Andere | `...` |
 {:.grid}
+TODO: Andere angeben. Den Code trotzdem? oder leer lassen?
 
 
 {% capture resource_inheritance %}

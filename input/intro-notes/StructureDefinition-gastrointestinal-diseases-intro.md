@@ -6,17 +6,17 @@
 
 | Parameter Case Report Form | FHIR Resource Attribute |
 | -------------------------- | ----------------------- |
-| ... | `...` |
-{:.grid}
-
-| Parameter Case Report Form | Response Options |
-| -------------------------- | ---------------- |
-| ... | ... |
+| Does the patient suffer from a gastrointestinal disease? Which gastrointestinal disease does the patient suffer from? | `Condition.code` |
 {:.grid}
 
 | Response Option | Code |
 | ------ | ---- |
-| ... | `...` |
+| Chronische Obstipation | `Chronic constipation (disorder)` |
+| Chronisch entzündliche Darmerkrankung | `Inflammatory bowel disease` |
+| Zoeliakie | `Celiac disease (disorder)` |
+| Kuhmilchproteinallergie | `Allergy to cow's milk protein (finding)` |
+| Gallengangserkrankung | `Disorder of bile duct (disorder)` |
+| Andere | `Disorder of gastrointestinal tract (disorder)` |
 {:.grid}
 
 

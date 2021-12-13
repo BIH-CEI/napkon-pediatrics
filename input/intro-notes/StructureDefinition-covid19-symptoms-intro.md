@@ -6,17 +6,20 @@
 
 | Parameter Case Report Form | FHIR Resource Attribute |
 | -------------------------- | ----------------------- |
-| ... | `...` |
-{:.grid}
-
-| Parameter Case Report Form | Response Options |
-| -------------------------- | ---------------- |
-| ... | ... |
+| Symptoms due to COVID-19 | `Condition.code` |
 {:.grid}
 
 | Response Option | Code |
 | ------ | ---- |
-| ... | `...` |
+| Halsschmerzen | `Pain in throat (finding)` |
+| Schluckbeschwerden | `Swallowing painful (finding)` |
+| Myoklonien | `Myoclonus (finding)` |
+| Delir | `Delirium (disorder)` |
+| Exanthem | `Eruption of skin (disorder)` |
+| Palmarerythem | `Palmar erythema (disorder)` |
+| Erdbeerzunge | `Raspberry tongue (disorder)` |
+| Hepatomegalie | `Large liver (disorder)` |
+| Splenomegalie | `Splenomegaly (disorder)` |
 {:.grid}
 
 

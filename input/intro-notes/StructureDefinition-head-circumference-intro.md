@@ -6,10 +6,10 @@
 
 | Parameter Case Report Form | Response Options |
 | -------------------------- | ---------------- |
-| Head circumference | Head circumference in cm |
+| Head circumference | _Head circumference in cm_ |
 {:.grid}
 
-The body mass index may be specified as a specific value (e.g. 133 cm) in Observation.valueQuantity.
+The head circumference may be specified as a specific value (e.g. 35 cm) in `Observation.valueQuantity`.
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

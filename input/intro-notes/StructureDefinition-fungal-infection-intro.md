@@ -9,11 +9,16 @@
 | Fungal infections in the context of co-infections | `Condition.code` |
 {:.grid}
 
-| Response Option | Code |
+| Response Option | `Condition.code` |
 | ------ | ---- |
-| ... | `...` |
+| Candida albicans | `Infection caused by Candida albicans (disorder)` |
+| Aspergillus | `Aspergillosis (disorder)` |
+| Andere | Child codes of `Mycosis (disorder)` |
 {:.grid}
-TODO: Wie "include[...]" abbilden? Reicht das über das VS?
+
+* include codes from system $sct where concept is-a #83062006 "Infection caused by Candida albicans (disorder)"
+* include codes from system $sct where concept is-a #65553006 "Aspergillosis (disorder)"
+* include codes from system $sct where concept is-a #3218000 "Mycosis (disorder)"
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

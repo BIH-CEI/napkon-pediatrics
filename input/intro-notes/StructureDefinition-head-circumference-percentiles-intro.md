@@ -6,10 +6,10 @@
 
 | Parameter Case Report Form | Response Options |
 | -------------------------- | ---------------- |
-| Head circumference | Head circumference in percentiles |
+| Head circumference | _Head circumference percentile_ |
 {:.grid}
 
-The body mass index may be specified as a specific percentile value (e.g. 75 %) in Observation.valueQuantity.
+The head circumference may be specified as a specific percentile value (e.g. 75th percentile) in `Observation.valueQuantity`.
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

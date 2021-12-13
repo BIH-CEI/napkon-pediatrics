@@ -9,6 +9,8 @@
 | Does the patient suffer from a congenital disease? Which congenital disease does the patient suffer from? | `Condition.code` |
 {:.grid}
 
+The `snomed` slice of the `Condition.code` is restricted to a value set that contains all children of `#66091009 "Congenital disease (disorder)"`. The specific congenital disease that a patient suffers from can be specified using any of the respective chilc codes.
+
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})
 {% if resource.base contains 'https://www.medizininformatik-initiative.de/fhir' %}

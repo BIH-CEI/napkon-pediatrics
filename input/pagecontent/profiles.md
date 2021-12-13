@@ -21,8 +21,7 @@
 {% include resource-reference.md name='Preadmission Medications' %}
 
 ### Laboratory
-Laborwerte	SARS-CoV-2-RT-PCR (respiratorische Proben)			(gecco)
-
+{% include resource-explicit.md name='SARS-CoV-2 RT PCR (respiratory specimen)' link='gecco-sars-cov-2-rt-pcr.html' description='SARS-CoV-2 RT PCR in respiratory specimen' %}
 {% include resource-reference.md name='SARS-CoV-2 RT PCR Specimen' %}
 {% include resource-reference.md name='Specimen Excreta' %}
 

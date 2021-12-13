@@ -6,7 +6,7 @@
 
 | Parameter Case Report Form | Response Options |
 | -------------------------- | ---------------- |
-| Body mass index  |_ Body mass index percentile as explicit value_ |
+| Body mass index | _Body mass index percentile_ |
 {:.grid}
 
 The body mass index may be specified as a specific percentile value (e.g. 90th percentile) in `Observation.valueQuantity`.

@@ -3,7 +3,7 @@
 [Birth Height with unit percentiles]: StructureDefinition-birth-height-percentiles.html
 [Body Mass Index]: StructureDefinition-body-mass-index.html
 [Body Mass Index with unit percentiles]: StructureDefinition-body-mass-index-percentiles.html
-[Chronic Hematologic Diseases]: StructureDefinition-chronic-Hematologic-diseases.html
+[Chronic Hematologic Diseases]: StructureDefinition-chronic-hematologic-diseases.html
 [Chronic Kidney Diseases]: StructureDefinition-chronic-kidney-diseases.html
 [Congenital Disease]: StructureDefinition-congenital-disease.html
 [Covid19 complication]: StructureDefinition-covid19-complication.html

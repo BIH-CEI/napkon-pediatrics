@@ -1,7 +1,7 @@
 ### Medical history and risk factors
 {% include resource-reference.md name='Value Set of Gastrointestinal Diseases' %}
 {% include resource-reference.md name='Value Set of Gastrointestinal Diseases ICD' %}
-{% include resource-reference.md name='Value Set of Chronic Hematologic Diseases' %}
+{% include resource-reference.md name='Chronic Hematologic Diseases' %}
 {% include resource-reference.md name='Chronic hematologic diseases (ICD10-GM)' %}
 {% include resource-reference.md name='Value Set of Chronic Kidney Diseases' %}
 {% include resource-reference.md name='Congenital Diseases' %}

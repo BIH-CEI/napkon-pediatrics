@@ -10,7 +10,7 @@ definition:
     page:
     - generation: markdown
       nameUrl: index.html
-      title: NAPKON Module Template
+      title: NAPKON Pediatrics Module
     - generation: markdown
       nameUrl: profiles.html
       title: Profiles
@@ -37,7 +37,7 @@ definition:
   - code: copyrightyear
     value: 2021+
   - code: releaselabel
-    value: ci-build
+    value: trial-use
   - code: active-tables
     value: 'true'
   - code: apply-contact
@@ -94,12 +94,12 @@ definition:
     name: Body Mass Index with unit percentiles
     reference:
       reference: StructureDefinition/body-mass-index-percentiles
-  - description: Chronic Hematologic diseases as a risk factor for a severe course
+  - description: Chronic hematologic diseases as a risk factor for a severe course
       of an infection with SARS-CoV-2 in the context of pediatrics
     exampleBoolean: false
     name: Chronic Hematologic Diseases
     reference:
-      reference: StructureDefinition/chronic-Hematologic-diseases
+      reference: StructureDefinition/chronic-hematologic-diseases
   - description: Chronic kidney diseases in the context of pediatrics
     exampleBoolean: false
     name: Chronic Kidney Diseases
@@ -208,16 +208,16 @@ definition:
     name: Bacterial Infectious Diseases
     reference:
       reference: ValueSet/bacterial-infectious-diseases
-  - description: Chronic Hematologic diseases the context of pediatrics and Covid-19
+  - description: Chronic hematologic diseases the context of pediatrics and Covid-19
     exampleBoolean: false
-    name: Value Set of Chronic Hematologic Diseases
+    name: Chronic Hematologic Diseases
     reference:
-      reference: ValueSet/chronic-Hematologic-diseases-sct
+      reference: ValueSet/chronic-hematologic-diseases-sct
   - description: Chronic hematologic diseases in the context of pediatrics and COVID-19
     exampleBoolean: false
     name: Chronic hematologic diseases (ICD10-GM)
     reference:
-      reference: ValueSet/chronic-Hematologic-diseases-icd
+      reference: ValueSet/chronic-hematologic-diseases-icd
   - description: Chronic kidney diseases in the context of pediatrics
     exampleBoolean: false
     name: Value Set of Chronic Kidney Diseases
@@ -508,18 +508,18 @@ definition:
     name: Instance of fhir resource body mass index in the context of pediatrics
     reference:
       reference: Observation/instance-body-mass-index-percentiles
-  - description: Example of a chronic Hematologic diseases
-    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases
-    name: Instance of fhir resource chronic Hematologic diseases in the context of
+  - description: Example of a chronic hematologic diseases
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/chronic-hematologic-diseases
+    name: Instance of fhir resource chronic hematologic diseases in the context of
       pediatrics
     reference:
-      reference: Condition/instance-chronic-Hematologic-diseases
-  - description: Example of a chronic Hematologic diseases
-    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases
-    name: Instance of fhir resource chronic Hematologic diseases in the context of
+      reference: Condition/instance-chronic-hematologic-diseases
+  - description: Example of a chronic hematologic diseases
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/chronic-hematologic-diseases
+    name: Instance of fhir resource chronic hematologic diseases in the context of
       pediatrics
     reference:
-      reference: Condition/instance-chronic-Hematologic-diseases-icd
+      reference: Condition/instance-chronic-hematologic-diseases-icd
   - description: Example or chronic kidney diseases
     exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/chronic-kidney-diseases
     name: Instance of fhir resource chronic kidney diseases in the context of pediatrics
@@ -595,10 +595,11 @@ dependsOn:
 fhirVersion:
 - 4.0.1
 id: napkon-pediatrics
-name: NAPKONPediatricsModule
+name: napkonpediatrics
 packageId: napkon-pediatrics
 publisher: "Charit\xE9 - Universit\xE4tsmedizin Berlin"
 resourceType: ImplementationGuide
-status: draft
+status: active
+title: NAPKON Pediatrics Module
 url: https://www.napkon.de/fhir/ImplementationGuide/napkon-pediatrics
-version: 0.1.0
+version: 1.0.0

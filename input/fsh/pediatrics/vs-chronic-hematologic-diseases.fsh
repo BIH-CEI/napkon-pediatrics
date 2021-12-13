@@ -1,9 +1,9 @@
 // Author: Thomas Haese
 // Charité - Universitätsmedizin Berlin
 ValueSet: ChronicHematologicDiseases
-Id: chronic-Hematologic-diseases-sct
-Title: "Value Set of Chronic Hematologic Diseases"
-Description: "Chronic Hematologic diseases the context of pediatrics and Covid-19"
+Id: chronic-hematologic-diseases-sct
+Title: "Chronic Hematologic Diseases"
+Description: "Chronic hematologic diseases the context of pediatrics and Covid-19"
 * insert napkon-metadata(2021-09-13, #active, 1.0.0)
 * $sct#61261009 "Hemolytic anemia (disorder)" // Hämolytische Anämie
 * $sct#40108008 "Thalassemia (disorder)" // Thalassämie

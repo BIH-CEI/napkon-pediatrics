@@ -6,19 +6,15 @@
 
 | Parameter Case Report Form | FHIR Resource Attribute |
 | -------------------------- | ----------------------- |
-| ... | `...` |
+| Duration of intensive care treatment | `Observation.code` |
 {:.grid}
 
 | Parameter Case Report Form | Response Options |
 | -------------------------- | ---------------- |
-| ... | ... |
+| Duration of intensive care treatment | Duration of intensive care treatment as explicit value in days |
 {:.grid}
 
-| Response Option | Code |
-| ------ | ---- |
-| ... | `...` |
-{:.grid}
-
+The duration of intensive care treatment may be specified as a specific value (e.g. 4) in Observation.valueQuantity.
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

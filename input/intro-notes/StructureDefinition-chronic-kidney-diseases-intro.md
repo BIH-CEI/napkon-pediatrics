@@ -15,6 +15,8 @@
 | Angeborene Erkrankung der Harnwege | `Disorder of the urinary system where Occurrence = Congenital` |
 {:.grid}
 
+Specific diseases can be transmitted using any child of [SNOMED CT][SNOMEDCT] codes `Kidney disease` or `Disorder or urinary system`.
+
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

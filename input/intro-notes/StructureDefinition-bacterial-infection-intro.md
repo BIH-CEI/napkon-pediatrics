@@ -9,7 +9,6 @@
 | Is there a bacterial infection? If yes, with which pathogen? | `Condition.code` |
 {:.grid}
 
-TODO: Ist es tatsächlich notwendig, das doppelt anzugeben? Nachfolgende haben wir ja die Antworten. Ich lass das erstmal weg. Müssen wir nochmal sprechen. In den nachfolgden Files lass ich das auch weg, füge den Kommentar aber nicht immer wieder hinzu.
 
 | Response Option | Condition.Code |
 | ------ | ---- |
@@ -37,7 +36,6 @@ TODO: Ist es tatsächlich notwendig, das doppelt anzugeben? Nachfolgende haben w
 | Neisseria meningitidis | `Meningococcal infectious disease (disorder)`|
 {:.grid}
 
-Beispieltext 1b
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

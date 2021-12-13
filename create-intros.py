@@ -10,8 +10,9 @@ from pathlib import Path
 base_path = Path(os.path.dirname(os.path.realpath(__file__)))
 output_path = base_path / 'input' / 'intro-notes'
 ig_fname = base_path / 'input' / 'data' / 'ig.yml'
-linklist_fname = base_path / 'input' / 'includes' / 'link-list.md'
+linklist_fname = base_path / 'input' / 'includes' / 'link-list-generated.md'
 profiles_fname = base_path / 'input' / 'pagecontent' / 'profiles-generated.md'
+valuesets_fname = base_path / 'input' / 'pagecontent' / 'valuesets-generated.md'
 
 template_md = """
 {% assign id = {{include.id}} %}
@@ -56,13 +57,6 @@ This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | 
 """
 
 linklist_general = {
-    "GECCO": "https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide/home",
-    "NAPKON": "https://napkon.de/",
-    "NUM": "https://www.netzwerk-universitaetsmedizin.de/",
-    "BIH": "https://www.bihealth.org/",
-    "MII": "https://www.medizininformatik-initiative.de/",
-    "uncertaintyOfPresence": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
-    "ConditionVerificationStatus": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
     "SNOMEDCT": "http://snomed.info/sct",
     "LOINC": "http://loinc.org/",
     "VSdataAbsentReason": "http://hl7.org/fhir/R4/valueset-data-absent-reason.html",
@@ -98,9 +92,13 @@ with open(ig_fname, 'r') as f:
     ig = yaml.safe_load(f)
 
 linklist = {}
+linklist_vs = {}
 
 for resource in ig["definition"]["resource"]:
     ref = resource["reference"]["reference"]
+
+    if ref.startswith('ValueSet/'):
+        linklist_vs[resource["name"]] = ref.replace('/', '-') + '.html'
 
     if not ref.startswith('StructureDefinition/'):
       continue
@@ -115,24 +113,27 @@ for resource in ig["definition"]["resource"]:
     linklist[resource["name"]] = ref.replace('/', '-') + '.html'
 
 
-if not linklist_fname.exists():
-    if not linklist_fname.parent.exists():
-        linklist_fname.parent.mkdir()
+if not linklist_fname.parent.exists():
+    linklist_fname.parent.mkdir()
 
-    print(linklist_fname.name)
-    with open(linklist_fname, 'w') as f:
-        for k, v in linklist.items():
-            f.write(f'[{k}]: {v}\n')
-        f.write("\n")
-        for k, v in linklist_general.items():
-            f.write(f'[{k}]: {v}\n')
+print(linklist_fname.name)
+with open(linklist_fname, 'w') as f:
+    for k, v in linklist.items():
+        f.write(f'[{k}]: {v}\n')
+    f.write("\n")
+    for k, v in linklist_general.items():
+        f.write(f'[{k}]: {v}\n')
 
-if not profiles_fname.exists():
-    print(profiles_fname.name)
-    with open(profiles_fname, 'w') as f:
-        f.write('### Profiles\n\n')
-        for name in linklist:
-            f.write(f"{{% include resource-reference.md name='{name}' %}}\n")
+print(profiles_fname.name)
+with open(profiles_fname, 'w') as f:
+    f.write('### Profiles\n\n')
+    for name in linklist:
+        f.write(f"{{% include resource-reference.md name='{name}' %}}\n")
 
+print(valuesets_fname.name)
+with open(valuesets_fname, "w") as f:
+    f.write('### Value Sets\n\n')
+    for name in linklist_vs:
+        f.write(f"{{% include resource-reference.md name='{name}' %}}\n")
 
 print("Done")

@@ -18,6 +18,6 @@ Usage: #example
 Title: "imaging-procedure-instance"
 Description: "Example of a performed radiology/imaging procedure for pediatric patients when treating COVID-19."
 * status = #completed
-* code.coding[+] = $sct#450436003 "Positron emission tomography with computed tomography (procedure)"
+* code.coding[0] = $sct#450436003 "Positron emission tomography with computed tomography (procedure)"
 * subject = Reference(ExamplePatient)
 * performedDateTime = "2021-09-23T13:06:00+02:00"

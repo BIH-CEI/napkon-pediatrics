@@ -18,5 +18,5 @@ Title: "preadmission-medications"
 Description: "Example list of medications before the admission of the patient to the hospital"
 * status = #current
 * mode = #working
-* entry[+].item = Reference(ImmunosuppresivePermanentMedication)
+* entry[0].item = Reference(ImmunosuppresivePermanentMedication)
 * subject = Reference(ExamplePatient)

@@ -6,10 +6,10 @@
 
 | Parameter Case Report Form | Response Options |
 | -------------------------- | ---------------- |
-| Body mass index | Body mass index as explicit value |
+| Body mass index | _Body mass index as explicit value_ |
 {:.grid}
 
-The body mass index may be specified as a specific value (e.g. 18.14) in Observation.valueQuantity.
+The body mass index may be specified as a specific value (e.g. `18.14 kg/m2`) in `Observation.valueQuantity`. The unit is fixed to the [UCUM][UCUM] code `#kg/m2`.
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

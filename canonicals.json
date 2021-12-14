@@ -49,9 +49,9 @@
     "name": "BodyMassIndexPercentiles"
   },
   {
-    "id": "chronic-Hematologic-diseases",
+    "id": "chronic-hematologic-diseases",
     "type": "StructureDefinition",
-    "url": "https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases",
+    "url": "https://www.napkon.de/fhir/StructureDefinition/chronic-hematologic-diseases",
     "version": "1.0.0",
     "name": "ChronicHematologicDiseases"
   },
@@ -74,14 +74,14 @@
     "type": "StructureDefinition",
     "url": "https://www.napkon.de/fhir/StructureDefinition/covid19-complication",
     "version": "1.0.0",
-    "name": "Covid19Complication"
+    "name": "COVID19Complication"
   },
   {
     "id": "covid19-symptoms",
     "type": "StructureDefinition",
     "url": "https://www.napkon.de/fhir/StructureDefinition/covid19-symptoms",
     "version": "1.0.0",
-    "name": "Covid19Symptoms"
+    "name": "COVID19Symptoms"
   },
   {
     "id": "fungal-infection",
@@ -210,16 +210,16 @@
     "name": "BacterialInfectiousDiseases"
   },
   {
-    "id": "chronic-Hematologic-diseases-icd",
+    "id": "chronic-hematologic-diseases-icd",
     "type": "ValueSet",
-    "url": "https://www.napkon.de/fhir/ValueSet/chronic-Hematologic-diseases-icd",
+    "url": "https://www.napkon.de/fhir/ValueSet/chronic-hematologic-diseases-icd",
     "version": "1.0.0",
     "name": "ChronicHematologicDiseasesICD"
   },
   {
-    "id": "chronic-Hematologic-diseases-sct",
+    "id": "chronic-hematologic-diseases-sct",
     "type": "ValueSet",
-    "url": "https://www.napkon.de/fhir/ValueSet/chronic-Hematologic-diseases-sct",
+    "url": "https://www.napkon.de/fhir/ValueSet/chronic-hematologic-diseases-sct",
     "version": "1.0.0",
     "name": "ChronicHematologicDiseases"
   },
@@ -249,28 +249,28 @@
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/covid-19-symptoms",
     "version": "1.0.0",
-    "name": "Covid19SymptomsSCT"
+    "name": "COVID19SymptomsSCT"
   },
   {
     "id": "covid-19-symptoms-icd-10-gm",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/covid-19-symptoms-icd-10-gm",
     "version": "1.0.0",
-    "name": "Covid19SymptomsICD10GM"
+    "name": "COVID19SymptomsICD10GM"
   },
   {
     "id": "covid19-complications",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/covid19-complications",
     "version": "1.0.0",
-    "name": "Covid19ComplicationsSCT"
+    "name": "COVID19ComplicationsSCT"
   },
   {
     "id": "covid19-complications-icd10-gm",
     "type": "ValueSet",
     "url": "https://www.napkon.de/fhir/ValueSet/covid19-complications-icd10-gm",
     "version": "1.0.0",
-    "name": "Covid19ComplicationsICD10GM"
+    "name": "COVID19ComplicationsICD10GM"
   },
   {
     "id": "detected-not-detected-unknown-undetermined",

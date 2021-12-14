@@ -14,16 +14,15 @@
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [
     {
-      "name": "Charité - Universitätsmedizin Berlin",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.netzwerk-universitaetsmedizin.de"
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
         }
       ]
     }
   ],
-  "description": "Medication used in the case of a of Covid-19 infection for a pediatric patient",
+  "description": "Medication used in the case of a of COVID-19 infection for a pediatric patient",
   "compose": {
     "include": [
       {

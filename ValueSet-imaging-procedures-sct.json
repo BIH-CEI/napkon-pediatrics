@@ -14,16 +14,15 @@
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [
     {
-      "name": "Charité - Universitätsmedizin Berlin",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.netzwerk-universitaetsmedizin.de"
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
         }
       ]
     }
   ],
-  "description": "Imaging procedures in the context of pediatrics and Covid-19",
+  "description": "Imaging procedures in the context of pediatrics and COVID-19",
   "compose": {
     "include": [
       {

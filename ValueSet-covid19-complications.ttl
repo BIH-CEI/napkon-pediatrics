@@ -14,21 +14,20 @@
   ];
   fhir:ValueSet.url [ fhir:value "https://www.napkon.de/fhir/ValueSet/covid19-complications"];
   fhir:ValueSet.version [ fhir:value "1.0.0"];
-  fhir:ValueSet.name [ fhir:value "Covid19ComplicationsSCT"];
-  fhir:ValueSet.title [ fhir:value "Covid19 complications"];
+  fhir:ValueSet.name [ fhir:value "COVID19ComplicationsSCT"];
+  fhir:ValueSet.title [ fhir:value "COVID-19 complications"];
   fhir:ValueSet.status [ fhir:value "active"];
   fhir:ValueSet.date [ fhir:value "2020-10-05"^^xsd:date];
   fhir:ValueSet.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
   fhir:ValueSet.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Charité - Universitätsmedizin Berlin" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
+       fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/en/research/core-facilities/interoperability/" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "Complications due to COVID19"];
+  fhir:ValueSet.description [ fhir:value "Complications due to COVID-19"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;

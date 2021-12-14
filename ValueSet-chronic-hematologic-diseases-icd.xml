@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="chronic-hematologic-diseases-icd"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^D5[5-9]\..* and child doesn't exist</li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^D50\..* and child doesn't exist</li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^D70\..* and child doesn't exist</li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^D46\..* and child doesn't exist</li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^D6[5-8]\..* and child doesn't exist</li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^D[5-7].* and child doesn't exist</li></ul></div>
+  </text>
+  <url value="https://www.napkon.de/fhir/ValueSet/chronic-hematologic-diseases-icd"/>
+  <version value="1.0.0"/>
+  <name value="ChronicHematologicDiseasesICD"/>
+  <title value="Chronic hematologic diseases (ICD10-GM)"/>
+  <status value="active"/>
+  <date value="2021-08-04"/>
+  <publisher value="Charité - Universitätsmedizin Berlin"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
+    </telecom>
+  </contact>
+  <description value="Chronic hematologic diseases in the context of pediatrics and COVID-19"/>
+  <compose>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+      <version value="2022"/>
+      <filter>
+        <property value="concept"/>
+        <op value="regex"/>
+        <value value="^D5[5-9]\..*"/>
+      </filter>
+      <filter>
+        <property value="child"/>
+        <op value="exists"/>
+        <value value="false"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+      <version value="2022"/>
+      <filter>
+        <property value="concept"/>
+        <op value="regex"/>
+        <value value="^D50\..*"/>
+      </filter>
+      <filter>
+        <property value="child"/>
+        <op value="exists"/>
+        <value value="false"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+      <version value="2022"/>
+      <filter>
+        <property value="concept"/>
+        <op value="regex"/>
+        <value value="^D70\..*"/>
+      </filter>
+      <filter>
+        <property value="child"/>
+        <op value="exists"/>
+        <value value="false"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+      <version value="2022"/>
+      <filter>
+        <property value="concept"/>
+        <op value="regex"/>
+        <value value="^D46\..*"/>
+      </filter>
+      <filter>
+        <property value="child"/>
+        <op value="exists"/>
+        <value value="false"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+      <version value="2022"/>
+      <filter>
+        <property value="concept"/>
+        <op value="regex"/>
+        <value value="^D6[5-8]\..*"/>
+      </filter>
+      <filter>
+        <property value="child"/>
+        <op value="exists"/>
+        <value value="false"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+      <version value="2022"/>
+      <filter>
+        <property value="concept"/>
+        <op value="regex"/>
+        <value value="^D[5-7].*"/>
+      </filter>
+      <filter>
+        <property value="child"/>
+        <op value="exists"/>
+        <value value="false"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

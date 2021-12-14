@@ -7,19 +7,18 @@
   </text>
   <url value="https://www.napkon.de/fhir/ValueSet/covid19-complications"/>
   <version value="1.0.0"/>
-  <name value="Covid19ComplicationsSCT"/>
-  <title value="Covid19 complications"/>
+  <name value="COVID19ComplicationsSCT"/>
+  <title value="COVID-19 complications"/>
   <status value="active"/>
   <date value="2020-10-05"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
-    <name value="Charité - Universitätsmedizin Berlin"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
     </telecom>
   </contact>
-  <description value="Complications due to COVID19"/>
+  <description value="Complications due to COVID-19"/>
   <compose>
     <include>
       <system value="http://snomed.info/sct"/>

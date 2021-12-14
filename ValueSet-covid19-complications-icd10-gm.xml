@@ -7,19 +7,18 @@
   </text>
   <url value="https://www.napkon.de/fhir/ValueSet/covid19-complications-icd10-gm"/>
   <version value="1.0.0"/>
-  <name value="Covid19ComplicationsICD10GM"/>
-  <title value="Covid19 complications ICD10 GM"/>
+  <name value="COVID19ComplicationsICD10GM"/>
+  <title value="COVID-19 complications ICD10 GM"/>
   <status value="active"/>
   <date value="2020-10-05"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
-    <name value="Charité - Universitätsmedizin Berlin"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
     </telecom>
   </contact>
-  <description value="Complications due to COVID19"/>
+  <description value="Complications due to COVID-19"/>
   <compose>
     <include>
       <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>

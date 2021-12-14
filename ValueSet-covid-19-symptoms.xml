@@ -7,19 +7,18 @@
   </text>
   <url value="https://www.napkon.de/fhir/ValueSet/covid-19-symptoms"/>
   <version value="1.0.0"/>
-  <name value="Covid19SymptomsSCT"/>
-  <title value="Covid19 symptoms"/>
+  <name value="COVID19SymptomsSCT"/>
+  <title value="COVID-19 symptoms"/>
   <status value="active"/>
   <date value="2020-11-11"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
-    <name value="Charité - Universitätsmedizin Berlin"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
     </telecom>
   </contact>
-  <description value="Symptoms due to COVID19"/>
+  <description value="Symptoms due to COVID-19"/>
   <compose>
     <include>
       <system value="http://snomed.info/sct"/>

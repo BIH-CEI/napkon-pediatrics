@@ -1,0 +1,131 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.napkon.de/fhir/ValueSet/chronic-hematologic-diseases-icd> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "chronic-hematologic-diseases-icd"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^D5[5-9]\\..* and child doesn't exist</li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^D50\\..* and child doesn't exist</li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^D70\\..* and child doesn't exist</li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^D46\\..* and child doesn't exist</li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^D6[5-8]\\..* and child doesn't exist</li><li>Include codes from <code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code> where concept  matches (by regex)  ^D[5-7].* and child doesn't exist</li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://www.napkon.de/fhir/ValueSet/chronic-hematologic-diseases-icd"];
+  fhir:ValueSet.version [ fhir:value "1.0.0"];
+  fhir:ValueSet.name [ fhir:value "ChronicHematologicDiseasesICD"];
+  fhir:ValueSet.title [ fhir:value "Chronic hematologic diseases (ICD10-GM)"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-08-04"^^xsd:date];
+  fhir:ValueSet.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/en/research/core-facilities/interoperability/" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Chronic hematologic diseases in the context of pediatrics and COVID-19"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://fhir.de/CodeSystem/bfarm/icd-10-gm" ];
+       fhir:ValueSet.compose.include.version [ fhir:value "2022" ];
+       fhir:ValueSet.compose.include.filter [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "concept" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "regex" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "^D5[5-9]\\..*" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "child" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "exists" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "false" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://fhir.de/CodeSystem/bfarm/icd-10-gm" ];
+       fhir:ValueSet.compose.include.version [ fhir:value "2022" ];
+       fhir:ValueSet.compose.include.filter [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "concept" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "regex" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "^D50\\..*" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "child" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "exists" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "false" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://fhir.de/CodeSystem/bfarm/icd-10-gm" ];
+       fhir:ValueSet.compose.include.version [ fhir:value "2022" ];
+       fhir:ValueSet.compose.include.filter [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "concept" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "regex" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "^D70\\..*" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "child" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "exists" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "false" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://fhir.de/CodeSystem/bfarm/icd-10-gm" ];
+       fhir:ValueSet.compose.include.version [ fhir:value "2022" ];
+       fhir:ValueSet.compose.include.filter [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "concept" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "regex" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "^D46\\..*" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "child" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "exists" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "false" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://fhir.de/CodeSystem/bfarm/icd-10-gm" ];
+       fhir:ValueSet.compose.include.version [ fhir:value "2022" ];
+       fhir:ValueSet.compose.include.filter [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "concept" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "regex" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "^D6[5-8]\\..*" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "child" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "exists" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "false" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://fhir.de/CodeSystem/bfarm/icd-10-gm" ];
+       fhir:ValueSet.compose.include.version [ fhir:value "2022" ];
+       fhir:ValueSet.compose.include.filter [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "concept" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "regex" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "^D[5-7].*" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "child" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "exists" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "false" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.napkon.de/fhir/ValueSet/chronic-hematologic-diseases-icd.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

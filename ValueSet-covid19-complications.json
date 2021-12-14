@@ -7,23 +7,22 @@
   },
   "url": "https://www.napkon.de/fhir/ValueSet/covid19-complications",
   "version": "1.0.0",
-  "name": "Covid19ComplicationsSCT",
-  "title": "Covid19 complications",
+  "name": "COVID19ComplicationsSCT",
+  "title": "COVID-19 complications",
   "status": "active",
   "date": "2020-10-05",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [
     {
-      "name": "Charité - Universitätsmedizin Berlin",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.netzwerk-universitaetsmedizin.de"
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
         }
       ]
     }
   ],
-  "description": "Complications due to COVID19",
+  "description": "Complications due to COVID-19",
   "compose": {
     "include": [
       {

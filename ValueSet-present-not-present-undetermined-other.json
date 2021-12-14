@@ -10,19 +10,7 @@
   "name": "PresentNotPresentUndeterminedOther",
   "title": "Present Not Present Undetermined Other",
   "status": "active",
-  "date": "2021-12-06T20:58:11+00:00",
-  "publisher": "Charité - Universitätsmedizin Berlin",
-  "contact": [
-    {
-      "name": "Charité - Universitätsmedizin Berlin",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.netzwerk-universitaetsmedizin.de"
-        }
-      ]
-    }
-  ],
+  "date": "2021-12-14T15:06:44+00:00",
   "description": "Values for laboratory observations",
   "compose": {
     "include": [

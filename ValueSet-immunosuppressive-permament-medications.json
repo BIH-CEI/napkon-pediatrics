@@ -3,7 +3,7 @@
   "id": "immunosuppressive-permament-medications",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #768759001</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #416587008</li><li>Include these codes as defined in <a href=\"CodeSystem-napkon-pediatrics-module.html\"><code>https://www.napkon.de/fhir/CodeSystem/napkon-pediatrics-module</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P10\">P10</a></td><td>Mammalian target of rapamycin (mTOR)-Kinase inhibitor</td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P1\">P1</a></td><td>Sphingosine analogue</td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P2\">P2</a></td><td>Interleukin 2 receptor antagonist</td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P3\">P3</a></td><td>Interleukin 17 receptor antagonist</td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P4\">P4</a></td><td>Anti-CD20 antibody</td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P5\">P5</a></td><td>Anti-CD52 antibody</td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P6\">P6</a></td><td>Anti-CD3 antibody</td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P7\">P7</a></td><td>Anti-CD3/CD19 antibody</td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P8\">P8</a></td><td>Integrin inhibitor</td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P9\">P9</a></td><td>B cell activating factor inhibitor</td></tr></table></li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #58760003</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #19768003</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #416897008</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #430817009</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #784015001</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #771678003</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #870401008</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #786198001</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #704315005</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #129557000</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #48583005</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  #768865007</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  69431002 (Medicinal product acting as immunosuppressant (product))</li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  768759001 (Product containing steroid (product))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  416587008 (Product containing calcineurin inhibitor (product))</li><li>Include these codes as defined in <a href=\"CodeSystem-napkon-pediatrics-module.html\"><code>https://www.napkon.de/fhir/CodeSystem/napkon-pediatrics-module</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P10\">P10</a></td><td>Mammalian target of rapamycin (mTOR)-Kinase inhibitor</td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P1\">P1</a></td><td>Sphingosine analogue</td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P2\">P2</a></td><td>Interleukin 2 receptor antagonist</td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P3\">P3</a></td><td>Interleukin 17 receptor antagonist</td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P4\">P4</a></td><td>Anti-CD20 antibody</td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P5\">P5</a></td><td>Anti-CD52 antibody</td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P6\">P6</a></td><td>Anti-CD3 antibody</td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P7\">P7</a></td><td>Anti-CD3/CD19 antibody</td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P8\">P8</a></td><td>Integrin inhibitor</td></tr><tr><td><a href=\"CodeSystem-napkon-pediatrics-module.html#napkon-pediatrics-module-P9\">P9</a></td><td>B cell activating factor inhibitor</td></tr></table></li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  58760003 (Product containing antimetabolite (product))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  19768003 (Product containing alkylating agent (product))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  416897008 (Product containing tumor necrosis factor alpha inhibitor (product))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  430817009 (Product containing interleukin 1 receptor antagonist (product))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  784015001 (Interleukin 6 receptor antagonist)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  771678003 (Interleukin 23 receptor antagonist-containing product)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  870401008 (Cytotoxic T-lymphocyte-associated protein 4 inhibitor)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  786198001 (Equine antithymocyte immunoglobulin-containing product)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  704315005 (Product containing Janus kinase inhibitor (product))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  129557000 (Product containing protein-tyrosine kinase inhibitor (product))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  48583005 (Immunoglobulin E)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  768865007 (Product containing interferon (product))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  69431002 (Medicinal product acting as immunosuppressant (product))</li></ul></div>"
   },
   "url": "https://www.napkon.de/fhir/ValueSet/immunosuppressive-permament-medications",
   "version": "1.0.0",
@@ -14,11 +14,10 @@
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [
     {
-      "name": "Charité - Universitätsmedizin Berlin",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.netzwerk-universitaetsmedizin.de"
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
         }
       ]
     }
@@ -32,7 +31,7 @@
           {
             "property": "concept",
             "op": "is-a",
-            "value": "#768759001"
+            "value": "768759001"
           }
         ]
       },
@@ -42,7 +41,7 @@
           {
             "property": "concept",
             "op": "is-a",
-            "value": "#416587008"
+            "value": "416587008"
           }
         ]
       },
@@ -97,7 +96,7 @@
           {
             "property": "concept",
             "op": "is-a",
-            "value": "#58760003"
+            "value": "58760003"
           }
         ]
       },
@@ -107,7 +106,7 @@
           {
             "property": "concept",
             "op": "is-a",
-            "value": "#19768003"
+            "value": "19768003"
           }
         ]
       },
@@ -117,7 +116,7 @@
           {
             "property": "concept",
             "op": "is-a",
-            "value": "#416897008"
+            "value": "416897008"
           }
         ]
       },
@@ -127,7 +126,7 @@
           {
             "property": "concept",
             "op": "is-a",
-            "value": "#430817009"
+            "value": "430817009"
           }
         ]
       },
@@ -137,7 +136,7 @@
           {
             "property": "concept",
             "op": "is-a",
-            "value": "#784015001"
+            "value": "784015001"
           }
         ]
       },
@@ -147,7 +146,7 @@
           {
             "property": "concept",
             "op": "is-a",
-            "value": "#771678003"
+            "value": "771678003"
           }
         ]
       },
@@ -157,7 +156,7 @@
           {
             "property": "concept",
             "op": "is-a",
-            "value": "#870401008"
+            "value": "870401008"
           }
         ]
       },
@@ -167,7 +166,7 @@
           {
             "property": "concept",
             "op": "is-a",
-            "value": "#786198001"
+            "value": "786198001"
           }
         ]
       },
@@ -177,7 +176,7 @@
           {
             "property": "concept",
             "op": "is-a",
-            "value": "#704315005"
+            "value": "704315005"
           }
         ]
       },
@@ -187,7 +186,7 @@
           {
             "property": "concept",
             "op": "is-a",
-            "value": "#129557000"
+            "value": "129557000"
           }
         ]
       },
@@ -197,7 +196,7 @@
           {
             "property": "concept",
             "op": "is-a",
-            "value": "#48583005"
+            "value": "48583005"
           }
         ]
       },
@@ -207,7 +206,7 @@
           {
             "property": "concept",
             "op": "is-a",
-            "value": "#768865007"
+            "value": "768865007"
           }
         ]
       },

@@ -15,8 +15,9 @@
   fhir:ImplementationGuide.url [ fhir:value "https://www.napkon.de/fhir/ImplementationGuide/napkon-pediatrics"];
   fhir:ImplementationGuide.version [ fhir:value "1.0.0"];
   fhir:ImplementationGuide.name [ fhir:value "napkonpediatrics"];
+  fhir:ImplementationGuide.title [ fhir:value "NAPKON Pediatrics Module"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-12-06T20:58:11+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-12-14T15:06:44+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -127,11 +128,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+         fhir:Extension.valueString [ fhir:value "true" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -139,11 +140,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+         fhir:Extension.valueString [ fhir:value "false" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -151,11 +152,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "path-qa" ]
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+         fhir:Extension.valueString [ fhir:value "false" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -163,11 +164,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "path-temp" ]
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+         fhir:Extension.valueString [ fhir:value "false" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -175,11 +176,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "path-output" ]
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "output" ]
+         fhir:Extension.valueString [ fhir:value "false" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -187,11 +188,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+         fhir:Extension.valueString [ fhir:value "show-inherited-invariants" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+         fhir:Extension.valueString [ fhir:value "false" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -199,11 +200,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "path-history" ]
+         fhir:Extension.valueString [ fhir:value "usage-stats-opt-out" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "https://www.napkon.de/fhir/history.html" ]
+         fhir:Extension.valueString [ fhir:value "true" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -211,11 +212,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "template-html" ]
+         fhir:Extension.valueString [ fhir:value "excludexml" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+         fhir:Extension.valueString [ fhir:value "false" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -223,11 +224,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "template-md" ]
+         fhir:Extension.valueString [ fhir:value "excludejsn" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+         fhir:Extension.valueString [ fhir:value "false" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -235,7 +236,7 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+         fhir:Extension.valueString [ fhir:value "excludettl" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
@@ -247,7 +248,7 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "apply-context" ]
+         fhir:Extension.valueString [ fhir:value "excludemap" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
@@ -259,7 +260,7 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+         fhir:Extension.valueString [ fhir:value "excludeexample" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
@@ -271,11 +272,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+         fhir:Extension.valueString [ fhir:value "extension-domain" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "true" ]
+         fhir:Extension.valueString [ fhir:value "https://www.netzwerk-universitaetsmedizin.de" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -283,11 +284,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "apply-license" ]
+         fhir:Extension.valueString [ fhir:value "extension-domain" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "true" ]
+         fhir:Extension.valueString [ fhir:value "https://napkon.de" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -295,11 +296,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+         fhir:Extension.valueString [ fhir:value "extension-domain" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "true" ]
+         fhir:Extension.valueString [ fhir:value "https://simplifier.net" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -307,7 +308,7 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "apply-version" ]
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
@@ -319,7 +320,139 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "code" ];
-         fhir:Extension.valueString [ fhir:value "active-tables" ]
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://www.napkon.de/fhir/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
@@ -405,14 +538,42 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/chronic-Hematologic-diseases" ]
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-complication>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/covid19-complication" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Chronic Hematologic Diseases" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Chronic Hematologic diseases as a risk factor for a severe course of an infection with SARS-CoV-2 in the context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 complication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Complication due to COVID-19" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-symptoms>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/covid19-symptoms" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 Symptoms" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Additional COVID-19 symptoms" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/chronic-hematologic-diseases>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/chronic-hematologic-diseases" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Chronic Hematologic Diseases" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Chronic hematologic diseases as a risk factor for a severe course of an infection with SARS-CoV-2 in the context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -426,7 +587,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Chronic kidney diseases in the context of pediatrics" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -438,34 +599,6 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Congenital Disease" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Congenital disease in the context of the NAPKON pediatrics module" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 8;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-complication>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/covid19-complication" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19 complication" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Complication due to COVID19" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 9;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-symptoms>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/covid19-symptoms" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19Symptoms" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cover additional Covid 19 symptoms" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 10;
@@ -713,11 +846,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/ValueSet/chronic-Hematologic-diseases-sct>;
-         fhir:Reference.reference [ fhir:value "ValueSet/chronic-Hematologic-diseases-sct" ]
+         fhir:link <https://www.napkon.de/fhir/ValueSet/covid19-complications-icd10-gm>;
+         fhir:Reference.reference [ fhir:value "ValueSet/covid19-complications-icd10-gm" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Value Set of Chronic Hematologic Diseases" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Chronic Hematologic diseases the context of pediatrics and Covid-19" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 complications ICD10 GM" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Complications due to COVID-19" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 28;
@@ -727,14 +860,70 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/ValueSet/chronic-Hematologic-diseases-icd>;
-         fhir:Reference.reference [ fhir:value "ValueSet/chronic-Hematologic-diseases-icd" ]
+         fhir:link <https://www.napkon.de/fhir/ValueSet/covid19-complications>;
+         fhir:Reference.reference [ fhir:value "ValueSet/covid19-complications" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 complications" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Complications due to COVID-19" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/covid-19-symptoms-icd-10-gm>;
+         fhir:Reference.reference [ fhir:value "ValueSet/covid-19-symptoms-icd-10-gm" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 symptoms" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Symptoms due to COVID-19" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/covid-19-symptoms>;
+         fhir:Reference.reference [ fhir:value "ValueSet/covid-19-symptoms" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 symptoms" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Symptoms due to COVID-19" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/chronic-hematologic-diseases-sct>;
+         fhir:Reference.reference [ fhir:value "ValueSet/chronic-hematologic-diseases-sct" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Chronic Hematologic Diseases" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Chronic hematologic diseases the context of pediatrics and COVID-19" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.napkon.de/fhir/ValueSet/chronic-hematologic-diseases-icd>;
+         fhir:Reference.reference [ fhir:value "ValueSet/chronic-hematologic-diseases-icd" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Chronic hematologic diseases (ICD10-GM)" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Chronic hematologic diseases in the context of pediatrics and COVID-19" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 29;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -748,7 +937,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Chronic kidney diseases in the context of pediatrics" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 30;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -762,7 +951,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Chronic kidney diseases in the context of pediatrics" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 31;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -774,62 +963,6 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Congenital Diseases" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Congenital diseases" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 32;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/ValueSet/covid19-complications-icd10-gm>;
-         fhir:Reference.reference [ fhir:value "ValueSet/covid19-complications-icd10-gm" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19 complications ICD10 GM" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Complications due to COVID19" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 33;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/ValueSet/covid19-complications>;
-         fhir:Reference.reference [ fhir:value "ValueSet/covid19-complications" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19 complications" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Complications due to COVID19" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 34;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/ValueSet/covid-19-symptoms-icd-10-gm>;
-         fhir:Reference.reference [ fhir:value "ValueSet/covid-19-symptoms-icd-10-gm" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19 symptoms" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Symptoms due to COVID19" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 35;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/ValueSet/covid-19-symptoms>;
-         fhir:Reference.reference [ fhir:value "ValueSet/covid-19-symptoms" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19 symptoms" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Symptoms due to COVID19" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 36;
@@ -899,7 +1032,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/gastrointestinal-diseases-sct" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Value Set of Gastrointestinal Diseases" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Gastrointestinal diseases in the context of pediatrics and Covid-19" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Gastrointestinal diseases in the context of pediatrics and COVID-19" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 41;
@@ -913,7 +1046,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/gastrointestinal-diseases-icd" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Value Set of Gastrointestinal Diseases ICD" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Gastrointestinal diseases in the context of pediatrics and Covid-19" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Gastrointestinal diseases in the context of pediatrics and COVID-19" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 42;
@@ -927,7 +1060,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/imaging-procedures-dicom" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Value Set of imaging procedures in dicom format" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Imaging procedures in the context of pediatrics and Covid-19" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Imaging procedures in the context of pediatrics and COVID-19" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 43;
@@ -941,7 +1074,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/imaging-procedures-sct" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Value Set of imaging procedures from SNOMED CT" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Imaging procedures in the context of pediatrics and Covid-19" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Imaging procedures in the context of pediatrics and COVID-19" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 44;
@@ -1025,7 +1158,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/medication-pediatrics-atc-de" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Pediatrics ATC DE" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication used in the case of a of Covid-19 infection for a pediatric patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication used in the case of a of COVID-19 infection for a pediatric patient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 50;
@@ -1039,7 +1172,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/medication-pediatrics-sct" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medication Pediatrics SNOMED CT" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication used in the case of a of Covid-19 infection for a pediatric patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medication used in the case of a of COVID-19 infection for a pediatric patient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 51;
@@ -1152,14 +1285,14 @@
          fhir:Extension.valueString [ fhir:value "Condition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/Condition/CongenitalAtransferrinemiaConfirmed>;
-         fhir:Reference.reference [ fhir:value "Condition/CongenitalAtransferrinemiaConfirmed" ]
+         fhir:link <https://www.napkon.de/fhir/Condition/COVID19Complication>;
+         fhir:Reference.reference [ fhir:value "Condition/COVID19Complication" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Congenital Atransferrinemia confirmed" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example: Confirmed congenital atransferrinemia" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 Complication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a COVID-19 complication" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.napkon.de/fhir/StructureDefinition/congenital-disease";
-         fhir:link <https://www.napkon.de/fhir/StructureDefinition/congenital-disease>
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/covid19-complication";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-complication>
        ]
      ], [
        fhir:index 59;
@@ -1169,14 +1302,14 @@
          fhir:Extension.valueString [ fhir:value "Condition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/Condition/Covid19Complication>;
-         fhir:Reference.reference [ fhir:value "Condition/Covid19Complication" ]
+         fhir:link <https://www.napkon.de/fhir/Condition/COVID19Symptoms>;
+         fhir:Reference.reference [ fhir:value "Condition/COVID19Symptoms" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19 Complication" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a covid19 complication" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID19 Symptom" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a COVID-19 complication" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.napkon.de/fhir/StructureDefinition/covid19-complication";
-         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-complication>
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/covid19-symptoms";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-symptoms>
        ]
      ], [
        fhir:index 60;
@@ -1186,14 +1319,14 @@
          fhir:Extension.valueString [ fhir:value "Condition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/Condition/Covid19Symptoms>;
-         fhir:Reference.reference [ fhir:value "Condition/Covid19Symptoms" ]
+         fhir:link <https://www.napkon.de/fhir/Condition/CongenitalAtransferrinemiaConfirmed>;
+         fhir:Reference.reference [ fhir:value "Condition/CongenitalAtransferrinemiaConfirmed" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Covid19 Symptom" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a covid19 complication" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Congenital Atransferrinemia confirmed" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example: Confirmed congenital atransferrinemia" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.napkon.de/fhir/StructureDefinition/covid19-symptoms";
-         fhir:link <https://www.napkon.de/fhir/StructureDefinition/covid19-symptoms>
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/congenital-disease";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/congenital-disease>
        ]
      ], [
        fhir:index 61;
@@ -1608,14 +1741,14 @@
          fhir:Extension.valueString [ fhir:value "Condition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/Condition/instance-chronic-Hematologic-diseases>;
-         fhir:Reference.reference [ fhir:value "Condition/instance-chronic-Hematologic-diseases" ]
+         fhir:link <https://www.napkon.de/fhir/Condition/instance-chronic-hematologic-diseases>;
+         fhir:Reference.reference [ fhir:value "Condition/instance-chronic-hematologic-diseases" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of fhir resource chronic Hematologic diseases in the context of pediatrics" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a chronic Hematologic diseases" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of fhir resource chronic hematologic diseases in the context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a chronic hematologic diseases" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases";
-         fhir:link <https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases>
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/chronic-hematologic-diseases";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/chronic-hematologic-diseases>
        ]
      ], [
        fhir:index 86;
@@ -1625,14 +1758,14 @@
          fhir:Extension.valueString [ fhir:value "Condition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.napkon.de/fhir/Condition/instance-chronic-Hematologic-diseases-icd>;
-         fhir:Reference.reference [ fhir:value "Condition/instance-chronic-Hematologic-diseases-icd" ]
+         fhir:link <https://www.napkon.de/fhir/Condition/instance-chronic-hematologic-diseases-icd>;
+         fhir:Reference.reference [ fhir:value "Condition/instance-chronic-hematologic-diseases-icd" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of fhir resource chronic Hematologic diseases in the context of pediatrics" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a chronic Hematologic diseases" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance of fhir resource chronic hematologic diseases in the context of pediatrics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a chronic hematologic diseases" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases";
-         fhir:link <https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases>
+         fhir:value "https://www.napkon.de/fhir/StructureDefinition/chronic-hematologic-diseases";
+         fhir:link <https://www.napkon.de/fhir/StructureDefinition/chronic-hematologic-diseases>
        ]
      ], [
        fhir:index 87;
@@ -1778,8 +1911,59 @@
        fhir:ImplementationGuide.definition.page.page [
          fhir:index 0;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "NAPKON Pediatrics Module" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "profiles.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Profiles" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "codesystems.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Code Systems" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "valuesets.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Value Sets" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 4;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "extensions.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Extensions" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 5;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "examples.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Examples" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 6;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+       ], [
+         fhir:index 7;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "changelog.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Change Log" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 8;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "artifacts.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Artifacts" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "gecco-sars-cov-2-rt-pcr.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "GECCO SARS-CoV-2 RT PCR in respiratory specimen" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 1;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "gecco-immunization.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "GECCO History of Vaccination" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ]
        ]
      ];
      fhir:ImplementationGuide.definition.parameter [

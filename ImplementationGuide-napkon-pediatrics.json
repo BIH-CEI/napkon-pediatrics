@@ -8,8 +8,9 @@
   "url": "https://www.napkon.de/fhir/ImplementationGuide/napkon-pediatrics",
   "version": "1.0.0",
   "name": "napkonpediatrics",
+  "title": "NAPKON Pediatrics Module",
   "status": "active",
-  "date": "2021-12-06T20:58:11+00:00",
+  "date": "2021-12-14T15:06:44+00:00",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [
     {
@@ -95,6 +96,214 @@
           {
             "url": "value",
             "valueString": "trial-use"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "active-tables"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-contact"
+          },
+          {
+            "url": "value",
+            "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-jurisdiction"
+          },
+          {
+            "url": "value",
+            "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-publisher"
+          },
+          {
+            "url": "value",
+            "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-version"
+          },
+          {
+            "url": "value",
+            "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "show-inherited-invariants"
+          },
+          {
+            "url": "value",
+            "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "usage-stats-opt-out"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludexml"
+          },
+          {
+            "url": "value",
+            "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludejsn"
+          },
+          {
+            "url": "value",
+            "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludettl"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludemap"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludeexample"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "extension-domain"
+          },
+          {
+            "url": "value",
+            "valueString": "https://www.netzwerk-universitaetsmedizin.de"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "extension-domain"
+          },
+          {
+            "url": "value",
+            "valueString": "https://napkon.de"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "extension-domain"
+          },
+          {
+            "url": "value",
+            "valueString": "https://simplifier.net"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "autoload-resources"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -220,19 +429,6 @@
         "extension": [
           {
             "url": "code",
-            "valueString": "apply-contact"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
             "valueString": "apply-context"
           },
           {
@@ -259,59 +455,7 @@
         "extension": [
           {
             "url": "code",
-            "valueString": "apply-jurisdiction"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
             "valueString": "apply-license"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "apply-publisher"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "apply-version"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "active-tables"
           },
           {
             "url": "value",
@@ -400,10 +544,38 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/chronic-Hematologic-diseases"
+          "reference": "StructureDefinition/covid19-complication"
+        },
+        "name": "COVID-19 complication",
+        "description": "Complication due to COVID-19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/covid19-symptoms"
+        },
+        "name": "COVID-19 Symptoms",
+        "description": "Additional COVID-19 symptoms",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/chronic-hematologic-diseases"
         },
         "name": "Chronic Hematologic Diseases",
-        "description": "Chronic Hematologic diseases as a risk factor for a severe course of an infection with SARS-CoV-2 in the context of pediatrics",
+        "description": "Chronic hematologic diseases as a risk factor for a severe course of an infection with SARS-CoV-2 in the context of pediatrics",
         "exampleBoolean": false
       },
       {
@@ -432,34 +604,6 @@
         },
         "name": "Congenital Disease",
         "description": "Congenital disease in the context of the NAPKON pediatrics module",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/covid19-complication"
-        },
-        "name": "Covid19 complication",
-        "description": "Complication due to COVID19",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/covid19-symptoms"
-        },
-        "name": "Covid19Symptoms",
-        "description": "Cover additional Covid 19 symptoms",
         "exampleBoolean": false
       },
       {
@@ -708,10 +852,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/chronic-Hematologic-diseases-sct"
+          "reference": "ValueSet/covid19-complications-icd10-gm"
         },
-        "name": "Value Set of Chronic Hematologic Diseases",
-        "description": "Chronic Hematologic diseases the context of pediatrics and Covid-19",
+        "name": "COVID-19 complications ICD10 GM",
+        "description": "Complications due to COVID-19",
         "exampleBoolean": false
       },
       {
@@ -722,7 +866,63 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/chronic-Hematologic-diseases-icd"
+          "reference": "ValueSet/covid19-complications"
+        },
+        "name": "COVID-19 complications",
+        "description": "Complications due to COVID-19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/covid-19-symptoms-icd-10-gm"
+        },
+        "name": "COVID-19 symptoms",
+        "description": "Symptoms due to COVID-19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/covid-19-symptoms"
+        },
+        "name": "COVID-19 symptoms",
+        "description": "Symptoms due to COVID-19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/chronic-hematologic-diseases-sct"
+        },
+        "name": "Chronic Hematologic Diseases",
+        "description": "Chronic hematologic diseases the context of pediatrics and COVID-19",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/chronic-hematologic-diseases-icd"
         },
         "name": "Chronic hematologic diseases (ICD10-GM)",
         "description": "Chronic hematologic diseases in the context of pediatrics and COVID-19",
@@ -768,62 +968,6 @@
         },
         "name": "Congenital Diseases",
         "description": "Congenital diseases",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/covid19-complications-icd10-gm"
-        },
-        "name": "Covid19 complications ICD10 GM",
-        "description": "Complications due to COVID19",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/covid19-complications"
-        },
-        "name": "Covid19 complications",
-        "description": "Complications due to COVID19",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/covid-19-symptoms-icd-10-gm"
-        },
-        "name": "Covid19 symptoms",
-        "description": "Symptoms due to COVID19",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/covid-19-symptoms"
-        },
-        "name": "Covid19 symptoms",
-        "description": "Symptoms due to COVID19",
         "exampleBoolean": false
       },
       {
@@ -893,7 +1037,7 @@
           "reference": "ValueSet/gastrointestinal-diseases-sct"
         },
         "name": "Value Set of Gastrointestinal Diseases",
-        "description": "Gastrointestinal diseases in the context of pediatrics and Covid-19",
+        "description": "Gastrointestinal diseases in the context of pediatrics and COVID-19",
         "exampleBoolean": false
       },
       {
@@ -907,7 +1051,7 @@
           "reference": "ValueSet/gastrointestinal-diseases-icd"
         },
         "name": "Value Set of Gastrointestinal Diseases ICD",
-        "description": "Gastrointestinal diseases in the context of pediatrics and Covid-19",
+        "description": "Gastrointestinal diseases in the context of pediatrics and COVID-19",
         "exampleBoolean": false
       },
       {
@@ -921,7 +1065,7 @@
           "reference": "ValueSet/imaging-procedures-dicom"
         },
         "name": "Value Set of imaging procedures in dicom format",
-        "description": "Imaging procedures in the context of pediatrics and Covid-19",
+        "description": "Imaging procedures in the context of pediatrics and COVID-19",
         "exampleBoolean": false
       },
       {
@@ -935,7 +1079,7 @@
           "reference": "ValueSet/imaging-procedures-sct"
         },
         "name": "Value Set of imaging procedures from SNOMED CT",
-        "description": "Imaging procedures in the context of pediatrics and Covid-19",
+        "description": "Imaging procedures in the context of pediatrics and COVID-19",
         "exampleBoolean": false
       },
       {
@@ -1019,7 +1163,7 @@
           "reference": "ValueSet/medication-pediatrics-atc-de"
         },
         "name": "Medication Pediatrics ATC DE",
-        "description": "Medication used in the case of a of Covid-19 infection for a pediatric patient",
+        "description": "Medication used in the case of a of COVID-19 infection for a pediatric patient",
         "exampleBoolean": false
       },
       {
@@ -1033,7 +1177,7 @@
           "reference": "ValueSet/medication-pediatrics-sct"
         },
         "name": "Medication Pediatrics SNOMED CT",
-        "description": "Medication used in the case of a of Covid-19 infection for a pediatric patient",
+        "description": "Medication used in the case of a of COVID-19 infection for a pediatric patient",
         "exampleBoolean": false
       },
       {
@@ -1141,24 +1285,10 @@
           }
         ],
         "reference": {
-          "reference": "Condition/CongenitalAtransferrinemiaConfirmed"
+          "reference": "Condition/COVID19Complication"
         },
-        "name": "Congenital Atransferrinemia confirmed",
-        "description": "Example: Confirmed congenital atransferrinemia",
-        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/congenital-disease"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Condition"
-          }
-        ],
-        "reference": {
-          "reference": "Condition/Covid19Complication"
-        },
-        "name": "Covid19 Complication",
-        "description": "Example of a covid19 complication",
+        "name": "COVID-19 Complication",
+        "description": "Example of a COVID-19 complication",
         "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/covid19-complication"
       },
       {
@@ -1169,11 +1299,25 @@
           }
         ],
         "reference": {
-          "reference": "Condition/Covid19Symptoms"
+          "reference": "Condition/COVID19Symptoms"
         },
-        "name": "Covid19 Symptom",
-        "description": "Example of a covid19 complication",
+        "name": "COVID19 Symptom",
+        "description": "Example of a COVID-19 complication",
         "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/covid19-symptoms"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/CongenitalAtransferrinemiaConfirmed"
+        },
+        "name": "Congenital Atransferrinemia confirmed",
+        "description": "Example: Confirmed congenital atransferrinemia",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/congenital-disease"
       },
       {
         "extension": [
@@ -1519,11 +1663,11 @@
           }
         ],
         "reference": {
-          "reference": "Condition/instance-chronic-Hematologic-diseases"
+          "reference": "Condition/instance-chronic-hematologic-diseases"
         },
-        "name": "Instance of fhir resource chronic Hematologic diseases in the context of pediatrics",
-        "description": "Example of a chronic Hematologic diseases",
-        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases"
+        "name": "Instance of fhir resource chronic hematologic diseases in the context of pediatrics",
+        "description": "Example of a chronic hematologic diseases",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/chronic-hematologic-diseases"
       },
       {
         "extension": [
@@ -1533,11 +1677,11 @@
           }
         ],
         "reference": {
-          "reference": "Condition/instance-chronic-Hematologic-diseases-icd"
+          "reference": "Condition/instance-chronic-hematologic-diseases-icd"
         },
-        "name": "Instance of fhir resource chronic Hematologic diseases in the context of pediatrics",
-        "description": "Example of a chronic Hematologic diseases",
-        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases"
+        "name": "Instance of fhir resource chronic hematologic diseases in the context of pediatrics",
+        "description": "Example of a chronic hematologic diseases",
+        "exampleCanonical": "https://www.napkon.de/fhir/StructureDefinition/chronic-hematologic-diseases"
       },
       {
         "extension": [
@@ -1659,8 +1803,60 @@
       "page": [
         {
           "nameUrl": "index.html",
-          "title": "Home",
+          "title": "NAPKON Pediatrics Module",
           "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "codesystems.html",
+          "title": "Code Systems",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "valuesets.html",
+          "title": "Value Sets",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "extensions.html",
+          "title": "Extensions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "changelog.html",
+          "title": "Change Log",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "artifacts.html",
+          "title": "Artifacts",
+          "generation": "html",
+          "page": [
+            {
+              "nameUrl": "gecco-sars-cov-2-rt-pcr.html",
+              "title": "GECCO SARS-CoV-2 RT PCR in respiratory specimen",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "gecco-immunization.html",
+              "title": "GECCO History of Vaccination",
+              "generation": "markdown"
+            }
+          ]
         }
       ]
     },

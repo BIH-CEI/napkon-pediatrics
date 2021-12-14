@@ -19,8 +19,12 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
+  <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/colors.css"/>
+<link rel="stylesheet" href="assets/css/napkon.css"/>
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+    <script src="assets/js/fhir-table-scripts.js" type="text/javascript"> </script>
 
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- [if lt IE 9]>
@@ -39,15 +43,28 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.26"}
-    h3,h4,h5,h6{--heading-prefix:"2.26"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.28"}
+    h3,h4,h5,h6{--heading-prefix:"9.28"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
-          <!-- Placeholder for child template header declarations -->
+          <!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+  <a no-external="true" id="project-logo" href="https://napkon.de/">
+    <img src="assets/images/napkon-logo.svg" alt="Project home" height="71"/>
+  </a>
+</div>
+
+  <!-- Right logo - for example the FHIR logo -->
+  <!-- Make sure you have authorization to use the FHIR logo -->
+<div id="family-nav">
+  <a no-external="true" id="family-logo" href="https://www.netzwerk-universitaetsmedizin.de">
+    <img src="assets/images/logo_num.svg" alt="FHIR website" height="70"/>
+  </a>
+</div>
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span><br/>1.0.0 - trial-use</p>
+          <p><span style="font-size:12pt;font-weight:bold">NAPKON Pediatrics Module</span><br/>1.0.0 - trial-use</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -74,7 +91,22 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="artifacts.html">Artifacts</a>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="codesystems.html">Code Systems</a>
+  </li>
+  <li>
+    <a href="valuesets.html">Value Sets</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
   </li>
 </ul>
             </div>    <!-- /.nav-collapse -->
@@ -88,7 +120,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Viral Infection</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts</b></a></li><li><b>Viral Infection</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -101,7 +133,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 4" class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">napkonpediatrics - Local Development build (v1.0.0). See the <a href="https://www.napkon.de/fhir/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">NAPKON Pediatrics Module - Local Development build (v1.0.0). See the <a href="https://www.napkon.de/fhir/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -127,12 +159,6 @@
   </li>
 
 
-
-  
-    <li>
-      <a href="StructureDefinition-viral-infection-mappings.html">Mappings</a>
-    </li>
-  
 
 
 
@@ -161,12 +187,6 @@
     </li>
   
 
-
-  
-    <li>
-      <a href="StructureDefinition-viral-infection.profile.ttl.html">TTL</a>
-    </li>
-  
 
 
 </ul>
@@ -367,7 +387,7 @@ A human language.
   <tr><td>Definition</td><td><p>Extension used on a condition resource if the presence of the condition is unknown.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l1526">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence]]">UncertaintyOfPresence</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l1571">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence]]">UncertaintyOfPresence</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="http://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
@@ -534,7 +554,7 @@ The data type is CodeableConcept because verificationStatus has some clinical ju
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l2591">​</a>The codes SHALL be taken from <a href="null">ConditionVerificationStatusSNOMED</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l2636">​</a>The codes SHALL be taken from <a href="null">ConditionVerificationStatusSNOMED</a>
 Confirmed present | Definitely NOT present
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td></tr>
@@ -904,8 +924,8 @@ Identification of the condition or diagnosis.
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l4943">​</a>The codes SHALL be taken from <a href="null">ICD10GM</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l4952">​</a><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/CodingICD10GM]]">CodingICD10GM</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l4988">​</a>The codes SHALL be taken from <a href="null">ICD10GM</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l4997">​</a><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/CodingICD10GM]]">CodingICD10GM</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Allows for alternative encodings within a code system, and translations to other code systems.</p>
 </td></tr>
@@ -935,7 +955,7 @@ Identification of the condition or diagnosis.
   <tr><td>Definition</td><td><p>Optional Extension Element - found in all resources.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l5161">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen]]">ExtensionMehrfachcodierungKennzeichen</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l5206">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen]]">ExtensionMehrfachcodierungKennzeichen</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
@@ -947,7 +967,7 @@ Identification of the condition or diagnosis.
   <tr><td>Definition</td><td><p>Optional Extension Element - found in all resources.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l5249">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/seitenlokalisation]]">ExtensionSeitenlokalisation</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l5294">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/seitenlokalisation]]">ExtensionSeitenlokalisation</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
@@ -959,7 +979,7 @@ Identification of the condition or diagnosis.
   <tr><td>Definition</td><td><p>Optional Extension Element - found in all resources.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l5337">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit]]">ExtensionICD10GMDiagnosesicherheit</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l5382">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit]]">ExtensionICD10GMDiagnosesicherheit</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
@@ -1032,8 +1052,8 @@ Hierdurch wird der Tatsache Rechnung getragen, dass jede der jährlich neu ersch
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l5791">​</a>The codes SHALL be taken from <a href="null">Alpha-id</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l5800">​</a><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/CodingAlphaID]]">CodingAlphaID</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="l5836">​</a>The codes SHALL be taken from <a href="null">Alpha-id</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l5845">​</a><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/CodingAlphaID]]">CodingAlphaID</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Allows for alternative encodings within a code system, and translations to other code systems.</p>
 </td></tr>
@@ -1442,7 +1462,7 @@ Codes describing anatomical locations. May include laterality.
   <tr><td>Definition</td><td><p>A reference from one resource to another.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l8386">​</a><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="null" title="[CanonicalType[https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference]]">MII-Reference</a>)(<a href="http://hl7.org/fhir/R4/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l8431">​</a><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="null" title="[CanonicalType[https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference]]">MII-Reference</a>)(<a href="http://hl7.org/fhir/R4/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Group is typically used for veterinary or public health use cases.</p>
 </td></tr>
@@ -1454,7 +1474,7 @@ Codes describing anatomical locations. May include laterality.
   <tr><td>Definition</td><td><p>A reference from one resource to another.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l8473">​</a><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="null" title="[CanonicalType[https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference]]">MII-Reference</a>)(<a href="http://hl7.org/fhir/R4/encounter.html" title="http://hl7.org/fhir/StructureDefinition/Encounter">Encounter</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l8518">​</a><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="null" title="[CanonicalType[https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference]]">MII-Reference</a>)(<a href="http://hl7.org/fhir/R4/encounter.html" title="http://hl7.org/fhir/StructureDefinition/Encounter">Encounter</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
@@ -1532,7 +1552,7 @@ Codes describing anatomical locations. May include laterality.
   <tr><td>Definition</td><td><p>Optional Extension Element - found in all resources.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l9068">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/lebensphase]]">ExtensionLebensphase</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l9113">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/lebensphase]]">ExtensionLebensphase</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
@@ -1576,7 +1596,7 @@ Codes describing anatomical locations. May include laterality.
   <tr><td>Definition</td><td><p>Optional Extension Element - found in all resources.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l9402">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/lebensphase]]">ExtensionLebensphase</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a name="l9447">​</a><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="null" title="[CanonicalType[http://fhir.de/StructureDefinition/lebensphase]]">ExtensionLebensphase</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
   <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
@@ -1824,41 +1844,44 @@ Codes that describe the manifestation or symptoms of a condition.
       }
     });
   </script>
-  <a name="bottom"> </a>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
-
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">Charité - Universitätsmedizin Berlin</a>.  Package napkon-pediatrics#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 6, 2021 20:58+0000">2021-12-06</span>
+          IG &copy; 2021+ <a href="https://www.netzwerk-universitaetsmedizin.de">Charité - Universitätsmedizin Berlin</a>.  Package napkon-pediatrics#1.0.0 based on <a href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 14, 2021 15:06+0000">2021-12-14</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
-                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
-                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                 
-                
-          
+          <span style="color: #FFFF77">
+            <p style="color: white"><a name="l10905">​</a>
+       Links: <a href="toc.html">Table of Contents</a> |
+       <a href="qa.html">QA Report</a> |
+       <a href="https://github.com/BIH-CEI/napkon-pediatrics/issues/" target="_blank">Issues</a> |
+       <a href="https://github.com/BIH-CEI/napkon-pediatrics/issues/new" target="_blank">Submit an issue</a> |
+       <a href="http://hl7.org/fhir/R4//history.html" target="_blank">Version History</a> |
+       <a rel="license" href="http://hl7.org/fhir/R4/license.html"><img src="assets/images/cc-by.svg" alt="CC-BY" style="border-style: none;" height="17"/></a> |
+</p>
+
+          </span>
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->
   </div>    <!-- /segment-footer -->
-  
+
   <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
     <div class="container">    <!-- container -->
     </div>    <!-- /container -->
   </div>    <!-- /segment-post-footer -->
-  
+
     <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
-  ================================================== -->
+    <!-- Bootstrap core JavaScript -->
+
     <!-- Placed at the end of the document so the pages load faster -->
   <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
   <script src="assets/js/respond.min.js" type="text/javascript"> </script>
   <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
-  
-  <!-- feedback form - Google forms -->
+
+    <!-- feedback form - Google forms -->
   <!-- v0.1, 2021-01-09 -->
 
 

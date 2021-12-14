@@ -13,13 +13,12 @@
   <date value="2021-09-23"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
-    <name value="Charité - Universitätsmedizin Berlin"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
     </telecom>
   </contact>
-  <description value="Medication used in the case of a of Covid-19 infection for a pediatric patient"/>
+  <description value="Medication used in the case of a of COVID-19 infection for a pediatric patient"/>
   <compose>
     <include>
       <system value="http://snomed.info/sct"/>

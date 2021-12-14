@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="fungal-infections-sct"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  83062006 (Infection by Candida albicans)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  65553006 (Aspergillosis)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  3218000 (Mycosis)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  3218000 (Mycosis)</li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  83062006 (Infection by Candida albicans)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  65553006 (Aspergillosis)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  3218000 (Mycosis)</li></ul></div>
   </text>
   <url value="https://www.napkon.de/fhir/ValueSet/fungal-infections-sct"/>
   <version value="1.0.0"/>
@@ -13,10 +13,9 @@
   <date value="2020-10-05"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
-    <name value="Charité - Universitätsmedizin Berlin"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
     </telecom>
   </contact>
   <description value="Value set of fungal infections"/>
@@ -35,14 +34,6 @@
         <property value="concept"/>
         <op value="is-a"/>
         <value value="65553006"/>
-      </filter>
-    </include>
-    <include>
-      <system value="http://snomed.info/sct"/>
-      <filter>
-        <property value="concept"/>
-        <op value="is-a"/>
-        <value value="3218000"/>
       </filter>
     </include>
     <include>

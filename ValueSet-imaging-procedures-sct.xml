@@ -13,13 +13,12 @@
   <date value="2021-09-23"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
-    <name value="Charité - Universitätsmedizin Berlin"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
     </telecom>
   </contact>
-  <description value="Imaging procedures in the context of pediatrics and Covid-19"/>
+  <description value="Imaging procedures in the context of pediatrics and COVID-19"/>
   <compose>
     <include>
       <system value="http://snomed.info/sct"/>

@@ -8,8 +8,9 @@
   <url value="https://www.napkon.de/fhir/ImplementationGuide/napkon-pediatrics"/>
   <version value="1.0.0"/>
   <name value="napkonpediatrics"/>
+  <title value="NAPKON Pediatrics Module"/>
   <status value="active"/>
-  <date value="2021-12-06T20:58:11+00:00"/>
+  <date value="2021-12-14T15:06:44+00:00"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
     <name value="Charité - Universitätsmedizin Berlin"/>
@@ -71,6 +72,134 @@
       </extension>
       <extension url="value">
         <valueString value="trial-use"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="usage-stats-opt-out"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludexml"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludejsn"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludettl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludemap"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludeexample"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="extension-domain"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.netzwerk-universitaetsmedizin.de"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="extension-domain"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://napkon.de"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="extension-domain"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://simplifier.net"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -147,14 +276,6 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-contact"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueString value="apply-context"/>
       </extension>
       <extension url="value">
@@ -171,39 +292,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-jurisdiction"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueString value="apply-license"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-publisher"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-version"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="active-tables"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -269,10 +358,32 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/chronic-Hematologic-diseases"/>
+        <reference value="StructureDefinition/covid19-complication"/>
+      </reference>
+      <name value="COVID-19 complication"/>
+      <description value="Complication due to COVID-19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/covid19-symptoms"/>
+      </reference>
+      <name value="COVID-19 Symptoms"/>
+      <description value="Additional COVID-19 symptoms"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/chronic-hematologic-diseases"/>
       </reference>
       <name value="Chronic Hematologic Diseases"/>
-      <description value="Chronic Hematologic diseases as a risk factor for a severe course of an infection with SARS-CoV-2 in the context of pediatrics"/>
+      <description value="Chronic hematologic diseases as a risk factor for a severe course of an infection with SARS-CoV-2 in the context of pediatrics"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -295,28 +406,6 @@
       </reference>
       <name value="Congenital Disease"/>
       <description value="Congenital disease in the context of the NAPKON pediatrics module"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/covid19-complication"/>
-      </reference>
-      <name value="Covid19 complication"/>
-      <description value="Complication due to COVID19"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/covid19-symptoms"/>
-      </reference>
-      <name value="Covid19Symptoms"/>
-      <description value="Cover additional Covid 19 symptoms"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -511,10 +600,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/chronic-Hematologic-diseases-sct"/>
+        <reference value="ValueSet/covid19-complications-icd10-gm"/>
       </reference>
-      <name value="Value Set of Chronic Hematologic Diseases"/>
-      <description value="Chronic Hematologic diseases the context of pediatrics and Covid-19"/>
+      <name value="COVID-19 complications ICD10 GM"/>
+      <description value="Complications due to COVID-19"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -522,7 +611,51 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/chronic-Hematologic-diseases-icd"/>
+        <reference value="ValueSet/covid19-complications"/>
+      </reference>
+      <name value="COVID-19 complications"/>
+      <description value="Complications due to COVID-19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/covid-19-symptoms-icd-10-gm"/>
+      </reference>
+      <name value="COVID-19 symptoms"/>
+      <description value="Symptoms due to COVID-19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/covid-19-symptoms"/>
+      </reference>
+      <name value="COVID-19 symptoms"/>
+      <description value="Symptoms due to COVID-19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/chronic-hematologic-diseases-sct"/>
+      </reference>
+      <name value="Chronic Hematologic Diseases"/>
+      <description value="Chronic hematologic diseases the context of pediatrics and COVID-19"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/chronic-hematologic-diseases-icd"/>
       </reference>
       <name value="Chronic hematologic diseases (ICD10-GM)"/>
       <description value="Chronic hematologic diseases in the context of pediatrics and COVID-19"/>
@@ -559,50 +692,6 @@
       </reference>
       <name value="Congenital Diseases"/>
       <description value="Congenital diseases"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/covid19-complications-icd10-gm"/>
-      </reference>
-      <name value="Covid19 complications ICD10 GM"/>
-      <description value="Complications due to COVID19"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/covid19-complications"/>
-      </reference>
-      <name value="Covid19 complications"/>
-      <description value="Complications due to COVID19"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/covid-19-symptoms-icd-10-gm"/>
-      </reference>
-      <name value="Covid19 symptoms"/>
-      <description value="Symptoms due to COVID19"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/covid-19-symptoms"/>
-      </reference>
-      <name value="Covid19 symptoms"/>
-      <description value="Symptoms due to COVID19"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -657,7 +746,7 @@
         <reference value="ValueSet/gastrointestinal-diseases-sct"/>
       </reference>
       <name value="Value Set of Gastrointestinal Diseases"/>
-      <description value="Gastrointestinal diseases in the context of pediatrics and Covid-19"/>
+      <description value="Gastrointestinal diseases in the context of pediatrics and COVID-19"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -668,7 +757,7 @@
         <reference value="ValueSet/gastrointestinal-diseases-icd"/>
       </reference>
       <name value="Value Set of Gastrointestinal Diseases ICD"/>
-      <description value="Gastrointestinal diseases in the context of pediatrics and Covid-19"/>
+      <description value="Gastrointestinal diseases in the context of pediatrics and COVID-19"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -679,7 +768,7 @@
         <reference value="ValueSet/imaging-procedures-dicom"/>
       </reference>
       <name value="Value Set of imaging procedures in dicom format"/>
-      <description value="Imaging procedures in the context of pediatrics and Covid-19"/>
+      <description value="Imaging procedures in the context of pediatrics and COVID-19"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -690,7 +779,7 @@
         <reference value="ValueSet/imaging-procedures-sct"/>
       </reference>
       <name value="Value Set of imaging procedures from SNOMED CT"/>
-      <description value="Imaging procedures in the context of pediatrics and Covid-19"/>
+      <description value="Imaging procedures in the context of pediatrics and COVID-19"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -756,7 +845,7 @@
         <reference value="ValueSet/medication-pediatrics-atc-de"/>
       </reference>
       <name value="Medication Pediatrics ATC DE"/>
-      <description value="Medication used in the case of a of Covid-19 infection for a pediatric patient"/>
+      <description value="Medication used in the case of a of COVID-19 infection for a pediatric patient"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -767,7 +856,7 @@
         <reference value="ValueSet/medication-pediatrics-sct"/>
       </reference>
       <name value="Medication Pediatrics SNOMED CT"/>
-      <description value="Medication used in the case of a of Covid-19 infection for a pediatric patient"/>
+      <description value="Medication used in the case of a of COVID-19 infection for a pediatric patient"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -851,21 +940,10 @@
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/CongenitalAtransferrinemiaConfirmed"/>
+        <reference value="Condition/COVID19Complication"/>
       </reference>
-      <name value="Congenital Atransferrinemia confirmed"/>
-      <description value="Example: Confirmed congenital atransferrinemia"/>
-      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/congenital-disease"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/Covid19Complication"/>
-      </reference>
-      <name value="Covid19 Complication"/>
-      <description value="Example of a covid19 complication"/>
+      <name value="COVID-19 Complication"/>
+      <description value="Example of a COVID-19 complication"/>
       <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/covid19-complication"/>
     </resource>
     <resource>
@@ -873,11 +951,22 @@
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/Covid19Symptoms"/>
+        <reference value="Condition/COVID19Symptoms"/>
       </reference>
-      <name value="Covid19 Symptom"/>
-      <description value="Example of a covid19 complication"/>
+      <name value="COVID19 Symptom"/>
+      <description value="Example of a COVID-19 complication"/>
       <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/covid19-symptoms"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/CongenitalAtransferrinemiaConfirmed"/>
+      </reference>
+      <name value="Congenital Atransferrinemia confirmed"/>
+      <description value="Example: Confirmed congenital atransferrinemia"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/congenital-disease"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1148,22 +1237,22 @@
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/instance-chronic-Hematologic-diseases"/>
+        <reference value="Condition/instance-chronic-hematologic-diseases"/>
       </reference>
-      <name value="Instance of fhir resource chronic Hematologic diseases in the context of pediatrics"/>
-      <description value="Example of a chronic Hematologic diseases"/>
-      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases"/>
+      <name value="Instance of fhir resource chronic hematologic diseases in the context of pediatrics"/>
+      <description value="Example of a chronic hematologic diseases"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/chronic-hematologic-diseases"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/instance-chronic-Hematologic-diseases-icd"/>
+        <reference value="Condition/instance-chronic-hematologic-diseases-icd"/>
       </reference>
-      <name value="Instance of fhir resource chronic Hematologic diseases in the context of pediatrics"/>
-      <description value="Example of a chronic Hematologic diseases"/>
-      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/chronic-Hematologic-diseases"/>
+      <name value="Instance of fhir resource chronic hematologic diseases in the context of pediatrics"/>
+      <description value="Example of a chronic hematologic diseases"/>
+      <exampleCanonical value="https://www.napkon.de/fhir/StructureDefinition/chronic-hematologic-diseases"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1259,8 +1348,58 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="Home"/>
+        <title value="NAPKON Pediatrics Module"/>
         <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="profiles.html"/>
+        <title value="Profiles"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="codesystems.html"/>
+        <title value="Code Systems"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="valuesets.html"/>
+        <title value="Value Sets"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="extensions.html"/>
+        <title value="Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="examples.html"/>
+        <title value="Examples"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="changelog.html"/>
+        <title value="Change Log"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifacts"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="gecco-sars-cov-2-rt-pcr.html"/>
+          <title value="GECCO SARS-CoV-2 RT PCR in respiratory specimen"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="gecco-immunization.html"/>
+          <title value="GECCO History of Vaccination"/>
+          <generation value="markdown"/>
+        </page>
       </page>
     </page>
     <parameter>

@@ -1,7 +1,7 @@
 // Author: Thomas Haese
 // Charité - Universitätsmedizin Berlin
 ValueSet: ChronicHematologicDiseasesICD
-Id: chronic-Hematologic-diseases-icd
+Id: chronic-hematologic-diseases-icd
 Title: "Chronic hematologic diseases (ICD10-GM)"
 Description: "Chronic hematologic diseases in the context of pediatrics and COVID-19"
 * insert napkon-metadata(2021-08-04, #active, 1.0.0)

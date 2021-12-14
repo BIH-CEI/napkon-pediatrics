@@ -1,9 +1,9 @@
 // Author: Larissa Röhrig
 // Charité - Universitätsmedizin Berlin
-ValueSet: Covid19SymptomsICD10GM
+ValueSet: COVID19SymptomsICD10GM
 Id: covid-19-symptoms-icd-10-gm
-Title: "Covid19 symptoms"
-Description: "Symptoms due to COVID19"
+Title: "COVID-19 symptoms"
+Description: "Symptoms due to COVID-19"
 * insert napkon-metadata(2020-11-11, #active, 1.0.0)
 * $icd10-gm#R07.0 "Halsschmerzen" // Halschmerzen
 * $icd10-gm#R19.88 "Sonstige näher bezeichnete Symptome, die das Verdauungssystem und das Abdomen betreffen" // Schluckbeschwerden

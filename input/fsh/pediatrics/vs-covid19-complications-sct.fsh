@@ -1,9 +1,9 @@
 // Author: Gregor Lichtner
 // Charité - Universitätsmedizin Berlin
-ValueSet: Covid19ComplicationsSCT
+ValueSet: COVID19ComplicationsSCT
 Id: covid19-complications
-Title: "Covid19 complications"
-Description: "Complications due to COVID19"
+Title: "COVID-19 complications"
+Description: "Complications due to COVID-19"
 * insert napkon-metadata(2020-10-05, #active, 1.0.0)
 * $sct#52702003 "Chronic fatigue syndrome (disorder)" // Chronische Fatigue
 * $sct#32398004 "Bronchitis (disorder)" // Bronchitis/Bronchiolitis

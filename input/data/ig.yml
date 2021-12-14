@@ -1,0 +1,615 @@
+contact:
+- name: "Charit\xE9 - Universit\xE4tsmedizin Berlin"
+  telecom:
+  - system: url
+    value: https://www.netzwerk-universitaetsmedizin.de
+definition:
+  page:
+    generation: html
+    nameUrl: toc.html
+    page:
+    - generation: markdown
+      nameUrl: index.html
+      title: NAPKON Pediatrics Module
+    - generation: markdown
+      nameUrl: profiles.html
+      title: Profiles
+    - generation: markdown
+      nameUrl: codesystems.html
+      title: Code Systems
+    - generation: markdown
+      nameUrl: valuesets.html
+      title: Value Sets
+    - generation: markdown
+      nameUrl: extensions.html
+      title: Extensions
+    - generation: markdown
+      nameUrl: examples.html
+      title: Examples
+    - generation: html
+      nameUrl: downloads.html
+      title: Downloads
+    - generation: markdown
+      nameUrl: changelog.html
+      title: Change Log
+    - generation: html
+      nameUrl: artifacts.html
+      page:
+      - generation: markdown
+        nameUrl: gecco-sars-cov-2-rt-pcr.html
+        title: GECCO SARS-CoV-2 RT PCR in respiratory specimen
+      - generation: markdown
+        nameUrl: gecco-immunization.html
+        title: GECCO History of Vaccination
+      title: Artifacts
+    title: Table of Contents
+  parameter:
+  - code: copyrightyear
+    value: 2021+
+  - code: releaselabel
+    value: trial-use
+  - code: active-tables
+    value: 'true'
+  - code: apply-contact
+    value: 'false'
+  - code: apply-jurisdiction
+    value: 'false'
+  - code: apply-publisher
+    value: 'false'
+  - code: apply-version
+    value: 'false'
+  - code: show-inherited-invariants
+    value: 'false'
+  - code: usage-stats-opt-out
+    value: 'true'
+  - code: excludexml
+    value: 'false'
+  - code: excludejsn
+    value: 'false'
+  - code: excludettl
+    value: 'true'
+  - code: excludemap
+    value: 'true'
+  - code: excludeexample
+    value: 'true'
+  - code: extension-domain
+    value: https://www.netzwerk-universitaetsmedizin.de
+  - code: extension-domain
+    value: https://napkon.de
+  - code: extension-domain
+    value: https://simplifier.net
+  resource:
+  - description: Occurrence of a bacterial infection
+    exampleBoolean: false
+    name: Bacterial Infection
+    reference:
+      reference: StructureDefinition/bacterial-infection
+  - description: Birth Height of a patient in context of Pediatrics
+    exampleBoolean: false
+    name: Birth Height
+    reference:
+      reference: StructureDefinition/birth-height
+  - description: Birth Height with unit percentiles in context of Pediatrics
+    exampleBoolean: false
+    name: Birth Height with unit percentiles
+    reference:
+      reference: StructureDefinition/birth-height-percentiles
+  - description: Body mass index of a patient in context of Pediatrics
+    exampleBoolean: false
+    name: Body Mass Index
+    reference:
+      reference: StructureDefinition/body-mass-index
+  - description: Body mass index with unit percentiles in context of Pediatrics
+    exampleBoolean: false
+    name: Body Mass Index with unit percentiles
+    reference:
+      reference: StructureDefinition/body-mass-index-percentiles
+  - description: Complication due to COVID-19
+    exampleBoolean: false
+    name: COVID-19 complication
+    reference:
+      reference: StructureDefinition/covid19-complication
+  - description: Additional COVID-19 symptoms
+    exampleBoolean: false
+    name: COVID-19 Symptoms
+    reference:
+      reference: StructureDefinition/covid19-symptoms
+  - description: Chronic hematologic diseases as a risk factor for a severe course
+      of an infection with SARS-CoV-2 in the context of pediatrics
+    exampleBoolean: false
+    name: Chronic Hematologic Diseases
+    reference:
+      reference: StructureDefinition/chronic-hematologic-diseases
+  - description: Chronic kidney diseases in the context of pediatrics
+    exampleBoolean: false
+    name: Chronic Kidney Diseases
+    reference:
+      reference: StructureDefinition/chronic-kidney-diseases
+  - description: Congenital disease in the context of the NAPKON pediatrics module
+    exampleBoolean: false
+    name: Congenital Disease
+    reference:
+      reference: StructureDefinition/congenital-disease
+  - description: Occurrence of a fungal infection
+    exampleBoolean: false
+    name: Fungal Infection
+    reference:
+      reference: StructureDefinition/fungal-infection
+  - description: Gastrointestinal diseases in the field of pediatrics as a risk factor
+      for a severe course of an infection with SARS-CoV-2.
+    exampleBoolean: false
+    name: Gastrointestinal Diseases
+    reference:
+      reference: StructureDefinition/gastrointestinal-diseases
+  - description: Head circumference of a patient in context of Pediatrics
+    exampleBoolean: false
+    name: Head circumference
+    reference:
+      reference: StructureDefinition/head-circumference
+  - description: Head circumference with unit percentiles in context of Pediatrics
+    exampleBoolean: false
+    name: Head circumference with unit percentiles
+    reference:
+      reference: StructureDefinition/head-circumference-percentiles
+  - description: Records an application of a radiological imaging procedures performed
+      on the patient (COVID-19 imaging procedures)
+    exampleBoolean: false
+    name: Imaging Procedures
+    reference:
+      reference: StructureDefinition/imaging-procedures
+  - description: Immunosuppresive Permanent Medication
+    exampleBoolean: false
+    name: Immunosuppresive Permanent Medication
+    reference:
+      reference: StructureDefinition/immunosuppresive-permanent-medication
+  - description: Duration of intensive care treatment
+    exampleBoolean: false
+    name: Intensive care treatment duration
+    reference:
+      reference: StructureDefinition/intensive-care-treatment-duration
+  - description: This profile describes a stem cell transplant for a pediatric patient.
+    exampleBoolean: false
+    name: Medical History Stem Cells Transplant
+    reference:
+      reference: StructureDefinition/medical-history-stem-cell-transplant
+  - description: Records an application of a radiological imaging procedures performed
+      on the patient (COVID-19 imaging procedures)
+    exampleBoolean: false
+    name: Pediatric Imaging Study
+    reference:
+      reference: StructureDefinition/pediatric-imaging-study
+  - description: Medication taken by or given to a pediatric patient.
+    exampleBoolean: false
+    name: Pediatric Medication
+    reference:
+      reference: StructureDefinition/pediatric-medication
+  - description: List of medications taken before admission to a hospital
+    exampleBoolean: false
+    name: Preadmission Medications
+    reference:
+      reference: StructureDefinition/preadmission-medications
+  - description: Qualitative detection of SARS-CoV-2 in specimens by RT-PCR
+    exampleBoolean: false
+    name: SARS-CoV-2 RT PCR Specimen
+    reference:
+      reference: StructureDefinition/sars-cov2-rt-pcr-specimen
+  - description: Urine and Stool samples
+    exampleBoolean: false
+    name: Specimen Excreta
+    reference:
+      reference: StructureDefinition/specimen-excreta
+  - description: Application of a thoracic drainage
+    exampleBoolean: false
+    name: Thoracic Drainge
+    reference:
+      reference: StructureDefinition/thoracic-drainage
+  - description: Total length of stay
+    exampleBoolean: false
+    name: Total length of stay
+    reference:
+      reference: StructureDefinition/total-length-of-stay
+  - description: Occurrence of a viral infection
+    exampleBoolean: false
+    name: Viral Infection
+    reference:
+      reference: StructureDefinition/viral-infection
+  - description: Value set of bacterial infections
+    exampleBoolean: false
+    name: Bacterial Infectious Diseases
+    reference:
+      reference: ValueSet/bacterial-infectious-diseases
+  - description: Complications due to COVID-19
+    exampleBoolean: false
+    name: COVID-19 complications ICD10 GM
+    reference:
+      reference: ValueSet/covid19-complications-icd10-gm
+  - description: Complications due to COVID-19
+    exampleBoolean: false
+    name: COVID-19 complications
+    reference:
+      reference: ValueSet/covid19-complications
+  - description: Symptoms due to COVID-19
+    exampleBoolean: false
+    name: COVID-19 symptoms
+    reference:
+      reference: ValueSet/covid-19-symptoms-icd-10-gm
+  - description: Symptoms due to COVID-19
+    exampleBoolean: false
+    name: COVID-19 symptoms
+    reference:
+      reference: ValueSet/covid-19-symptoms
+  - description: Chronic hematologic diseases the context of pediatrics and COVID-19
+    exampleBoolean: false
+    name: Chronic Hematologic Diseases
+    reference:
+      reference: ValueSet/chronic-hematologic-diseases-sct
+  - description: Chronic hematologic diseases in the context of pediatrics and COVID-19
+    exampleBoolean: false
+    name: Chronic hematologic diseases (ICD10-GM)
+    reference:
+      reference: ValueSet/chronic-hematologic-diseases-icd
+  - description: Chronic kidney diseases in the context of pediatrics
+    exampleBoolean: false
+    name: Value Set of Chronic Kidney Diseases
+    reference:
+      reference: ValueSet/chronic-kidney-diseases-icd
+  - description: Chronic kidney diseases in the context of pediatrics
+    exampleBoolean: false
+    name: Value Set of Chronic Kidney Diseases
+    reference:
+      reference: ValueSet/chronic-kidney-diseases-sct
+  - description: Congenital diseases
+    exampleBoolean: false
+    name: Congenital Diseases
+    reference:
+      reference: ValueSet/congenital-diseases
+  - description: Values for laboratory observations
+    exampleBoolean: false
+    name: Detected Not Detected Unknown Undetermined
+    reference:
+      reference: ValueSet/detected-not-detected-unknown-undetermined
+  - description: Codes for excreta (stool and urine)
+    exampleBoolean: false
+    name: Excreta
+    reference:
+      reference: ValueSet/Excreta
+  - description: Value set of fungal infections
+    exampleBoolean: false
+    name: Fungal Infections ICD10 GM
+    reference:
+      reference: ValueSet/fungal-infections-icd10-gm
+  - description: Value set of fungal infections
+    exampleBoolean: false
+    name: Fungal Infections SNOMED CT
+    reference:
+      reference: ValueSet/fungal-infections-sct
+  - description: Gastrointestinal diseases in the context of pediatrics and COVID-19
+    exampleBoolean: false
+    name: Value Set of Gastrointestinal Diseases
+    reference:
+      reference: ValueSet/gastrointestinal-diseases-sct
+  - description: Gastrointestinal diseases in the context of pediatrics and COVID-19
+    exampleBoolean: false
+    name: Value Set of Gastrointestinal Diseases ICD
+    reference:
+      reference: ValueSet/gastrointestinal-diseases-icd
+  - description: Imaging procedures in the context of pediatrics and COVID-19
+    exampleBoolean: false
+    name: Value Set of imaging procedures in dicom format
+    reference:
+      reference: ValueSet/imaging-procedures-dicom
+  - description: Imaging procedures in the context of pediatrics and COVID-19
+    exampleBoolean: false
+    name: Value Set of imaging procedures from SNOMED CT
+    reference:
+      reference: ValueSet/imaging-procedures-sct
+  - description: Immunosuppressive medications
+    exampleBoolean: false
+    name: Immunosuppressive Permanent Medications
+    reference:
+      reference: ValueSet/immunosuppressive-permament-medications
+  - description: Immunosuppressive Medications ATC codes
+    exampleBoolean: false
+    name: Immunosuppressive Permanent Medications ATC
+    reference:
+      reference: ValueSet/immunosuppressive-permament-medications-atc
+  - description: Laboratory tests in the context of NAPKON Pediatrics Module
+    exampleBoolean: false
+    name: Laboratory Tests
+    reference:
+      reference: ValueSet/laboratory-tests
+  - description: Medical history linked to stem cells or bone marrow transplant for
+      pediatric patients
+    exampleBoolean: false
+    name: Medical History Stem Cell Transplants
+    reference:
+      reference: ValueSet/medical-history-stem-cell-transplant
+  - description: Medical history linked to stem cells or bone marrow transplant for
+      pediatric patients
+    exampleBoolean: false
+    name: Medical History Stem Cell Transplants ICD
+    reference:
+      reference: ValueSet/medical-history-stem-cell-transplant-icd
+  - description: Medication used in the case of a of COVID-19 infection for a pediatric
+      patient
+    exampleBoolean: false
+    name: Medication Pediatrics ATC DE
+    reference:
+      reference: ValueSet/medication-pediatrics-atc-de
+  - description: Medication used in the case of a of COVID-19 infection for a pediatric
+      patient
+    exampleBoolean: false
+    name: Medication Pediatrics SNOMED CT
+    reference:
+      reference: ValueSet/medication-pediatrics-sct
+  - description: Values for laboratory observations
+    exampleBoolean: false
+    name: Present Not Present Undetermined Other
+    reference:
+      reference: ValueSet/present-not-present-undetermined-other
+  - description: EventStatus value set restricted to codes not-done, active, completed
+      and unknown
+    exampleBoolean: false
+    name: RestrictedEventStatus
+    reference:
+      reference: ValueSet/restricted-event-status
+  - exampleBoolean: false
+    name: ViralInfectiousDiseases
+    reference:
+      reference: ValueSet/viral-infectious-diseases
+  - description: Yes / No / Unknown
+    exampleBoolean: false
+    name: Yes No Unknown
+    reference:
+      reference: ValueSet/yes-no-unknown
+  - description: NAPKON Pediatrics Module Code System - Collection of pediatrics module-specific
+      codes that are missing from common terminologies such as SNOMED CT
+    exampleBoolean: false
+    name: NapkonPediatricsModule
+    reference:
+      reference: CodeSystem/napkon-pediatrics-module
+  - description: Example of a confirmed bacterial infection
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/bacterial-infection
+    name: Bacterial Infection Confirmed
+    reference:
+      reference: Condition/BacterialInfectionConfirmed
+  - description: Example of a refuted bacterial infection
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/bacterial-infection
+    name: Bacterial Infection Refuted
+    reference:
+      reference: Condition/BacterialInfectionRefuted
+  - description: Example of a COVID-19 complication
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/covid19-complication
+    name: COVID-19 Complication
+    reference:
+      reference: Condition/COVID19Complication
+  - description: Example of a COVID-19 complication
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/covid19-symptoms
+    name: COVID19 Symptom
+    reference:
+      reference: Condition/COVID19Symptoms
+  - description: 'Example: Confirmed congenital atransferrinemia'
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/congenital-disease
+    name: Congenital Atransferrinemia confirmed
+    reference:
+      reference: Condition/CongenitalAtransferrinemiaConfirmed
+  - description: Example patient to be used as reference in other instances
+    exampleBoolean: true
+    name: ExamplePatient
+    reference:
+      reference: Patient/ExamplePatient
+  - description: Example of a confirmed fungal infection
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/fungal-infection
+    name: Fungal Infection Confirmed
+    reference:
+      reference: Condition/FungalInfectionConfirmed
+  - description: Example of a fungal infection where the presence is unknown
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/fungal-infection
+    name: Fungal Infection Unknown
+    reference:
+      reference: Condition/FungalInfectionUnknown
+  - description: Example of a performed radiology/imaging procedure for pediatric
+      patients when treating COVID-19.
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/imaging-procedures
+    name: imaging-procedure-instance
+    reference:
+      reference: Procedure/ImagingProcedures
+  - description: Example of a concrete imaging study performed on a patient
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/pediatric-imaging-study
+    name: Imaging Study
+    reference:
+      reference: ImagingStudy/ImagingStudyPTHeart
+  - description: Example of a Immunosuppresive Permanent Medication
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/immunosuppresive-permanent-medication
+    name: Immunosuppresive Permanent Medication
+    reference:
+      reference: MedicationStatement/ImmunosuppresivePermanentMedication
+  - description: Example of an intensive care treatment duration
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/intensive-care-treatment-duration
+    name: Intensive Care Treatment Duration
+    reference:
+      reference: Observation/IntensiveCareTreatmentDuration
+  - description: 'Example prescription of a medication or consumption by a pediatric
+      patient '
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/pediatric-medication
+    name: Pediatric Medication ATC DE
+    reference:
+      reference: MedicationStatement/PediatricMedicationATCDE
+  - description: 'Example prescription of a medication or consumption by a pediatric
+      patient '
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/pediatric-medication
+    name: Pediatric Medication SNOMED CT
+    reference:
+      reference: MedicationStatement/PediatricMedicationSCT
+  - description: Example of a SARS-CoV-2 RT PCR from a stool sample that is detected
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/sars-cov2-rt-pcr-specimen
+    name: SARS-CoV-2 RT PCR Stool Detected
+    reference:
+      reference: Observation/SarsCoV2RTPCRStoolDetected
+  - description: Example of a SARS-CoV-2 RT PCR from a stool sample that is not detected
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/sars-cov2-rt-pcr-specimen
+    name: SARS-CoV-2 RT PCR Stool Not Detected
+    reference:
+      reference: Observation/SarsCoV2RTPCRStoolNotDetected
+  - description: Example of a SARS-CoV-2 RT PCR from a urine sample that is inconclusive
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/sars-cov2-rt-pcr-specimen
+    name: SARS-CoV-2 RT PCR Urine Inconclusive
+    reference:
+      reference: Observation/SarsCoV2RTPCRUrineInconclusive
+  - description: Stool sample
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/specimen-excreta
+    name: Specimen Stool
+    reference:
+      reference: Specimen/SpecimenStool
+  - description: Urine sample
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/specimen-excreta
+    name: Specimen Urine
+    reference:
+      reference: Specimen/SpecimenUrine
+  - description: Example of a thoracic drainage that was completed
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage
+    name: Thoracic Drainage Completed
+    reference:
+      reference: Procedure/ThoracicDrainageCompleted
+  - description: Example of a thoracic drainage that was not performed
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage
+    name: Thoracic Drainage Not Done
+    reference:
+      reference: Procedure/ThoracicDrainageNotDone
+  - description: Example of a thoracic drainage for which it is not known if it was
+      performed or not
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/thoracic-drainage
+    name: Thoracic Drainage Unknown
+    reference:
+      reference: Procedure/ThoracicDrainageUnknown
+  - description: Example of an total length of stay
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/total-length-of-stay
+    name: Total Length of Stay
+    reference:
+      reference: Observation/TotalLengthOfStay
+  - description: Example of a confirmed viral infection
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/viral-infection
+    name: Viral Infection Confirmed
+    reference:
+      reference: Condition/ViralInfectionConfirmed
+  - description: Example of a refuted viral infection
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/viral-infection
+    name: Viral Infection Refuted
+    reference:
+      reference: Condition/ViralInfectionRefuted
+  - description: Example of a birth height
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/birth-height-percentiles
+    name: Instance of fhir resource birth height (unit percentiles) in the context
+      of pediatrics
+    reference:
+      reference: Observation/birth-height-circumference-percentiles
+  - description: Example of birth height
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/birth-height
+    name: Instance of fhir resource birth height in the context of pediatrics
+    reference:
+      reference: Observation/instance-birth-height
+  - description: Example of body mass index
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/body-mass-index
+    name: Instance of fhir resource body mass index in the context of pediatrics
+    reference:
+      reference: Observation/instance-body-mass-index
+  - description: Example of body mass index with unit percentiles
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/body-mass-index-percentiles
+    name: Instance of fhir resource body mass index in the context of pediatrics
+    reference:
+      reference: Observation/instance-body-mass-index-percentiles
+  - description: Example of a chronic hematologic diseases
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/chronic-hematologic-diseases
+    name: Instance of fhir resource chronic hematologic diseases in the context of
+      pediatrics
+    reference:
+      reference: Condition/instance-chronic-hematologic-diseases
+  - description: Example of a chronic hematologic diseases
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/chronic-hematologic-diseases
+    name: Instance of fhir resource chronic hematologic diseases in the context of
+      pediatrics
+    reference:
+      reference: Condition/instance-chronic-hematologic-diseases-icd
+  - description: Example or chronic kidney diseases
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/chronic-kidney-diseases
+    name: Instance of fhir resource chronic kidney diseases in the context of pediatrics
+    reference:
+      reference: Condition/instance-chronic-kidney-diseases-icd
+  - description: Example or chronic kidney diseases
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/chronic-kidney-diseases
+    name: Instance of fhir resource chronic kidney diseases in the context of pediatrics
+    reference:
+      reference: Condition/instance-chronic-kidney-diseases-sct
+  - description: Example of a gastrointestinal disease
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/gastrointestinal-diseases
+    name: Instance of fhir resource sgastrointestinal-diseases in the context of pediatrics
+    reference:
+      reference: Condition/instance-gastrointestinal-diseases
+  - description: Example of a gastrointestinal disease
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/gastrointestinal-diseases
+    name: Instance of fhir resource sgastrointestinal-diseases in the context of pediatrics
+    reference:
+      reference: Condition/instance-gastrointestinal-diseases-icd
+  - description: Example of a head circumference
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/head-circumference
+    name: Instance of fhir resource head circumference (unit cm) in the context of
+      pediatrics
+    reference:
+      reference: Observation/instance-head-circumference
+  - description: Example of a head circumference
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/head-circumference-percentiles
+    name: Instance of fhir resource head circumference (unit percentiles) in thr context
+      of pediatrics
+    reference:
+      reference: Observation/instance-head-circumference-percentiles
+  - description: This profile describes a stem cell transplant for a pediatric patient.
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/medical-history-stem-cell-transplant
+    name: medical-history-stem-cell-transplant-instance
+    reference:
+      reference: Condition/medical-history-stem-cell-transplant-instance
+  - description: Example list of medications before the admission of the patient to
+      the hospital
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/preadmission-medications
+    name: preadmission-medications
+    reference:
+      reference: List/preadmission-medications
+dependsOn:
+- id: de_medizininformatikinitiative_kerndatensatz_prozedur
+  packageId: de.medizininformatikinitiative.kerndatensatz.prozedur
+  uri: https://simplifier.net/guide/medizininformatikinitiative-modulprozeduren-implementationguide
+  version: 2.0.0-alpha4
+- id: de_medizininformatikinitiative_kerndatensatz_person
+  packageId: de.medizininformatikinitiative.kerndatensatz.person
+  uri: https://simplifier.net/guide/medizininformatikinitiative-modulperson-implementationguide
+  version: 2.0.0-alpha3
+- id: de_medizininformatikinitiative_kerndatensatz_medikation
+  packageId: de.medizininformatikinitiative.kerndatensatz.medikation
+  uri: https://simplifier.net/guide/medizininformatikinitiative-modulmedikation-implementationguide
+  version: 1.0.10
+- id: de_medizininformatikinitiative_kerndatensatz_diagnose
+  packageId: de.medizininformatikinitiative.kerndatensatz.diagnose
+  uri: https://simplifier.net/guide/medizininformatikinitiative-moduldiagnosen-implementationguide
+  version: 2.0.0-alpha3
+- id: de_medizininformatikinitiative_kerndatensatz_laborbefund
+  packageId: de.medizininformatikinitiative.kerndatensatz.laborbefund
+  uri: https://simplifier.net/guide/laborbefundindermedizininformatik-initiative
+  version: 1.0.6
+- id: de_gecco
+  packageId: de.gecco
+  uri: https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide
+  version: 1.0.5
+- id: de_medizininformatikinitiative_kerndatensatz_meta
+  packageId: de.medizininformatikinitiative.kerndatensatz.meta
+  uri: https://simplifier.net/guide/medizininformatikinitiative-implementationguide-manteldokument
+  version: 1.0.3
+fhirVersion:
+- 4.0.1
+id: napkon-pediatrics
+name: napkonpediatrics
+packageId: napkon-pediatrics
+publisher: "Charit\xE9 - Universit\xE4tsmedizin Berlin"
+resourceType: ImplementationGuide
+status: active
+title: NAPKON Pediatrics Module
+url: https://www.napkon.de/fhir/ImplementationGuide/napkon-pediatrics
+version: 1.0.0

@@ -14,7 +14,6 @@ Description: "Medication taken by or given to a pediatric patient."
   * coding contains sct 0..1 and atcde 0..1
   * coding[sct] from MedicationPediatricsSCT (required)
   * coding[atcde] from MedicationPediatricsATCDE (required)
-// TODO: Mention in IG that "Anwendungsdauer" is coded by effectivePeriod
 
 Instance: PediatricMedicationSCT
 InstanceOf: pediatric-medication

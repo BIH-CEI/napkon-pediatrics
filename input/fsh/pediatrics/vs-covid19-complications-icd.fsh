@@ -1,9 +1,9 @@
 // Author: Gregor Lichtner
 // Berlin Institute of Health | Charité
-ValueSet: Covid19ComplicationsICD10GM
+ValueSet: COVID19ComplicationsICD10GM
 Id: covid19-complications-icd10-gm
-Title: "Covid19 complications ICD10 GM"
-Description: "Complications due to COVID19"
+Title: "COVID-19 complications ICD10 GM"
+Description: "Complications due to COVID-19"
 * insert napkon-metadata(2020-10-05, #active, 1.0.0)
 
 // Chronische Fatigue

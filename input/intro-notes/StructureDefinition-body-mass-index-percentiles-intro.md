@@ -9,7 +9,7 @@
 | Body mass index | _Body mass index percentile_ |
 {:.grid}
 
-The body mass index may be specified as a specific percentile value (e.g. 90th percentile) in `Observation.valueQuantity`.
+The body mass index is specified as a specific percentile value (e.g. 90th percentile) in `Observation.valueQuantity`.
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

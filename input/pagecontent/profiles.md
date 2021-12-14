@@ -14,7 +14,7 @@
 {% include resource-reference.md name='Medical History Stem Cells Transplant' %}
 
 ### Symptoms
-{% include resource-reference.md name='Covid19Symptoms' %}
+{% include resource-reference.md name='COVID-19 Symptoms' %}
 
 ### Medication
 {% include resource-reference.md name='Immunosuppresive Permanent Medication' %}
@@ -26,7 +26,7 @@
 {% include resource-reference.md name='Specimen Excreta' %}
 
 ### Complications
-{% include resource-reference.md name='Covid19 complication' %}
+{% include resource-reference.md name='COVID-19 complication' %}
 {% include resource-reference.md name='Bacterial Infection' %}
 {% include resource-reference.md name='Viral Infection' %}
 {% include resource-reference.md name='Fungal Infection' %}

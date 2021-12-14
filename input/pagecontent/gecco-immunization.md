@@ -17,7 +17,7 @@ In contrast to what is specified in the [Implementation Guide of the GECCO Immun
 | COVID-19 Vaccine® Moderna | `1119349007 |Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)|` |
 | Vaxzevria® AstraZeneca | `29061000087103 | Vaccine product containing only recombinant non-replicating viral vector encoding Severe acute respiratory syndrome coronavirus 2 spike protein (medicinal product) |` |
 | Janssen® Johnson & Johnson | `29061000087103 | Vaccine product containing only recombinant non-replicating viral vector encoding Severe acute respiratory syndrome coronavirus 2 spike protein (medicinal product) |` |
-
+{:grid}
 
 SARS-CoV-2 RT PCR in respiratory speciment are supplied using the [GECCO SARS-CoV-2-RT-PCR profile](https://simplifier.net/guide/GermanCoronaConsensusDataSet-ImplementationGuide/SARS-CoV-2-RT-PCR), which is derived from the [MII Laborbefund profile](https://simplifier.net/guide/LaborbefundinderMedizininformatik-Initiative/Observation). Please see the [GECCO SARS-CoV-2-RT-PCR Implementation Guide](https://simplifier.net/guide/GermanCoronaConsensusDataSet-ImplementationGuide/SARS-CoV-2-RT-PCR) for more information.
 

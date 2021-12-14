@@ -3,7 +3,7 @@
 ValueSet: ChronicHematologicDiseases
 Id: chronic-hematologic-diseases-sct
 Title: "Chronic Hematologic Diseases"
-Description: "Chronic hematologic diseases the context of pediatrics and Covid-19"
+Description: "Chronic hematologic diseases the context of pediatrics and COVID-19"
 * insert napkon-metadata(2021-09-13, #active, 1.0.0)
 * $sct#61261009 "Hemolytic anemia (disorder)" // Hämolytische Anämie
 * $sct#40108008 "Thalassemia (disorder)" // Thalassämie

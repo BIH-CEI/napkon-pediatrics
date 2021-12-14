@@ -22,8 +22,8 @@
 {% include resource-reference.md name='Excreta' %}
 
 ### Complications
-{% include resource-reference.md name='Covid19 complications ICD10 GM' %}
-{% include resource-reference.md name='Covid19 complications' %}
+{% include resource-reference.md name='COVID-19 complications ICD10 GM' %}
+{% include resource-reference.md name='COVID-19 complications' %}
 {% include resource-reference.md name='Bacterial Infectious Diseases' %}
 {% include resource-reference.md name='ViralInfectiousDiseases' %}
 {% include resource-reference.md name='Fungal Infections ICD10 GM' %}

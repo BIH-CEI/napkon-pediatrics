@@ -32,6 +32,16 @@ definition:
     - generation: markdown
       nameUrl: changelog.html
       title: Change Log
+    - generation: html
+      nameUrl: artifacts.html
+      page:
+      - generation: markdown
+        nameUrl: gecco-sars-cov-2-rt-pcr.html
+        title: GECCO SARS-CoV-2 RT PCR in respiratory specimen
+      - generation: markdown
+        nameUrl: gecco-immunization.html
+        title: GECCO History of Vaccination
+      title: Artifacts
     title: Table of Contents
   parameter:
   - code: copyrightyear
@@ -94,6 +104,16 @@ definition:
     name: Body Mass Index with unit percentiles
     reference:
       reference: StructureDefinition/body-mass-index-percentiles
+  - description: Complication due to COVID-19
+    exampleBoolean: false
+    name: COVID-19 complication
+    reference:
+      reference: StructureDefinition/covid19-complication
+  - description: Additional COVID-19 symptoms
+    exampleBoolean: false
+    name: COVID-19 Symptoms
+    reference:
+      reference: StructureDefinition/covid19-symptoms
   - description: Chronic hematologic diseases as a risk factor for a severe course
       of an infection with SARS-CoV-2 in the context of pediatrics
     exampleBoolean: false
@@ -110,16 +130,6 @@ definition:
     name: Congenital Disease
     reference:
       reference: StructureDefinition/congenital-disease
-  - description: Complication due to COVID19
-    exampleBoolean: false
-    name: Covid19 complication
-    reference:
-      reference: StructureDefinition/covid19-complication
-  - description: Cover additional Covid 19 symptoms
-    exampleBoolean: false
-    name: Covid19Symptoms
-    reference:
-      reference: StructureDefinition/covid19-symptoms
   - description: Occurrence of a fungal infection
     exampleBoolean: false
     name: Fungal Infection
@@ -208,7 +218,27 @@ definition:
     name: Bacterial Infectious Diseases
     reference:
       reference: ValueSet/bacterial-infectious-diseases
-  - description: Chronic hematologic diseases the context of pediatrics and Covid-19
+  - description: Complications due to COVID-19
+    exampleBoolean: false
+    name: COVID-19 complications ICD10 GM
+    reference:
+      reference: ValueSet/covid19-complications-icd10-gm
+  - description: Complications due to COVID-19
+    exampleBoolean: false
+    name: COVID-19 complications
+    reference:
+      reference: ValueSet/covid19-complications
+  - description: Symptoms due to COVID-19
+    exampleBoolean: false
+    name: COVID-19 symptoms
+    reference:
+      reference: ValueSet/covid-19-symptoms-icd-10-gm
+  - description: Symptoms due to COVID-19
+    exampleBoolean: false
+    name: COVID-19 symptoms
+    reference:
+      reference: ValueSet/covid-19-symptoms
+  - description: Chronic hematologic diseases the context of pediatrics and COVID-19
     exampleBoolean: false
     name: Chronic Hematologic Diseases
     reference:
@@ -233,26 +263,6 @@ definition:
     name: Congenital Diseases
     reference:
       reference: ValueSet/congenital-diseases
-  - description: Complications due to COVID19
-    exampleBoolean: false
-    name: Covid19 complications ICD10 GM
-    reference:
-      reference: ValueSet/covid19-complications-icd10-gm
-  - description: Complications due to COVID19
-    exampleBoolean: false
-    name: Covid19 complications
-    reference:
-      reference: ValueSet/covid19-complications
-  - description: Symptoms due to COVID19
-    exampleBoolean: false
-    name: Covid19 symptoms
-    reference:
-      reference: ValueSet/covid-19-symptoms-icd-10-gm
-  - description: Symptoms due to COVID19
-    exampleBoolean: false
-    name: Covid19 symptoms
-    reference:
-      reference: ValueSet/covid-19-symptoms
   - description: Values for laboratory observations
     exampleBoolean: false
     name: Detected Not Detected Unknown Undetermined
@@ -273,22 +283,22 @@ definition:
     name: Fungal Infections SNOMED CT
     reference:
       reference: ValueSet/fungal-infections-sct
-  - description: Gastrointestinal diseases in the context of pediatrics and Covid-19
+  - description: Gastrointestinal diseases in the context of pediatrics and COVID-19
     exampleBoolean: false
     name: Value Set of Gastrointestinal Diseases
     reference:
       reference: ValueSet/gastrointestinal-diseases-sct
-  - description: Gastrointestinal diseases in the context of pediatrics and Covid-19
+  - description: Gastrointestinal diseases in the context of pediatrics and COVID-19
     exampleBoolean: false
     name: Value Set of Gastrointestinal Diseases ICD
     reference:
       reference: ValueSet/gastrointestinal-diseases-icd
-  - description: Imaging procedures in the context of pediatrics and Covid-19
+  - description: Imaging procedures in the context of pediatrics and COVID-19
     exampleBoolean: false
     name: Value Set of imaging procedures in dicom format
     reference:
       reference: ValueSet/imaging-procedures-dicom
-  - description: Imaging procedures in the context of pediatrics and Covid-19
+  - description: Imaging procedures in the context of pediatrics and COVID-19
     exampleBoolean: false
     name: Value Set of imaging procedures from SNOMED CT
     reference:
@@ -320,13 +330,13 @@ definition:
     name: Medical History Stem Cell Transplants ICD
     reference:
       reference: ValueSet/medical-history-stem-cell-transplant-icd
-  - description: Medication used in the case of a of Covid-19 infection for a pediatric
+  - description: Medication used in the case of a of COVID-19 infection for a pediatric
       patient
     exampleBoolean: false
     name: Medication Pediatrics ATC DE
     reference:
       reference: ValueSet/medication-pediatrics-atc-de
-  - description: Medication used in the case of a of Covid-19 infection for a pediatric
+  - description: Medication used in the case of a of COVID-19 infection for a pediatric
       patient
     exampleBoolean: false
     name: Medication Pediatrics SNOMED CT
@@ -368,21 +378,21 @@ definition:
     name: Bacterial Infection Refuted
     reference:
       reference: Condition/BacterialInfectionRefuted
+  - description: Example of a COVID-19 complication
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/covid19-complication
+    name: COVID-19 Complication
+    reference:
+      reference: Condition/COVID19Complication
+  - description: Example of a COVID-19 complication
+    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/covid19-symptoms
+    name: COVID19 Symptom
+    reference:
+      reference: Condition/COVID19Symptoms
   - description: 'Example: Confirmed congenital atransferrinemia'
     exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/congenital-disease
     name: Congenital Atransferrinemia confirmed
     reference:
       reference: Condition/CongenitalAtransferrinemiaConfirmed
-  - description: Example of a covid19 complication
-    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/covid19-complication
-    name: Covid19 Complication
-    reference:
-      reference: Condition/Covid19Complication
-  - description: Example of a covid19 complication
-    exampleCanonical: https://www.napkon.de/fhir/StructureDefinition/covid19-symptoms
-    name: Covid19 Symptom
-    reference:
-      reference: Condition/Covid19Symptoms
   - description: Example patient to be used as reference in other instances
     exampleBoolean: true
     name: ExamplePatient

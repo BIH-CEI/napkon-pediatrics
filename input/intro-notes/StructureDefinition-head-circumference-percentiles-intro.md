@@ -9,7 +9,7 @@
 | Head circumference | _Head circumference percentile_ |
 {:.grid}
 
-The head circumference may be specified as a specific percentile value (e.g. 75th percentile) in `Observation.valueQuantity`.
+The head circumference is specified as a specific percentile value (e.g. 75th percentile) in `Observation.valueQuantity`.
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

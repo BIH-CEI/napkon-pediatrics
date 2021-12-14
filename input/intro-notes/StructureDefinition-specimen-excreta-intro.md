@@ -16,8 +16,6 @@ The following codes are from the [v2-0487 Code System](http://terminology.hl7.or
 | ------ | ---- |
 | Stuhl | `#STL "Stool = Fecal"` |
 | Urin | `#UR "Urine"` |
-
-
 {:.grid}
 
 This Specimen profile is used in conjunction with the [SARS-CoV-2 RT PCR Specimen profile][SARS-CoV-2 RT PCR Specimen] to specify the type of excreta that was collected from a patient and tested for SARS-CoV-2.

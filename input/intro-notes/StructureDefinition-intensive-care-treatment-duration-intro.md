@@ -14,7 +14,7 @@
 | Duration of intensive care treatment | _Duration of intensive care treatment in days_ |
 {:.grid}
 
-The duration of intensive care treatment may be specified as a specific value (e.g. 4) in `Observation.valueQuantity`. The unit is fixed to the [UCUM][UCUM] code `#d` (days).
+The duration of intensive care treatment is specified as a specific value (e.g. 4) in `Observation.valueQuantity`. The unit is fixed to the [UCUM][UCUM] code `#d` (days).
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

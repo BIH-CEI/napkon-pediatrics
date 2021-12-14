@@ -16,9 +16,6 @@
 | Andere | Child codes of `Mycosis (disorder)` |
 {:.grid}
 
-* include codes from system $sct where concept is-a #83062006 "Infection caused by Candida albicans (disorder)"
-* include codes from system $sct where concept is-a #65553006 "Aspergillosis (disorder)"
-* include codes from system $sct where concept is-a #3218000 "Mycosis (disorder)"
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

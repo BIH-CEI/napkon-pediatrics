@@ -6,18 +6,18 @@
 
 | Parameter Case Report Form | FHIR Resource Attribute |
 | -------------------------- | ----------------------- |
-| ... | `...` |
-{:.grid}
-
-| Parameter Case Report Form | Response Options |
-| -------------------------- | ---------------- |
-| ... | ... |
+| SARS-CoV-2 RT PCR in excreta | `Observation.valueCodeableConcept` |
 {:.grid}
 
 | Response Option | Code |
 | ------ | ---- |
-| ... | `...` |
+| Detected | `Detected (qualifier value)` |
+| Not detected | `Not detected (qualifier value)` |
+| Inconclusive | `Inconclusive (qualifier value)` |
 {:.grid}
+
+This profile is akin to the [GECCO SARS-CoV-2-RT-PCR profile](https://simplifier.net/guide/GermanCoronaConsensusDataSet-ImplementationGuide/SARS-CoV-2-RT-PCR), but for excreta specimens, not respiratory specimens.
+The exact type of specimen is specified using the `Observation.specimen` attribute with a reference to the [Specimen Excreta profile][Specimen Excreta].
 
 
 {% capture resource_inheritance %}

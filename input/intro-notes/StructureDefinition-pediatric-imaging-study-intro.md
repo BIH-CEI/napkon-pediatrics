@@ -4,21 +4,12 @@
 
 ### Guidance
 
-| Parameter Case Report Form | FHIR Resource Attribute |
-| -------------------------- | ----------------------- |
-| ... | `...` |
-{:.grid}
-
 | Parameter Case Report Form | Response Options |
 | -------------------------- | ---------------- |
-| ... | ... |
+| Imaging procedures in the context of COVID-19 | `ImagingStudy` attributes to describe the actual imaging study |
 {:.grid}
 
-| Response Option | Code |
-| ------ | ---- |
-| ... | `...` |
-{:.grid}
-
+This profile is used in conjunction with the [Imaging Procedures profile][Imaging Procedures] to capture details about the actual imaging study.
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

@@ -6,17 +6,31 @@
 
 | Parameter Case Report Form | FHIR Resource Attribute |
 | -------------------------- | ----------------------- |
-| ... | `...` |
+| Did/does the patient take a medication? | `MedicationStatement.medicationCodeableConcept` |
 {:.grid}
 
-| Parameter Case Report Form | Response Options |
-| -------------------------- | ---------------- |
-| ... | ... |
-{:.grid}
 
 | Response Option | Code |
 | ------ | ---- |
-| ... | `...` |
+| ASS | `Product containing aspirin (medicinal product)` |
+| Immunoglobuline | `Product containing human immunoglobulin (medicinal product)` |
+| Tocilizumab | `Product containing tocilizumab (medicinal product)` |
+| Anakinra | `Product containing anakinra (medicinal product)` |
+| Intropika | `Inotropic agent (substance)` |
+| Vasopressoren | `Vasopressor (substance)` |
+| Systemische Antibiotika | `Medicinal product acting as antibacterial agent (product)` |
+| Hämostaseologische Therapien | `Medicinal product acting as hemostatic (product)` |
+| Transfusion | `Blood product (product)` |
+| Bronchodilatoren | `Bronchodilator (substance)` |
+| N<sub>2</sub>O | `Product containing nitric oxide (medicinal product)` |
+{:.grid}
+
+
+| Response Option | `MedicationStatement.status` | `MedicationStatement.effectivePeriod` |
+| --------------- | --------------------------- | ------------------------------- |
+| Verabreicht (+ Anwendungsdauer) | `#completed` | _duration as [period](http://www.hl7.org/fhir/datatypes.html#Period)_ |
+| Nicht verabreicht | `#not-taken` | - |
+| Unbekannt | `#unknown` | - |
 {:.grid}
 
 

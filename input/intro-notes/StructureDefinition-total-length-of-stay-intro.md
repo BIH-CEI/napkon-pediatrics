@@ -11,10 +11,10 @@
 
 | Parameter Case Report Form | Response Options |
 | -------------------------- | ---------------- |
-| Duration of inpatient stay | uration of inpatient stay as explicit value in days |
+| Duration of inpatient stay | _Duration of inpatient stay in days_ |
 {:.grid}
 
-The duration of inpatient stay may be specified as a specific value (e.g. 14) in Observation.valueQuantity.
+The duration of inpatient stay may be specified as a specific value (e.g. 14 #d) in `Observation.valueQuantity`. The unit is fixed to the [UCUM][UCUM] code `#d` (days).
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

@@ -6,13 +6,12 @@
 
 | Parameter Case Report Form | FHIR Resource Attribute |
 | -------------------------- | ----------------------- |
-| ... | `...` |
+| Was the patient receiving immunosuppressive therapy prior to admission? If yes, which? | `MedicationStatement.medicationCodeableConcept` |
 {:.grid}
 
-| Parameter Case Report Form | Response Options |
-| -------------------------- | ---------------- |
-| ... | ... |
-{:.grid}
+
+This profile is used in conjunction with the [Preadmission Medications List profile][Preadmission Medications]: Each instance of this profile shall be added to the [Preadmission Medications List][Preadmission Medications] to indicate that the medications were administered prior to admission.
+
 
 | Response Option | [SNOMED CT][SNOMEDCT] Code | [NAPKON Pediatrics Code](CodeSystem-napkon-pediatrics-module.html) |
 | ------ | ---- |

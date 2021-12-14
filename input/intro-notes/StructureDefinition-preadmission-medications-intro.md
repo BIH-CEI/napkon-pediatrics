@@ -4,19 +4,11 @@
 
 ### Guidance
 
+This List profile is used to collect all medications that were taken prior to medication, as defined in the [Immunosuppresive Permanent Medication profile][Immunosuppresive Permanent Medication] (all entries must be derived from that profile).
+
 | Parameter Case Report Form | FHIR Resource Attribute |
 | -------------------------- | ----------------------- |
-| ... | `...` |
-{:.grid}
-
-| Parameter Case Report Form | Response Options |
-| -------------------------- | ---------------- |
-| ... | ... |
-{:.grid}
-
-| Response Option | Code |
-| ------ | ---- |
-| ... | `...` |
+| Which immunosuppressive/-modulatory medications did the patient take before admissions? | `List.entry` |
 {:.grid}
 
 

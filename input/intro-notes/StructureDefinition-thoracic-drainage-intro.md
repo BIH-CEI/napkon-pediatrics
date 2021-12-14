@@ -6,7 +6,7 @@
 
 | Parameter Case Report Form | FHIR Resource Attribute |
 | -------------------------- | ----------------------- |
-| Application of a thoracic drainage | `Prcodedure.code` |
+| Application of a thoracic drainage | `Procedure.code` |
 {:.grid}
 
 | Parameter Case Report Form | Response Options |
@@ -16,7 +16,7 @@
 
 | Response Option | Code |
 | ------ | ---- |
-| Yes,currently | `#in-progress` |
+| Yes, currently | `#in-progress` |
 | Yes | `#completed` |
 | No | `#not-done` |
 | Unknown | `#unknown` |

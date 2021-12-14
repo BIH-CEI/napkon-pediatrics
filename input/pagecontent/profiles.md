@@ -41,4 +41,7 @@
 {% include resource-reference.md name='Total length of stay' %}
 {% include resource-reference.md name='Pediatric Medication' %}
 
+### Vaccination
+{% include resource-explicit.md name='COVID-19 vaccination' link='gecco-immunization.html' description='A patient\'s history of SARS-CoV-2 vaccination' %}
+
 {% include link-list.md %}

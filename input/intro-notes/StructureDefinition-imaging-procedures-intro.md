@@ -6,7 +6,7 @@
 
 | Parameter Case Report Form | FHIR Resource Attribute |
 | -------------------------- | ----------------------- |
-| Imaging procedures in the context of COVID-19 | `...` |
+| Imaging procedures in the context of COVID-19 | `Procedure.code` |
 {:.grid}
 
 | Response Option | Code |
@@ -14,6 +14,8 @@
 | Echokardiographie | `Echocardiography (procedure)` |
 | PET-CT | `Positron emission tomography with computed tomography (procedure)` |
 {:.grid}
+
+To capture details of the actual imaging study, the [Pediatric Imaging Study profile][Pediatric Imaging Study] shall be used.
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

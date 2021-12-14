@@ -9,7 +9,7 @@
 | Head circumference | _Head circumference in cm_ |
 {:.grid}
 
-The head circumference may be specified as a specific value (e.g. 35 cm) in `Observation.valueQuantity`.
+The head circumference may be specified as a specific value (e.g. 35 cm) in `Observation.valueQuantity`. The unit is fixed to the [UCUM][UCUM] code `#cm`.
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

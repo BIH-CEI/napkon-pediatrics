@@ -19,10 +19,8 @@
 | Bocaviren | `Disease caused by Human bocavirus (disorder)` |
 | Parainfluenzaviren | `Parainfluenza (disorder)` |
 | Andere Coronaviren | `Disease caused by Coronaviridae (disorder)` |
-| Andere | `...` |
+| Andere | `Viral disease (disorder)` and children thereof |
 {:.grid}
-TODO: Andere angeben. Den Code trotzdem? oder leer lassen?
-
 
 {% capture resource_inheritance %}
 This profile of a FHIR {{resource.type}} is derived from the [{{resource.base | split: '/' | last}}]({{resource.base}})

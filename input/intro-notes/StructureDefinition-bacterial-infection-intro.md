@@ -9,7 +9,6 @@
 | Is there a bacterial infection? If yes, with which pathogen? | `Condition.code` |
 {:.grid}
 
-
 | Response Option | Condition.Code |
 | ------ | ---- |
 | Bordetella pertussis | `Pertussis (disorder)` |

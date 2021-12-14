@@ -50,6 +50,12 @@ pages:
   downloads.xml:
   changelog.md:
     title: Change Log
+  artifacts.html:
+    title: Artifacts
+    gecco-sars-cov-2-rt-pcr.md:
+      title: "GECCO SARS-CoV-2 RT PCR in respiratory specimen"
+    gecco-immunization.md:
+      title: "GECCO History of Vaccination"
 
 menu:
   Home: index.html

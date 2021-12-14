@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "napkonpediatrics"];
   fhir:ImplementationGuide.title [ fhir:value "NAPKON Pediatrics Module"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-12-14T15:06:44+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-12-14T17:47:04+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;

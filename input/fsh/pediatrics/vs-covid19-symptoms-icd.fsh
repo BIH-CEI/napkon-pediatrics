@@ -2,7 +2,7 @@
 // Charité - Universitätsmedizin Berlin
 ValueSet: COVID19SymptomsICD10GM
 Id: covid-19-symptoms-icd-10-gm
-Title: "COVID-19 symptoms"
+Title: "COVID-19 symptoms (ICD-10-GM)"
 Description: "Symptoms due to COVID-19"
 * insert napkon-metadata(2020-11-11, #active, 1.0.0)
 * $icd10-gm#R07.0 "Halsschmerzen" // Halschmerzen

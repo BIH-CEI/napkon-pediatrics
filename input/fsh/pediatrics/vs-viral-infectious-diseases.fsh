@@ -2,6 +2,8 @@
 // Charité - Universitätsmedizin Berlin
 ValueSet: ViralInfectiousDiseases
 Id: viral-infectious-diseases
+Title: "Viral Infectious Diseases"
+Description: "Viral infectious diseases in the context of pediatrics"
 * insert napkon-metadata(2021-05-28, #active, 1.0.0)
 * $sct#55735004 "Respiratory syncytial virus infection (disorder)" // RSV-Infektion
 * $sct#6142004 "Influenza (disorder)" // Influenza

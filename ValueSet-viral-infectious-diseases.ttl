@@ -15,6 +15,7 @@
   fhir:ValueSet.url [ fhir:value "https://www.napkon.de/fhir/ValueSet/viral-infectious-diseases"];
   fhir:ValueSet.version [ fhir:value "1.0.0"];
   fhir:ValueSet.name [ fhir:value "ViralInfectiousDiseases"];
+  fhir:ValueSet.title [ fhir:value "Viral Infectious Diseases"];
   fhir:ValueSet.status [ fhir:value "active"];
   fhir:ValueSet.date [ fhir:value "2021-05-28"^^xsd:date];
   fhir:ValueSet.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];
@@ -26,6 +27,7 @@
        fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/en/research/core-facilities/interoperability/" ]
      ]
   ];
+  fhir:ValueSet.description [ fhir:value "Viral infectious diseases in the context of pediatrics"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;

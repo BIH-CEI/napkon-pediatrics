@@ -1,10 +1,10 @@
 ﻿napkonpediatrics : Validation Results
 =========================================
 
-err = 20, warn = 64, info = 7
-IG Publisher Version: 1.1.83 Out of date - current version is 1.1.90
-Generated Tue Dec 14 17:49:22 UTC 2021. FHIR version 4.0.1 for napkon-pediatrics#1.0.0 (canonical = https://www.napkon.de/fhir)
- Build Errors : 2055 / 8 / 1
+err = 20, warn = 63, info = 7
+IG Publisher Version: 1.1.83 Out of date - current version is 1.1.91
+Generated Fri Dec 17 12:29:57 UTC 2021. FHIR version 4.0.1 for napkon-pediatrics#1.0.0 (canonical = https://www.napkon.de/fhir)
+ Build Errors : 2055 / 7 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-napkon-pediatrics-module : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-BacterialInfectionConfirmed : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-BacterialInfectionRefuted : 0 / 0 / 1
@@ -112,7 +112,6 @@ WARNING: ImplementationGuide.dependency[4].url: The canonical URL for an Impleme
 WARNING: ImplementationGuide.dependency[5].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: ImplementationGuide.dependency[6].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/CodingICD10GM could not be resolved
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/viral-infectious-diseases.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: ?pkp-1?: The reference https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence could not be resolved
 ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/CodingAlphaID could not be resolved
 ERROR: ?pkp-1?: The reference http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen could not be resolved
@@ -2144,10 +2143,10 @@ ERROR: /github/workspace/output/ValueSet-restricted-event-status.json.html#/html
 ERROR: /github/workspace/output/ValueSet-restricted-event-status.ttl.html#/html/body/div/div/div/p/span/p/a at Line 263, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-restricted-event-status.xml.html#/html/body/div/div/div/p/span/p/a at Line 253, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-viral-infectious-diseases.change.history.html#/html/body/div/div/div/p/span/p/a at Line 233, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-viral-infectious-diseases.html#/html/body/div/div/div/p/span/p/a at Line 278, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-viral-infectious-diseases.json.html#/html/body/div/div/div/p/span/p/a at Line 295, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-viral-infectious-diseases.ttl.html#/html/body/div/div/div/p/span/p/a at Line 292, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-viral-infectious-diseases.xml.html#/html/body/div/div/div/p/span/p/a at Line 286, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-viral-infectious-diseases.html#/html/body/div/div/div/p/span/p/a at Line 281, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-viral-infectious-diseases.json.html#/html/body/div/div/div/p/span/p/a at Line 297, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-viral-infectious-diseases.ttl.html#/html/body/div/div/div/p/span/p/a at Line 294, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-viral-infectious-diseases.xml.html#/html/body/div/div/div/p/span/p/a at Line 288, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-yes-no-unknown.change.history.html#/html/body/div/div/div/p/span/p/a at Line 233, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-yes-no-unknown.html#/html/body/div/div/div/p/span/p/a at Line 278, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-yes-no-unknown.json.html#/html/body/div/div/div/p/span/p/a at Line 257, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
@@ -2166,7 +2165,7 @@ ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/ul/li/
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/span/p/a at Line 248, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/profiles.html#/html/body/div/div/div/p/span/p/a at Line 471, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/span/p/a at Line 175, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
-ERROR: /github/workspace/output/valuesets.html#/html/body/div/div/div/p/span/p/a at Line 278, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
+ERROR: /github/workspace/output/valuesets.html#/html/body/div/div/div/p/span/p/a at Line 478, column 9: The link 'http://hl7.org/fhir/R4//history.html' for "Version History" cannot be resolved
 == fsh-generated/resources/CodeSystem-napkon-pediatrics-module.json ==
 == fsh-generated/resources/Condition-BacterialInfectionConfirmed.json ==
 == fsh-generated/resources/Condition-BacterialInfectionRefuted.json ==

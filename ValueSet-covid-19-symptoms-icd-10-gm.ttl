@@ -15,7 +15,7 @@
   fhir:ValueSet.url [ fhir:value "https://www.napkon.de/fhir/ValueSet/covid-19-symptoms-icd-10-gm"];
   fhir:ValueSet.version [ fhir:value "1.0.0"];
   fhir:ValueSet.name [ fhir:value "COVID19SymptomsICD10GM"];
-  fhir:ValueSet.title [ fhir:value "COVID-19 symptoms"];
+  fhir:ValueSet.title [ fhir:value "COVID-19 symptoms (ICD-10-GM)"];
   fhir:ValueSet.status [ fhir:value "active"];
   fhir:ValueSet.date [ fhir:value "2020-11-11"^^xsd:date];
   fhir:ValueSet.publisher [ fhir:value "Charité - Universitätsmedizin Berlin"];

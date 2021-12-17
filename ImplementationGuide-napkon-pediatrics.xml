@@ -10,7 +10,7 @@
   <name value="napkonpediatrics"/>
   <title value="NAPKON Pediatrics Module"/>
   <status value="active"/>
-  <date value="2021-12-14T17:47:04+00:00"/>
+  <date value="2021-12-17T12:27:17+00:00"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
   <contact>
     <name value="Charité - Universitätsmedizin Berlin"/>
@@ -624,7 +624,7 @@
       <reference>
         <reference value="ValueSet/covid-19-symptoms-icd-10-gm"/>
       </reference>
-      <name value="COVID-19 symptoms"/>
+      <name value="COVID-19 symptoms (ICD-10-GM)"/>
       <description value="Symptoms due to COVID-19"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -888,7 +888,8 @@
       <reference>
         <reference value="ValueSet/viral-infectious-diseases"/>
       </reference>
-      <name value="ViralInfectiousDiseases"/>
+      <name value="Viral Infectious Diseases"/>
+      <description value="Viral infectious diseases in the context of pediatrics"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

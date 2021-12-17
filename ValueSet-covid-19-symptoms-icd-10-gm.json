@@ -8,7 +8,7 @@
   "url": "https://www.napkon.de/fhir/ValueSet/covid-19-symptoms-icd-10-gm",
   "version": "1.0.0",
   "name": "COVID19SymptomsICD10GM",
-  "title": "COVID-19 symptoms",
+  "title": "COVID-19 symptoms (ICD-10-GM)",
   "status": "active",
   "date": "2020-11-11",
   "publisher": "Charité - Universitätsmedizin Berlin",

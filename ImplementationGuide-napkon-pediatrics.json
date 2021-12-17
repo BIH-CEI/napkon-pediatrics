@@ -10,7 +10,7 @@
   "name": "napkonpediatrics",
   "title": "NAPKON Pediatrics Module",
   "status": "active",
-  "date": "2021-12-14T17:47:04+00:00",
+  "date": "2021-12-17T12:27:17+00:00",
   "publisher": "Charité - Universitätsmedizin Berlin",
   "contact": [
     {
@@ -882,7 +882,7 @@
         "reference": {
           "reference": "ValueSet/covid-19-symptoms-icd-10-gm"
         },
-        "name": "COVID-19 symptoms",
+        "name": "COVID-19 symptoms (ICD-10-GM)",
         "description": "Symptoms due to COVID-19",
         "exampleBoolean": false
       },
@@ -1218,7 +1218,8 @@
         "reference": {
           "reference": "ValueSet/viral-infectious-diseases"
         },
-        "name": "ViralInfectiousDiseases",
+        "name": "Viral Infectious Diseases",
+        "description": "Viral infectious diseases in the context of pediatrics",
         "exampleBoolean": false
       },
       {

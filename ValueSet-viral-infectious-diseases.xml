@@ -8,6 +8,7 @@
   <url value="https://www.napkon.de/fhir/ValueSet/viral-infectious-diseases"/>
   <version value="1.0.0"/>
   <name value="ViralInfectiousDiseases"/>
+  <title value="Viral Infectious Diseases"/>
   <status value="active"/>
   <date value="2021-05-28"/>
   <publisher value="Charité - Universitätsmedizin Berlin"/>
@@ -17,6 +18,7 @@
       <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/"/>
     </telecom>
   </contact>
+  <description value="Viral infectious diseases in the context of pediatrics"/>
   <compose>
     <include>
       <system value="http://snomed.info/sct"/>

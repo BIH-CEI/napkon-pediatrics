@@ -8,6 +8,7 @@
   "url": "https://www.napkon.de/fhir/ValueSet/viral-infectious-diseases",
   "version": "1.0.0",
   "name": "ViralInfectiousDiseases",
+  "title": "Viral Infectious Diseases",
   "status": "active",
   "date": "2021-05-28",
   "publisher": "Charité - Universitätsmedizin Berlin",
@@ -21,6 +22,7 @@
       ]
     }
   ],
+  "description": "Viral infectious diseases in the context of pediatrics",
   "compose": {
     "include": [
       {

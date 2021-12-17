@@ -134,6 +134,6 @@ print(valuesets_fname.name)
 with open(valuesets_fname, "w") as f:
     f.write('### Value Sets\n\n')
     for name in linklist_vs:
-        f.write(f"{{% include resource-reference.md name='{name}' %}}\n")
+        f.write(f"{{% include valueset-reference.md name='{name}' %}}\n")
 
 print("Done")

@@ -230,7 +230,7 @@ definition:
       reference: ValueSet/covid19-complications
   - description: Symptoms due to COVID-19
     exampleBoolean: false
-    name: COVID-19 symptoms
+    name: COVID-19 symptoms (ICD-10-GM)
     reference:
       reference: ValueSet/covid-19-symptoms-icd-10-gm
   - description: Symptoms due to COVID-19
@@ -353,8 +353,9 @@ definition:
     name: RestrictedEventStatus
     reference:
       reference: ValueSet/restricted-event-status
-  - exampleBoolean: false
-    name: ViralInfectiousDiseases
+  - description: Viral infectious diseases in the context of pediatrics
+    exampleBoolean: false
+    name: Viral Infectious Diseases
     reference:
       reference: ValueSet/viral-infectious-diseases
   - description: Yes / No / Unknown
